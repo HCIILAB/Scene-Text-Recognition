@@ -1,4 +1,5 @@
-# Scene Text Recognition Resources
+# Scene Text Recognition Resources 
+[Chinese_version](/scene_text_recognition_chinese_version.md)
 
 [<p align='right'>Author:陈晓雪</p>](https://github.com/CCchenxiaoxue)
 <!-- MarkdownTOC -->
@@ -22,8 +23,6 @@
 ***
 
 <a id="1-datasets"></a>
-
-[Chinese_version](/scene_text_recognition_chinese_version.md)
 
 <a id="1-datasets"></a>
 ## 1. Datasets
