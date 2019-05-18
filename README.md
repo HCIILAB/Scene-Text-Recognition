@@ -1,4 +1,4 @@
-# Scene Text Recognition Resources 
+# The State of the Art of Scene Text Recognition 
 [Chinese_version](/scene_text_recognition_chinese_version.md)
 
 [<p align='right'>Author:陈晓雪</p>](https://github.com/CCchenxiaoxue)
