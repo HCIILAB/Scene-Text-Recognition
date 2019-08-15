@@ -14,7 +14,7 @@
     - [1.5 Comparison of Datasets](#15-comparison-of-datasets)
 - [2. Summary of Scene Text Recognition Results](#2-summary-of-scene-text-recognition-results)
     - [2.1 Comparison of methods](#21-comparison-of-methods)
-    - [2.2 识别结果](#22-识别结果)
+    - [2.2 Results](#22-识别结果)
         - [2.2.1 Recognition Results on Regular Dataset](#221-recognition-results-on-regular-dataset)
         - [2.2.2 Recognition Results on Irregular Dataset](#222-recognition-results-on-irregular-dataset)
         - [2.2.3 Chinses Scene Text Dataset](#223-chinses-scene-text-dataset)
@@ -897,7 +897,7 @@ You can also download the [excels](https://pan.baidu.com/s/17V_TphIL5XOanSZlogr6
 <a id="22-识别结果"></a>
 
 <a id="22-识别结果"></a>
-### 2.2 识别结果
+### 2.2 Results
 
 In this section, we list the previous recognition algorithms in community on scene text recognition benchmarks, including IIIT5K，SVT，IC03，IC13，SVT-P，CUTE80，IC15，CTW，MWTI and RCTW.
 
@@ -1975,3 +1975,5 @@ It is important to notice that 1) The '*' indicates the method using the extra d
 **[55] \[CVPR-2019]** Zhan F, Lu S. Esir: End-to-end scene text recognition via iterative image rectification, in: Proceedings of Computer Vision and Pattern Recognition (CVPR), 2019, pp. 2059-2068. [paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhan_ESIR_End-To-End_Scene_Text_Recognition_via_Iterative_Image_Rectification_CVPR_2019_paper.pdf)
 
 **[56] \[CVPR-2019]** Zhang Y, Nie S, Liu W, et al. Sequence-To-Sequence Domain Adaptation Network for Robust Text Image Recognition, in: Proceedings of Computer Vision and Pattern Recognition (CVPR), 2019, pp. 2740-2749. [paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_Sequence-To-Sequence_Domain_Adaptation_Network_for_Robust_Text_Image_Recognition_CVPR_2019_paper.pdf)
+
+If you find any problems in our resources or some new papers for scene text recognition, please inform us at **xxuechen@foxmail.com**. Thank you for your contribution.
