@@ -1,26 +1,30 @@
-# The State of the Art of Scene Text Recognition 
-[Chinese_version](/scene_text_recognition_chinese_version.md)
+# Scene Text Recognition Resources
 
-[<p align='right'>Author: 陈晓雪</p>](https://github.com/CCchenxiaoxue)
+[<p align='right'>Author:陈晓雪</p>](https://github.com/CCchenxiaoxue)
+
+[Chinese_version](/scene_text_recognition_chinese_version_20190718.md)
+
 <!-- MarkdownTOC -->
 
-1. [1. Datasets](#1-datasets)
-    1. [1.1 Regular Scene Text Datasets](#11-regular-scene-text-datasets)
-    1. [1.2 Irregular Scene Text Datasets](#12-irregular-scene-text-datasets)
-    1. [1.3 Chinese Scene Text Datasets](#13-chinese-scene-text-datasets)
-    1. [1.4 Synthetic Datasets](#14-synthetic-datasets)
-    1. [1.5 Comparison of Datasets](#15-comparison-of-datasets)
-1. [2. Summary of Scene Text Recognition Results](#2-summary-of-scene-text-recognition-results)
-    1. [2.1 Introduction](#21-introduction)
-    1. [2.2 Summary of Scene Text Recognition Results](#22-summary-of-scene-text-recognition-results)
-    1. [2.3 Chinese Scene Text Recognition Results](#23-chinese-scene-text-recognition-results)
-1. [3. Field Survey](#3-field-survey)
-1. [4. OCR Service](#4-ocr-service)
-1. [5. References](#5-references)
+- [1. Datasets](#1-datasets)
+    - [1.1 Regular Scene Text Datasets](#11-regular-scene-text-datasets)
+    - [1.2 Irregular Scene Text Datasets](#12-irregular-scene-text-datasets)
+    - [1.3 Chinese Scene Text Datasets](#13-chinese-scene-text-datasets)
+    - [1.4 Synthetic Datasets](#14-synthetic-datasets)
+    - [1.5 Comparison of Datasets](#15-comparison-of-datasets)
+- [2. Summary of Scene Text Recognition Results](#2-summary-of-scene-text-recognition-results)
+    - [2.1 Comparison of methods](#21-comparison-of-methods)
+    - [2.2 识别结果](#22-识别结果)
+        - [2.2.1 Recognition Results on Regular Dataset](#221-recognition-results-on-regular-dataset)
+        - [2.2.2 Recognition Results on Irregular Dataset](#222-recognition-results-on-irregular-dataset)
+        - [2.2.3 Chinses Scene Text Dataset](#223-chinses-scene-text-dataset)
+- [3.  Survey](#3-field-survey)
+- [4. OCR Service](#4-ocr-service)
+- [5. References](#5-references)
 
 <!-- /MarkdownTOC -->
 
-***
+------
 
 <a id="1-datasets"></a>
 
@@ -31,64 +35,64 @@
 ### 1.1 Regular Scene Text Datasets
 
 - IIIT5K[31]：
-  * **Introduction:** There are 5000 images in total, 2000 for training and 3000 for testing. Text instances are mostly horizontal. Each image is associated with a short, 50-word lexicon and a long, 1000-word lexicon. (The lexicon consists of the groundtruth word and other random words.)
+  * **Introduction:** It contains 5000 images in total, 2000 for training and 3000 for testing. Every image is associated with a  50-word lexicon and a 1000-word lexicon. The lexicon consists of a  ground truth and some randomly picked words.
   * **Link:** [IIIT5K-download](http://cvit.iiit.ac.in/research/projects/cvit-projects/the-iiit-5k-word-dataset)
 - SVT[32]：
-  * **Introduction:** There are 647 images of cropped words. Text instances are mostly horizontal. Many images are severely corrupted by noise, blur, and low resolution. SVT is collected from the Google Street View, and each image is associated with a 50-word lexicon. It only has word-level annotations.
+  * **Introduction:** It contains 647 cropped word images. Many images are severely corrupted by noise, blur, and low resolution. SVT was collected from the Google Street View, and every image is associated with a 50-word lexicon. Specifically, it only provides word-level annotations.
   * **Link:** [SVT-download](http://vision.ucsd.edu/~kai/grocr/)
 - ICDAR 2003(IC03)[33]：
-  * **Introduction:** There are 509 images in total, 258 for training and 251 for testing. It contains 867 test images of cropped word after filtering. Text instances are mostly horizontal. Each image is associated with a 50-word lexicon and a full-word lexicon.  (The full lexicon combines all lexicon words.)
+  * **Introduction:** It contains 509 images in total, 258 for training and 251 for testing. Specifically, it contains 867 cropped word images after discarding images that contain non-alphanumeric characters or those have less than three characters. Every image is associated with a 50-word lexicon and a full-word lexicon.  The full lexicon combines all lexicon words.
   * **Link:** [IC03-download](http://www.iapr-tc11.org/mediawiki/index.php?title=ICDAR_2003_Robust_Reading_Competitions)
 - ICDAR 2013(IC13)[34]：
-  * **Introduction:** There are 1015 images of cropped word. Most images of IC13 are inherits from IC03. The text are mostly horizontal. No lexicon is provided.
+  * **Introduction:** It contains 1015 cropped word images and inherits most of its samples from IC03. No lexicon is associated with this dataset.
   * **Link:** [IC13-download](http://dagdata.cvc.uab.es/icdar2013competition/?ch=2&com=downloads)
 - SVHN[45]：
-  * **Introduction:** There are 600000 digits of house numbers in natural scenes. The digits are mostly horizontal. SVHN is collected from the Google View images, and is used to digit recognition.
+  * **Introduction:** It contains more than 600000 digits of house numbers in natural scenes. The images were collected from the Google View images, and were used to digit recognition.
   * **Link:** [SVHN-download](http://ufldl.stanford.edu/housenumbers/)
 
 <a id="12-irregular-scene-text-datasets"></a>
 ### 1.2 Irregular Scene Text Datasets
 
 - SVT-P[35]：
-  - **Introduction:** There are 639 images of cropped word. Many images are heavily distorted by the non-frontal view angle. SVT-P is collected from the side-view images in Google Street View. Each image is associated with a 50-word lexicon and a full-word lexicon.
-  - **Link:** [SVT-P-download](https://pan.baidu.com/s/1rhYUn1mIo8OZQEGUZ9Nmrg )  \(Extraction code : vnis)
+  - **Introduction:** It contains 639 cropped word images for testing. Images were selected from the side-view angle snapshots in Google Street View. Therefore, most images are heavily distorted by the non-frontal view angle. Every image is associated with a 50-word lexicon and a full-word lexicon.
+  - **Link:** [SVT-P-download](https://pan.baidu.com/s/1rhYUn1mIo8OZQEGUZ9Nmrg )  \(Password : vnis)
 - CUTE80[36]：
-  - **Introduction:** There are 80 high-resolution images taken in natural scenes. It contains 288 test images of cropped word after filtering and focuses on curved text. No lexicon is provided.
+  - **Introduction:** It contains 80 high-resolution images taken in natural scenes. Specifically, it contains 288 cropped word images for testing. The dataset focuses on curved text. No lexicon is provided.
   - **Link:** [CUTE80-download](http://cs-chan.com/downloads_CUTE80_dataset.html)
 - ICDAR 2015(IC15)[37]：
-  - **Introduction:** There are 1500 images in total, 1000 for training and 500 for testing. It contains 2077 test images of cropped word including more than 200 irregular text. No lexicon is provided.
+  - **Introduction:** It contains 1500 images in total, 1000 for training and 500 for testing. Specifically, it contains 2077 cropped images including more than 200 irregular text. No lexicon is associated with this dataset.
   - **Link:** [IC15-download](http://rrc.cvc.uab.es/?ch=4&com=downloads)
 - COCO-Text[38]：
-  - **Introduction:** There are 63686 images in total. It contains 145859 test images of cropped word including handwritten and printed, clear and blur, English and non-English.
+  - **Introduction:** It contains 63686 images in total. Specifically, it contains 145859  cropped word images for testing, including handwritten and printed, clear and blur, English and non-English.
   - **Link:** [COCO-Text-download](https://vision.cornell.edu/se3/coco-text-2/)
 - Total-Text[39]：
-  - **Introduction:** There are 1555 images in total. It contains 11459 test images of cropped word with more than three different text orientations: horizontal, multi-oriented and curved.
+  - **Introduction:** It contains 1555 images in total. Specifically, it contains 11459  cropped word images with more than three different text orientations: horizontal, multi-oriented and curved.
   - **Link:** [Total-Text-download](https://github.com/cs-chan/Total-Text-Dataset)
 - CTW-1500[43]：
-  - **Introduction:** There are 1500 images in total, 1000 for training and 500 for testing. It contains 10751 test images of cropped word. Text instances are multi-oriented and curved. The main languages are Chinese and English.
+  - **Introduction:** It contains 1500 images in total, 1000 for training and 500 for testing. Specifically, it contains 10751 cropped word images for testing. Annotations in CTW-1500 are polygons with 14 vertexes. The dataset mainly consists of Chinese and English.
   - **Link:** [CTW-1500-download](https://github.com/Yuliang-Liu/Curve-Text-Detector)
 
 <a id="13-chinese-scene-text-datasets"></a>
 ### 1.3 Chinese Scene Text Datasets
 
 - CTW-12k(RCTW competition，ICDAR17)[40]：
-  - **Introduction:** There are 12514 images in total, 11514 for training and 1000 for testing. Most images in CTW-12k is collected by camera or mobile phone, and others are generated images. Each image contains more than one text line. The competition tasks include text detection and end-to-end text recognition.
+  - **Introduction:** It contains 12514 images in total, 11514 for training and 1000 for testing. Images in CTW-12k were mostly collected by camera or mobile phone, and others were generated images. Text instances are annotated with parallelograms. It is the first large scale Chinese dataset, and was also the largest published one by then.
   - **Link:** [CTW-12K-download](http://rctw.vlrlab.net/dataset/)
 - MTWI(competition)[41]：
-  - **Introduction:** There are 20000 images. Text instances are mainly Chinese or English web text. The competition tasks include web text recognition, web text detection and end-to-end web text detection and recognition.
-  - **Link:** [MTWI-download ](https://pan.baidu.com/s/1SUODaOzV7YOPkrun0xSz6A#list/path=%2F)  \(Extraction code:gox9)
+  - **Introduction:** It contains 20000 images. The dataset mainly consists of Chinese or English web text. The competition includes three tasks: web text recognition, web text detection and end-to-end web text detection and recognition.
+  - **Link:** [MTWI-download ](https://pan.baidu.com/s/1SUODaOzV7YOPkrun0xSz6A#list/path=%2F)  \(Password:gox9)
 - CTW[42]：
-  - **Introduction:** There are 32285 high resolution street view images of Chinese text, with 1018402 character instances in total. CTW contains planar text, text in cities, text in rural areas, text under poor illumination, distant text, partially occluded text, etc.
+  - **Introduction:** It contains 32285 high resolution street view images of Chinese text, with 1018402 character instances in total. All images are annotated at the character level, including its underlying character type, bouding box, and 6 other attributes. These attributes indicate whether its background is complex, whether it’s raised, whether it’s hand-written or printed, whether it’s occluded, whether it’s distorted, whether it uses word-art.
   - **Link:** [CTW-download](https://ctwdataset.github.io/)
 
 <a id="14-synthetic-datasets"></a>
 ### 1.4 Synthetic Datasets
 
-* Synth90k [53] : 
-  * **Introduction:** There are 9 million images of cropped word generated from a set of 90k common English words. Words are rendered onto natural images with random transformations and effects.
+* Synth90k [53] :
+  * **Introduction:** It contains 9 million cropped word images generated from a set of 90k common English words. Words are rendered onto natural images with random transformations and effects. Every image is annotated with a ground-truth word.
   * **Link:** [Synth90k-download](http://www.robots.ox.ac.uk/~vgg/data/text/)
-* SynthText [54] : 
-  * **Introduction:** There are 6 million images of cropped word. The generation process is similar to that of Synth90k.
+* SynthText [54] :
+  * **Introduction:** It contains 6 million cropped word images. The generation process is similar to that of Synth90k.
   * **Link:** [SynthText-download](https://github.com/ankush-me/SynthText)
 
 <a id="15-comparison-of-datasets"></a>
@@ -369,78 +373,48 @@
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">regular</font></td>
 	</tr>
 </table>
-
 ***
 
 <a id="2-summary-of-scene-text-recognition-results"></a>
 ## 2. Summary of Scene Text Recognition Results
 
-<a id="21-introduction"></a>
-### 2.1 Introduction
+<a id="21-comparison-of-methods"></a>
 
-As shown in Table "Summary of Scene Text Recognition Results", we summarize the main recognition algorithms in community from 2011 to the present. The content of the table includes the sources, highlights, codes, types and recognition performance. The '*' in the Method indicates the use of extra datasets. The **bold** in the numeric  represents the highest recognition results; ''^" represents the highest result of using the extra datasets; "@" represents different evaluation method which only uses 1811 test images. 
+<a id="21-comparison-of-methods"></a>
+### 2.1 Comparison of methods
 
-<a id="22-summary-of-scene-text-recognition-results"></a>
-### 2.2 Summary of Scene Text Recognition Results
+It is important to notice that 1) "Reg" stands for regular scene text datasets. 2) "Irreg" stands for irregular scence text datasets. 3) "Seg" denotes the method based on segmentation. 4) "Extra" means the method using the extra datasets. 5) "CTC" represents the method which applies the CTC-based algorithm to decode. 6) "Attn" represents the method which applies the attention mechanism to decode.
+
+You can also download the [excels](https://pan.baidu.com/s/17V_TphIL5XOanSZlogr65A ) prepared by us, password: 3e39 .
 
 <table cellspacing="0" border="0">
 	<colgroup width="271"></colgroup>
-	<colgroup width="1051"></colgroup>
 	<colgroup span="2" width="89"></colgroup>
 	<colgroup width="106"></colgroup>
-	<colgroup width="117"></colgroup>
-	<colgroup span="13" width="89"></colgroup>
-	<colgroup span="5" width="86"></colgroup>
-	<colgroup width="103"></colgroup>
+	<colgroup width="100"></colgroup>
+	<colgroup span="3" width="89"></colgroup>
 	<colgroup span="2" width="86"></colgroup>
+	<colgroup width="832"></colgroup>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=24 height="34" align="center"><b><font size=4>Summary of Scene Text Recognition Results</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><br></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><br></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><br></td>
-	</tr>
-	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 height="39" align="center"><b><font face="Arial">Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Highlight&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Code</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Regular</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Irregular</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Segmentation</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Extra data</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">CTC</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Attention</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" bgcolor="#FFFFCC"><b><font face="Arial">IIIT5K</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" bgcolor="#FFFFCC"><b><font face="Arial">SVT</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" bgcolor="#FFFFCC"><b><font face="Arial">IC03</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><b><font face="Arial">IC13</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" bgcolor="#E6E6FF"><b><font face="Arial">SVT-P</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><b><font face="Arial">CUTE80</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><b><font face="Arial">IC15(2077)</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><b><font face="Arial">COCO-TEXT</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Time</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><b><font face="Arial">Source</font></b></td>
-	</tr>
-	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="50" sdnum="2052;"><b><font face="Arial">50</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><b><font face="Arial">1K</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><b><font face="Arial">None</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="50" sdnum="2052;"><b><font face="Arial">50</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><b><font face="Arial">None</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="50" sdnum="2052;"><b><font face="Arial">50</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><b><font face="Arial">Full</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><b><font face="Arial">50k</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><b><font face="Arial">None</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><b><font face="Arial">None</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="50" sdnum="2052;"><b><font face="Arial">50</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><b><font face="Arial">Full</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><b><font face="Arial">None</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><b><font face="Arial">None</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><b><font face="Arial">None</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><b><font face="Arial">None</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=11 height="34" align="center"><b><font size=4>Comparsion of methods</font></b></td>
 		</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Wang et al. [1]: ABBYY</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors propose a two-stage text recognition system. The system consists of a state-of-the-art text detection followed by a leading OCR engine that shows outstanding performance.</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 height="39" align="center"><font face="Arial">Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Code</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Reg</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Irreg</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Seg</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Extra</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">CTC</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Attn</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Time</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Source</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Highlight&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></td>
+	</tr>
+	<tr>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Wang et al. [1] : ABBYY</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000"> ×</font></td>
@@ -448,6 +422,517 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2011" sdnum="2052;">2011</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">A state-of-the-art text detector + a leading commercial OCR engine</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Wang et al. [1] : SYNTH+PLEX</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2011" sdnum="2052;">2011</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">The baseline of scene text recognition.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Mishra et al. [2]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2012" sdnum="2052;">2012</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">BMVC</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">1) Incorporating higher order statistical language models to recognize words in an unconstrained manner. 2) Introducing IIIT5K-word dataset.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Wang et al. [3]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2012" sdnum="2052;">2012</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">CNNs + Non-maximal suppression + beam search</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Goel et al. [4] : wDTW</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICDAR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Recognizing the text in the image by matching the scene and synthetic image features with wDTW.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Bissacco et al. [5] : PhotoOCR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Applying a network with five hidden layers for character classification.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Phan et al. [6]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">1) MSER + SIFT descriptors + SVM 2) Introducing the SVT-P datasets.
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Alsharif et al. [7] : HMM/Maxout</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICLR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">Convolutional Maxout networks + Hybrid HMM</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Almazan et al [8] : KCSR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">TPAMI</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Embedding word images and text string in a common vectorial subspace and allowing one to cast recognition and retrieval tasks as a nearest neighbor problem.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Yao et al. [9] : Strokelets</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center">×</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center">Proposing a novel multi-scale representation for scene text recognition: strokelets.</td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">R.-Serrano et al.[10] : Label embedding</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">IJCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Embedding word labels and word images into a common Euclidean space and finding the cloest word label in this space.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Jaderberg et al. [11]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ECCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">1) Enabling efficient feature sharing for text detection and classification. 2) Making technical changes over the traditional CNN architectures. 3) Proposing a method of automated data mining of Flickr.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Su and Lu [12]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ACCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">HOG + BLSTM + CTC</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Gordo[13] : Mid-features</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Proposing to learn local mid-level features suitable for building word image representations.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Jaderberg et al. [14]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">IJCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">1) Treating each word as a category and training very large convolutional neural networks to perform word recognition on the whole proposal region. 2) Generating 9 million images, with equal numbers of word samples from a 90k word dictionary.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Jaderberg et al. [15]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICLR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">CNN + CRF</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Shi, Bai, and Yao [16] : CRNN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">TPAMI</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">CNN + BLSTM + CTC</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Shi et al. [17] : RARE</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">STN + CNN + Attentional BLSTM</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Lee and Osindero [18] : R2AM</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Presenting recursive recurrent neural networks with attention modeling.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Liu et al.  [19] : STAR-Net</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">BMVC</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">STN + ResNet + BLSTM + CTC</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Yang et al. [20]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">IJCAI</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">1) CNN + 2D-Attention-based RNN, applying an auxiliary dense character detection task that helps to learn text specific visual patterns. 2) Developing a large-scale synthetic dataset.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Yin et al. [21]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">CNN + CTC</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Cheng et al. [22] : FAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">1) Proposing the concept of attention drift. 2)Introducing focusing network to focus deviated attention back on the target areas.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Cheng et al. [23] : AON</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">1) Extracting scene text features in four directions. 2)CNN + Attentional BLSTM </font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Gao et al. [24]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">arXiv</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Attentional ResNet + CNN + CTC</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Liu et al.  [25] : Char-Net</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">CNN + STN (facilitating the rectification of individual characters) + LSTM</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Liu et al.  [26] : SqueezedText</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Binary convolutional encoder-decoder network + Bi-RNN</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Bai et al. [27] : EP</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Proposing edit probability to effectively handle the misalignment between the training text and the output probability distribution sequence.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Liu et al. [28]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ECCV</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Designing a multi-task network with an encoder-discriminator-generator architecture to guide the feature of the original image toward that of the clean image.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Gao et al. [29]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICIP</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Attentional DenseNet + BLSTM + CTC</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Shi et al. [30] : ASTER</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">TPAMI</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">TPS + ResNet + Bidirectional attention-based BLSTM</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Luo et al. [46] : MORAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">PR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Multi-object rectification network + CNN + Attentional BLSTM</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Xie et al. [47] : CAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ACM</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">ResNet + CNN + GLU</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Liao et al.[48] : CA-FCN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Performing character classification at each pixel location and needing character-level annotations.</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Li et al. [49] : SAR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">ResNet + 2D Attentional LSTM</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Zhan el at. [55]: ESIR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Iterative rectification Network + ResNet + Attentional BLSTM</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Zhang et al. [56]: SSDAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Attentional CNN + GAS + GRU</font></td>
+	</tr>
+</table>
+<a id="22-识别结果"></a>
+
+<a id="22-识别结果"></a>
+### 2.2 识别结果
+
+In this section, we list the previous recognition algorithms in community on scene text recognition benchmarks, including IIIT5K，SVT，IC03，IC13，SVT-P，CUTE80，IC15，CTW，MWTI and RCTW.
+
+It is important to notice that 1) The '*' indicates the method using the extra datasets. 2) The **bold** represents the highest recognition results. 3) '^' denotes the highest recognition results of using the extra datasets. 4) '@' represents the methods under different evaluation which only uses 1811 test images.
+
+<a id="221-recognition-results-on-regular-dataset"></a>
+#### 2.2.1 Recognition Results on Regular Dataset
+
+<table cellspacing="0" border="0">
+	<colgroup width="271"></colgroup>
+	<colgroup span="10" width="89"></colgroup>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=27 height="34" align="center"><b><font size=4>Recognition Results on Regular Datasets</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 height="39" align="center"><font face="Arial">Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" bgcolor="#FFFFCC"><font face="Arial">IIIT5K</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" bgcolor="#FFFFCC"><font face="Arial">SVT</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" bgcolor="#FFFFCC"><font face="Arial">IC03</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">IC13</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="50" sdnum="2052;"><font face="Arial">50</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">1K</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">None</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="50" sdnum="2052;"><font face="Arial">50</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">None</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="50" sdnum="2052;"><font face="Arial">50</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">Full</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">50k</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">None</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">None</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Wang et al. [1] : ABBYY</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="24.3" sdnum="2052;0;0.0"><font face="Arial">24.3</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -458,25 +943,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="40.5" sdnum="2052;0;0.0"><font face="Arial">40.5</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="26.1" sdnum="2052;0;0.0"><font face="Arial">26.1</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2011" sdnum="2052;">2011</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Wang et al. [1] : SYNTH+PLEX</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors established a baseline for scene text recognition. The results showed that an object recognition-based pipeline outperform conventional OCR engines and do so without explicit use of a text detector, which significantly simplifying the recognition pipeline.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Wang et al. [1] : SYNTH+PLEX</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -487,25 +956,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2011" sdnum="2052;">2011</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Mishra et al. [2]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors presented a new framework, which used CRF and some or all of the English dictionary as the priors to obtain the recognition results. Besides, they introduced the IIIT5K-word datasets.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Mishra et al. [2]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="64.1" sdnum="2052;0;0.0"><font face="Arial">64.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="57.5" sdnum="2052;0;0.0"><font face="Arial">57.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -516,25 +969,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="45.7" sdnum="2052;0;0.0"><font face="Arial">45.7</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="24.7" sdnum="2052;0;0.0"><font face="Arial">24.7</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2012" sdnum="2052;">2012</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">BMVC</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Wang et al. [3]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors built a new recognition system for scene text recognition task. They combined the representational power of multi-layer CNN, NMS and beam search in a end-to-end, lexicon-driven, scene text recognition system.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Wang et al. [3]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -545,25 +982,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="40.2" sdnum="2052;0;0.0"><font face="Arial">40.2</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="32.4" sdnum="2052;0;0.0"><font face="Arial">32.4</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2012" sdnum="2052;">2012</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICPR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Goel et al. [4] : wDTW</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors presented a holistic word recognition framework which did not require explicit character segmentation. They generated synthetic images from lexicon words and recognized the text in the image by matching the scene and synthetic images features with wDTW.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Goel et al. [4] : wDTW</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -574,25 +995,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICDAR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Bissacco et al. [5] : PhotoOCR</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors presented a two-stage text recognition system. The system was based on HOG features and recognized by a 5-layer CNN. Besides, they built a self-supervision mechanism to construct additional datasets.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Bissacco et al. [5] : PhotoOCR</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -603,25 +1008,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87.6" sdnum="2052;0;0.0"><font face="Arial">87.6</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Phan et al. [6]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed a two-stage text recognition system for scene text recognition with perspective distortion. The system used MSERs to detect characters, SIFT descriptors to extract features, and SVM clustering to recognize words. Besides, the SVT-P datasets was introduced.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Phan et al. [6]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -632,25 +1021,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="62.3" sdnum="2052;0;0.0"><font face="Arial">62.3</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="42.2" sdnum="2052;0;0.0"><font face="Arial">42.2</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Alsharif et al. [7] : HMM/Maxout</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center">Authors constructed a two-stage text recognition system based on segmentation method. The system recognized words by leveraging the convolutional Maxout networks along with hybrid HMM models. Besides, author showed the performance of end-to-end recognition.</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Alsharif et al. [7] : HMM/Maxout</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -661,25 +1034,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="85.1" sdnum="2052;0;0.0"><font face="Arial">85.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICLR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Almazan et al [8] : KCSR</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors embedded the word images and text strings in a common vectorial subspace, and regarded the recognition task as a nearest neighbor problem. The proposed representation had a fixed length, low dimensional and was fast to compute.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="35" align="center"><font face="Arial">Almazan et al [8] : KCSR</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.6" sdnum="2052;0;0.0"><font face="Arial">88.6</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="75.6" sdnum="2052;0;0.0"><font face="Arial">75.6</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -690,25 +1047,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">TPAMI</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Yao et al. [9] : Strokelets</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center">Authors proposed a novel multi-scale representation 'Strokelets' for scene text recognition. Strokelets possed four distinctive advantages: usability, robustness, generality and expressivity.</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center">×</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Yao et al. [9] : Strokelets</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="80.2" sdnum="2052;0;0.0"><font face="Arial">80.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="69.3" sdnum="2052;0;0.0"><font face="Arial">69.3</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -719,25 +1060,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">R.-Serrano et al.[10] : Label embedding</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors embedded word labels and word images into a common Euclidean space. The advantages of proposed method was simple and effective. It could combine with any descriptor and did not require costly pre-/post-processing operations.  It also allowed for the recognition of never-seen before words.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">R.-Serrano et al.[10] : Label embedding</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="76.1" sdnum="2052;0;0.0"><font face="Arial">76.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="57.4" sdnum="2052;0;0.0"><font face="Arial">57.4</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -748,25 +1073,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">IJCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Jaderberg et al. [11]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed a novel CNN classifier that enabled efficient feature sharing for text detection, character case-sensitive and insensitive classification, and bi-gram classification. Besides, they proposed a method of automated data mining of Flickr.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Jaderberg et al. [11]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -777,25 +1086,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ECCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Su and Lu [12]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed a novel method that recognized the whole word images without character-level segmentation. The proposed method was based on HOG features, using BLSTM and CTC to achieve text recognition.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Su and Lu [12]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -806,25 +1099,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ACCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Gordo[13] : Mid-features</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed a descriptive, robust, and compact fixed-length representation: mid-level features. The proposed features could be paired with word attributes framework to improve recognition performance.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Gordo[13] : Mid-features</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.3" sdnum="2052;0;0.0"><font face="Arial">93.3</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="86.6" sdnum="2052;0;0.0"><font face="Arial">86.6</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -835,25 +1112,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Jaderberg et al. [14]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors presented an end-to-end system for text localizing and recognizing in natural scene images and a synthetic dataset containing 9 million images. The proposed system used CNN to identify text, and the categories was 90k, which covered almost all words. Besides, the recognition result of the system can be used to update the detector.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="35" align="center"><font face="Arial">Jaderberg et al. [14]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.1" sdnum="2052;0;0.0"><font face="Arial">97.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.7" sdnum="2052;0;0.0"><font face="Arial">92.7</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -864,25 +1125,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.3" sdnum="2052;0;0.0"><font face="Arial">93.3</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.1" sdnum="2052;0;0.0"><font face="Arial">93.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.8" sdnum="2052;0;0.0"><font face="Arial">90.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">IJCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Jaderberg et al. [15]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed a model incorporating CNN and CRF for the unconstrained recognition of words in natural images. The entire model could be jointly optimized by back-propagating the structured output loss. The results set the baseline for lexicon-free.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Jaderberg et al. [15]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.5" sdnum="2052;0;0.0"><font face="Arial">95.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.6" sdnum="2052;0;0.0"><font face="Arial">89.6</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -893,27 +1138,11 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.4" sdnum="2052;0;0.0"><font face="Arial">93.4</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.6" sdnum="2052;0;0.0"><font face="Arial">89.6</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.8" sdnum="2052;0;0.0"><font face="Arial">81.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICLR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Shi, Bai, and Yao [16] : CRNN</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors modeled scene text recognition as a sequence problem by integrating the advantages of both deep CNN and RNN. They proposed an end-to-end trainable framework where transcription was made by CTC.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Shi, Bai, and Yao [16] : CRNN</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.8" sdnum="2052;0;0.0"><font face="Arial">97.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">^95.0</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.2" sdnum="2052;0;0.0"><font face="Arial">81.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.5" sdnum="2052;0;0.0"><font face="Arial">97.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="82.7" sdnum="2052;0;0.0"><font face="Arial">82.7</font></td>
@@ -922,25 +1151,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.7" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">95.7</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.9" sdnum="2052;0;0.0"><font face="Arial">91.9</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.6" sdnum="2052;0;0.0"><font face="Arial">89.6</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">TPAMI</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Shi et al. [17] : RARE</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed RARE, a recognition model for irregular text. The input images were firstly rectified via STN, extracted features by CNN, and then decoded by a recurrent network based on attention mechanism.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Shi et al. [17] : RARE</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.2" sdnum="2052;0;0.0"><font face="Arial">96.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.8" sdnum="2052;0;0.0"><font face="Arial">93.8</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.9" sdnum="2052;0;0.0"><font face="Arial">81.9</font></td>
@@ -951,25 +1164,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.8" sdnum="2052;0;0.0"><font face="Arial">94.8</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.1" sdnum="2052;0;0.0"><font face="Arial">90.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.6" sdnum="2052;0;0.0"><font face="Arial">88.6</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="91.2" sdnum="2052;0;0.0"><font face="Arial">91.2</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="77.4" sdnum="2052;0;0.0"><font face="Arial">77.4</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="71.8" sdnum="2052;0;0.0"><font face="Arial">71.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="59.2" sdnum="2052;0;0.0"><font face="Arial">59.2</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Lee and Osindero [18] : R2AM</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed recursive CNN, which allowed for parametrically efficient and effective image feature extraction. They constructed R2AM, which implicitly learned character-level language model. The use of a soft-attention mechanism allowed the model to decode selectively. </font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Lee and Osindero [18] : R2AM</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.8" sdnum="2052;0;0.0"><font face="Arial">96.8</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.4" sdnum="2052;0;0.0"><font face="Arial">94.4</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="78.4" sdnum="2052;0;0.0"><font face="Arial">78.4</font></td>
@@ -980,25 +1177,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.7" sdnum="2052;0;0.0"><font face="Arial">88.7</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90" sdnum="2052;0;0.0"><font face="Arial">90.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Liu et al.  [19] : STAR-Net</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors presented the STAR-Net for irregular scene text recognition. The proposed network used STN to remove the distortions of texts, which reduced the difficulty of recognition module. The residue convolutional blocks were employed for extracting image-based features, and words were decoded by BLSTM and CTC.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Liu et al.  [19] : STAR-Net</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.7" sdnum="2052;0;0.0"><font face="Arial">97.7</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.5" sdnum="2052;0;0.0"><font face="Arial">94.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.3" sdnum="2052;0;0.0"><font face="Arial">83.3</font></td>
@@ -1009,25 +1190,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.9" sdnum="2052;0;0.0"><font face="Arial">89.9</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.1" sdnum="2052;0;0.0"><font face="Arial">89.1</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="94.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">94.3</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="83.6" sdnum="2052;0;0.0"><font face="Arial">83.6</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73.5" sdnum="2052;0;0.0"><font face="Arial">73.5</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">BMVC</font></td>
 	</tr>
 	<tr>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">*Yang et al. [20]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors presented a robust end-to-end neural-based model to attentively recognize text in natural images. An auxiliary dense character detection task was introduced that helped to learn text specific visual patterns. A recurrent decoder  network based on the attention mechanism that generated target sequences. Besides, they proposed a synthetic dataset containing perspective distortion, curvature, etc.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.8" sdnum="2052;0;0.0"><font face="Arial">97.8</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.1" sdnum="2052;0;0.0"><font face="Arial">96.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1038,26 +1203,9 @@ As shown in Table "Summary of Scene Text Recognition Results", we summarize the 
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="93" sdnum="2052;0;0.0"><font face="Arial">93.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="80.2" sdnum="2052;0;0.0"><font face="Arial">80.2</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="75.8" sdnum="2052;0;0.0"><font face="Arial">75.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="69.3" sdnum="2052;0;0.0"><font face="Arial">69.3</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">IJCAI</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Yin et al. [21]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed a novel system for scene text recognition. The method simultaneously detected and recognized characters by sliding the text line image with character
-models. CNN was used to extract image-based feature and the final recognition results were decoded with CTC based algorithm.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Yin et al. [21]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.7" sdnum="2052;0;0.0"><font face="Arial">98.7</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.1" sdnum="2052;0;0.0"><font face="Arial">96.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="78.2" sdnum="2052;0;0.0"><font face="Arial">78.2</font></td>
@@ -1068,56 +1216,22 @@ models. CNN was used to extract image-based feature and the final recognition re
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.1" sdnum="2052;0;0.0"><font face="Arial">81.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.4" sdnum="2052;0;0.0"><font face="Arial">81.4</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
 	</tr>
 	<tr>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">*Cheng et al. [22] : FAN</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed the concept of 'attention drift' and  a novel method called FAN for scene text recognition. A focusing network (FN) was introduced, which
-could focus AN’s deviated attention back on the target areas.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.3" sdnum="2052;0;0.0"><font face="Arial">99.3</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.5" sdnum="2052;0;0.0"><font face="Arial">97.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87.4" sdnum="2052;0;0.0"><font face="Arial">87.4</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.1" sdnum="2052;0;0.0"><font face="Arial">97.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="85.9" sdnum="2052;0;0.0"><font face="Arial">85.9</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.2" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">99.2</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">^99.2</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.3" sdnum="2052;0;0.0"><font face="Arial">97.3</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.2" sdnum="2052;0;0.0"><font face="Arial">94.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.3" sdnum="2052;0;0.0"><font face="Arial">93.3</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><b><font face="Arial" color="#339966">@85.3</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Cheng et al. [23] : AON</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors developed the arbitrary orientation network (AON) to directly capture the
-deep features of irregular texts. The proposed network extracted scene text features in four directions and the character placement clues. A filter gate (FG) was designed for fusing four-direction features with the learned placement clues.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Cheng et al. [23] : AON</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.6" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">99.6</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.1" sdnum="2052;0;0.0"><font face="Arial">98.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87" sdnum="2052;0;0.0"><font face="Arial">87.0</font></td>
@@ -1128,25 +1242,9 @@ deep features of irregular texts. The proposed network extracted scene text feat
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.5" sdnum="2052;0;0.0"><font face="Arial">91.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="94" sdnum="2052;0;0.0"><font face="Arial">94.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="83.7" sdnum="2052;0;0.0"><font face="Arial">83.7</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73" sdnum="2052;0;0.0"><font face="Arial">73.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="76.8" sdnum="2052;0;0.0"><font face="Arial">76.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="68.2" sdnum="2052;0;0.0"><font face="Arial">68.2</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Gao et al. [24]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed a novel scene text recognition system. In order to suppress the background noise, the residual attention modules were incorporated into a small densely connected network to improve the discriminability of CNN features. Besides, the proposed system speed up recognition by removing the RNN.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Gao et al. [24]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.1" sdnum="2052;0;0.0"><font face="Arial" color="#000000">99.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial">97.9</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.8" sdnum="2052;0;0.0"><font face="Arial">81.8</font></td>
@@ -1157,25 +1255,9 @@ deep features of irregular texts. The proposed network extracted scene text feat
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.2" sdnum="2052;0;0.0"><font face="Arial">89.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88" sdnum="2052;0;0.0"><font face="Arial">88.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">arXiv</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Liu et al.  [25] : Char-Net</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors presented a Char-Net for recognizing distorted scene text. The proposed system extracted the single-character feature region and removed distortion of it. Finally, the recurrent decoder network based on the attention mechanism generated target sequences.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Liu et al.  [25] : Char-Net</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.6" sdnum="2052;0;0.0"><font face="Arial">83.6</font></td>
@@ -1186,55 +1268,22 @@ deep features of irregular texts. The proposed network extracted scene text feat
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.5" sdnum="2052;0;0.0"><font face="Arial">91.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.8" sdnum="2052;0;0.0"><font face="Arial">90.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73.5" sdnum="2052;0;0.0"><font face="Arial">73.5</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="60" sdnum="2052;0;0.0"><font face="Arial">60.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">*Liu et al.  [26] : SqueezedText</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed SqueezedText for real-time scene text recognition. The front-end B-CEDNet was trained under binary constraints with significant compression . Hence, the proposed method lead to both remarkable inference run-time speedup as well as memory usage reduction.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Liu et al.  [26] : SqueezedText</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97" sdnum="2052;0;0.0"><font face="Arial">97.0</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.1" sdnum="2052;0;0.0"><font face="Arial">94.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87" sdnum="2052;0;0.0"><font face="Arial">87.0</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.2" sdnum="2052;0;0.0"><font face="Arial">95.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><font face="Arial">98.8</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">98.8</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial">97.9</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.8" sdnum="2052;0;0.0"><font face="Arial">93.8</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.1" sdnum="2052;0;0.0"><font face="Arial">93.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.9" sdnum="2052;0;0.0"><font face="Arial">92.9</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">*Bai et al. [27] : EP</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors focused on the the misalignment between the ground truth strings and the attention’s output sequences of probability distribution and proposed EP for scene text recognition. The advantage of using edit probability was that the training process could focus on the missing, superfluous and unrecognized characters, and thus the impact of the misalignment
-problem could be alleviated or even overcome.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="35" align="center"><font face="Arial">*Bai et al. [27] : EP</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.5" sdnum="2052;0;0.0"><font face="Arial">99.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial">97.9</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.3" sdnum="2052;0;0.0"><font face="Arial">88.3</font></td>
@@ -1244,26 +1293,10 @@ problem could be alleviated or even overcome.</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial">97.9</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.6" sdnum="2052;0;0.0"><font face="Arial">94.6</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.4" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^94.4</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73.9" sdnum="2052;0;0.0"><font face="Arial">73.9</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.4" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">94.4</font></b></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Liu et al. [28]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors addressed the problem of image feature learning for scene text recognition. The novel multi-task network was presented with an encoder-generator-discriminator-decoder architecture that guided image feature learning by using clean images.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Liu et al. [28]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.3" sdnum="2052;0;0.0"><font face="Arial">97.3</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.1" sdnum="2052;0;0.0"><font face="Arial">96.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.4" sdnum="2052;0;0.0"><font face="Arial">89.4</font></td>
@@ -1274,25 +1307,9 @@ problem could be alleviated or even overcome.</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.7" sdnum="2052;0;0.0"><font face="Arial" color="#000000">94.7</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94" sdnum="2052;0;0.0"><font face="Arial">94.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73.9" sdnum="2052;0;0.0"><font face="Arial">73.9</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="62.5" sdnum="2052;0;0.0"><font face="Arial">62.5</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ECCV</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Gao et al. [29]</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed a novel scene text recognition system. In order to suppress the background noise, the residual attention modules were incorporated into a small densely connected network to improve the discriminability of CNN features. Finally, a recurrent decoder based on CTC algorithm generated the recognition results.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Gao et al. [29]</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.1" sdnum="2052;0;0.0"><font face="Arial">99.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.2" sdnum="2052;0;0.0"><font face="Arial">97.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.6" sdnum="2052;0;0.0"><font face="Arial">83.6</font></td>
@@ -1303,54 +1320,22 @@ problem could be alleviated or even overcome.</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.4" sdnum="2052;0;0.0"><font face="Arial" color="#000000">91.4</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.5" sdnum="2052;0;0.0"><font face="Arial">89.5</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICIP</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Shi et al. [30] : ASTER</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed ASTER for irregular scene text recognition. The proposed system was an improved version of [17]. The input images were firstly rectified via TPS, extracted features by Res-Net, and then decoded by a recurrent network based on attention mechanism.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Shi et al. [30] : ASTER</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.6" sdnum="2052;0;0.0"><font face="Arial">99.6</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">98.8</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.4" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">93.4</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.4" sdnum="2052;0;0.0"><font face="Arial" color="#000000">97.4</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.5" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">89.5</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><font face="Arial">98.8</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">98.8</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98" sdnum="2052;0;0.0"><font face="Arial">98.0</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.5" sdnum="2052;0;0.0"><font face="Arial">94.5</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.8" sdnum="2052;0;0.0"><font face="Arial">91.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="78.5" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">78.5</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="79.5" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">79.5</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="76.1" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">76.1</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">TPAMI</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">Luo et al. [46] : MORAN</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors designed MORAN for rectifying images that contain irregular text. The proposed method predicted the offsets of different regions in text images, decreased the difficulty of recognition and enabled the attention-based sequence recognition network to more easily read irregular text. Compared with TPS, MORAN was simpler and more usable.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Luo et al. [46] : MORAN</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial" color="#000000">97.9</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.2" sdnum="2052;0;0.0"><font face="Arial" color="#000000">96.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.2" sdnum="2052;0;0.0"><font face="Arial" color="#000000">91.2</font></td>
@@ -1361,25 +1346,9 @@ problem could be alleviated or even overcome.</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">95.0</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.4" sdnum="2052;0;0.0"><font face="Arial">92.4</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="94.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">94.3</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="86.7" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">86.7</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="76.1" sdnum="2052;0;0.0"><font face="Arial">76.1</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="77.4" sdnum="2052;0;0.0"><font face="Arial">77.4</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="68.8" sdnum="2052;0;0.0"><font face="Arial">68.8</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">PR</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Xie et al. [47] : CAN</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors presented CAN for unconstrained scene text recognition. A Res-Net was used to extract image-based features .CNN and GLU were incorporated as the decoder instead of RNN to obtain the final recognition result.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Xie et al. [47] : CAN</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97" sdnum="2052;0;0.0"><font face="Arial" color="#000000">97.0</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.2" sdnum="2052;0;0.0"><font face="Arial" color="#000000">94.2</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="80.5" sdnum="2052;0;0.0"><font face="Arial" color="#000000">80.5</font></td>
@@ -1390,79 +1359,423 @@ problem could be alleviated or even overcome.</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91" sdnum="2052;0;0.0"><font face="Arial" color="#000000">91.0</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.5" sdnum="2052;0;0.0"><font face="Arial" color="#000000">90.5</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ACM</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">*Liao et al.[48] : CA-FCN</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">CA-FCN was devised for recognizing the text of arbitrary shapes. The proposed method was conducted from two-dimensional perspective and could simultaneously recognize the script and predict the position of each character. Besides, the proposed method required character-level labeling.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^99.8</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.9" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^98.9</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Liao et al.[48] : CA-FCN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^99.8</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^98.9</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92" sdnum="2052;0;0.0"><font face="Arial">92.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^98.8</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^98.8</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="82.1" sdnum="2052;0;0.0"><font face="Arial" color="#000000">82.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.4" sdnum="2052;0;0.0"><font face="Arial">91.4</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">*Li et al. [49] : SAR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.4" sdnum="2052;0;0.0"><font face="Arial">99.4</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.2" sdnum="2052;0;0.0"><font face="Arial">98.2</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^95.0</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.5" sdnum="2052;0;0.0"><font face="Arial" color="#000000">98.5</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^91.2</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94" sdnum="2052;0;0.0"><font face="Arial">94.0</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="23" align="center"><font face="Arial">Zhan el at. [55]: ESIR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.6" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">99.6</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">98.8</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.3" sdnum="2052;0;0.0"><font face="Arial" color="#000000">93.3</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.4" sdnum="2052;0;0.0"><font face="Arial">97.4</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.2" sdnum="2052;0;0.0"><font face="Arial">90.2</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.3" sdnum="2052;0;0.0"><font face="Arial">91.3</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="26" align="center"><font face="Arial">Zhang et al. [56]: SSDAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.8" sdnum="2052;0;0.0"><font face="Arial" color="#000000">83.8</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="84.5" sdnum="2052;0;0.0"><font face="Arial">84.5</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.1" sdnum="2052;0;0.0"><font face="Arial">92.1</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.8" sdnum="2052;0;0.0"><font face="Arial">91.8</font></td>
+	</tr>
+</table>
+
+<a id="222-recognition-results-on-irregular-dataset"></a>
+#### 2.2.2 Recognition Results on Irregular Dataset
+
+<table cellspacing="0" border="0">
+	<colgroup width="271"></colgroup>
+	<colgroup span="5" width="86"></colgroup>
+	<colgroup width="103"></colgroup>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=10 height="34" align="center"><b><font size=4>Recognition Results on Irregualr Datasets</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 height="39" align="center"><font face="Arial">Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" bgcolor="#E6E6FF"><font face="Arial">SVT-P</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><font face="Arial">CUTE80</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><font face="Arial">IC15</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><font face="Arial">COCO-TEXT</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="50" sdnum="2052;"><font face="Arial">50</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><font face="Arial">Full</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><font face="Arial">None</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><font face="Arial">None</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><font face="Arial">None</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF"><font face="Arial">None</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Wang et al. [1] : ABBYY</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="40.5" sdnum="2052;0;0.0"><font face="Arial">40.5</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="26.1" sdnum="2052;0;0.0"><font face="Arial">26.1</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Wang et al. [1] : SYNTH+PLEX</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Mishra et al. [2]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="45.7" sdnum="2052;0;0.0"><font face="Arial">45.7</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="24.7" sdnum="2052;0;0.0"><font face="Arial">24.7</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Wang et al. [3]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="40.2" sdnum="2052;0;0.0"><font face="Arial">40.2</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="32.4" sdnum="2052;0;0.0"><font face="Arial">32.4</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Goel et al. [4] : wDTW</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Bissacco et al. [5] : PhotoOCR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Phan et al. [6]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="62.3" sdnum="2052;0;0.0"><font face="Arial">62.3</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="42.2" sdnum="2052;0;0.0"><font face="Arial">42.2</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Alsharif et al. [7] : HMM/Maxout</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="34" align="center"><font face="Arial">Almazan et al [8] : KCSR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Yao et al. [9] : Strokelets</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">R.-Serrano et al.[10] : Label embedding</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Jaderberg et al. [11]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Su and Lu [12]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Gordo[13] : Mid-features</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="34" align="center"><font face="Arial">Jaderberg et al. [14]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Jaderberg et al. [15]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Shi, Bai, and Yao [16] : CRNN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Shi et al. [17] : RARE</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="91.2" sdnum="2052;0;0.0"><font face="Arial">91.2</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="77.4" sdnum="2052;0;0.0"><font face="Arial">77.4</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="71.8" sdnum="2052;0;0.0"><font face="Arial">71.8</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="59.2" sdnum="2052;0;0.0"><font face="Arial">59.2</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Lee and Osindero [18] : R2AM</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Liu et al.  [19] : STAR-Net</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="94.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">94.3</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="83.6" sdnum="2052;0;0.0"><font face="Arial">83.6</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73.5" sdnum="2052;0;0.0"><font face="Arial">73.5</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">*Yang et al. [20]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="93" sdnum="2052;0;0.0"><font face="Arial">93.0</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="80.2" sdnum="2052;0;0.0"><font face="Arial">80.2</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="75.8" sdnum="2052;0;0.0"><font face="Arial">75.8</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="69.3" sdnum="2052;0;0.0"><font face="Arial">69.3</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Yin et al. [21]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">*Cheng et al. [22] : FAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><b><font face="Arial" color="#339966">*85.3</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Cheng et al. [23] : AON</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="94" sdnum="2052;0;0.0"><font face="Arial">94.0</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="83.7" sdnum="2052;0;0.0"><font face="Arial">83.7</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73" sdnum="2052;0;0.0"><font face="Arial">73.0</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="76.8" sdnum="2052;0;0.0"><font face="Arial">76.8</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="68.2" sdnum="2052;0;0.0"><font face="Arial">68.2</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Gao et al. [24]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Liu et al.  [25] : Char-Net</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73.5" sdnum="2052;0;0.0"><font face="Arial">73.5</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="60" sdnum="2052;0;0.0"><font face="Arial">60.0</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">*Liu et al.  [26] : SqueezedText</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="34" align="center"><font face="Arial">*Bai et al. [27] : EP</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73.9" sdnum="2052;0;0.0"><font face="Arial">73.9</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="46" align="center"><font face="Arial">Liu et al. [28]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="73.9" sdnum="2052;0;0.0"><font face="Arial">73.9</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="62.5" sdnum="2052;0;0.0"><font face="Arial">62.5</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Gao et al. [29]</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Shi et al. [30] : ASTER</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="78.5" sdnum="2052;0;0.0"><font face="Arial">78.5</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="79.5" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">79.5</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="76.1" sdnum="2052;0;0.0"><font face="Arial">76.1</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Luo et al. [46] : MORAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="94.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">94.3</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="86.7" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">86.7</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="76.1" sdnum="2052;0;0.0"><font face="Arial">76.1</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="77.4" sdnum="2052;0;0.0"><font face="Arial">77.4</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="68.8" sdnum="2052;0;0.0"><font face="Arial">68.8</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Xie et al. [47] : CAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">*Liao et al.[48] : CA-FCN</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="78.1" sdnum="2052;0;0.0"><font face="Arial">78.1</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
 	</tr>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="47" align="center"><font face="Arial">*Li et al. [49] : SAR</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">Authors proposed SAR for irregular scene text recognition. A Res-Net was used to extract image features and the decoder network based on the 2D-attention mechanism generated target sequences.</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000">×</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.4" sdnum="2052;0;0.0"><font face="Arial">99.4</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.2" sdnum="2052;0;0.0"><font face="Arial">98.2</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">95.0</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.5" sdnum="2052;0;0.0"><font face="Arial" color="#000000">98.5</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.2" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^91.2</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94" sdnum="2052;0;0.0"><font face="Arial">94.0</font></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="95.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^95.8</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="91.2" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^91.2</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="86.4" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^86.4</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="89.6" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^89.6</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="78.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^78.8</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">*Li et al. [49] : SAR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^95.8</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^91.2</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^86.4</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^89.6</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^78.8</font></b></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^66.8</font></b></td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="23" align="center"><font face="Arial">Zhan el at. [55]: ESIR</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="79.6" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">79.6</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="83.3" sdnum="2052;0;0.0"><font face="Arial">83.3</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdval="76.9" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">76.9</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="25" align="center"><font face="Arial">Zhang et al. [56]: SSDAN</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#E6E6FF" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
 	</tr>
 </table>
 
-
-
-<a id="23-chinese-scene-text-recognition-results"></a>
-### 2.3 Chinese Scene Text Recognition Results
+<a id="223-chinses-scene-text-dataset"></a>
+#### 2.2.3 Chinses Scene Text Dataset
 
 <table cellspacing="0" border="0">
 	<colgroup width="356"></colgroup>
@@ -1471,7 +1784,7 @@ problem could be alleviated or even overcome.</font></td>
 	<colgroup width="103"></colgroup>
 	<colgroup span="2" width="86"></colgroup>
 	<tr>
-		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=6 height="34" align="center"><b><font size=4>Chinese Scene Text Recognition Results</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=6 height="34" align="center"><b><font size=4>Recognition Results on Chinese Scene Text Dataset</font></b></td>
 		</tr>
 	<tr>
 		<td style="text-overflow:ellipsis;word-break:keep-all; white-space:nowrap;border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 height="39" align="center"><b><font face="Arial">Method</font></b></td>
@@ -1516,11 +1829,10 @@ problem could be alleviated or even overcome.</font></td>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center">CTW-1500</td>
 	</tr>
 </table>
-
 ***
 
 <a id="3-field-survey"></a>
-## 3. Field Survey
+## 3. Survey
 
 **[50] \[TPAMI-2015]** Ye Q, Doermann D. Text detection and recognition in imagery: A survey[J]. IEEE transactions on pattern analysis and machine intelligence, 2015, 37(7): 1480-1500. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6945320)
 
@@ -1558,7 +1870,7 @@ problem could be alleviated or even overcome.</font></td>
 
 **[3] \[ICPR-2012]** T. Wang, D. J. Wu, A. Coates, and A. Y. Ng. End-to-end text recognition with convolutional neural networks. In Proceedings of International Conference on Pattern Recognition (ICPR), pages 3304–3308, 2012. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6460871&tag=1)
 
-**[4] \[ICDAR-2013]** V. Goel, A. Mishra, K. Alahari, and C. Jawahar. Whole is greater than sum of parts: Recognizing scene text words. In Proceedings of International Conference on Document Analysis and Recognition (ICDAR), pages 398–402, 2013. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6628652) 
+**[4] \[ICDAR-2013]** V. Goel, A. Mishra, K. Alahari, and C. Jawahar. Whole is greater than sum of parts: Recognizing scene text words. In Proceedings of International Conference on Document Analysis and Recognition (ICDAR), pages 398–402, 2013. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6628652)
 
 **[5] \[ICCV-2013]** A. Bissacco, M. Cummins, Y. Netzer, and H. Neven. Photoocr: Reading text in uncontrolled conditions. In Proceedings of International Conference on Computer Vision (ICCV), pages 785–792, 2013. [paper](http://openaccess.thecvf.com/content_iccv_2013/papers/Bissacco_PhotoOCR_Reading_Text_2013_ICCV_paper.pdf)
 
@@ -1646,7 +1958,7 @@ problem could be alleviated or even overcome.</font></td>
 
 **[47] \[ACM-2019]** Xie H, Fang S, Zha Z J, et al, “Convolutional Attention Networks for Scene Text Recognition,” ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), vol. 15, pp. 3 2019. [paper](https://dl.acm.org/citation.cfm?id=3231737)
 
-**[48] \[AAAI-2019]** Liao M, Zhang J, Wan Z, et al, “Scene text recognition from two-dimensional perspective,” //AAAI. 2019. [paper](https://arxiv.org/pdf/1809.06508.pdf) 
+**[48] \[AAAI-2019]** Liao M, Zhang J, Wan Z, et al, “Scene text recognition from two-dimensional perspective,” //AAAI. 2019. [paper](https://arxiv.org/pdf/1809.06508.pdf)
 
 **[49] \[AAAI-2019]** Li H, Wang P, Shen C, et al, “Show, Attend and Read: A Simple and Strong Baseline for Irregular Text Recognition,” //AAAI. 2019. [paper](https://arxiv.org/pdf/1811.00751.pdf)
 
@@ -1660,3 +1972,6 @@ problem could be alleviated or even overcome.</font></td>
 
 **[54] \[CVPR-2016]** A. Gupta, A. Vedaldi, A. Zisserman, Synthetic data for text localisation in natural images, in: Proceedings of Computer Vision and Pattern Recognition (CVPR), 2016, pp. 2315–2324. [paper](http://www.robots.ox.ac.uk/~ankush/textloc.pdf)
 
+**[55] \[CVPR-2019]** Zhan F, Lu S. Esir: End-to-end scene text recognition via iterative image rectification, in: Proceedings of Computer Vision and Pattern Recognition (CVPR), 2019, pp. 2059-2068. [paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhan_ESIR_End-To-End_Scene_Text_Recognition_via_Iterative_Image_Rectification_CVPR_2019_paper.pdf)
+
+**[56] \[CVPR-2019]** Zhang Y, Nie S, Liu W, et al. Sequence-To-Sequence Domain Adaptation Network for Robust Text Image Recognition, in: Proceedings of Computer Vision and Pattern Recognition (CVPR), 2019, pp. 2740-2749. [paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_Sequence-To-Sequence_Domain_Adaptation_Network_for_Robust_Text_Image_Recognition_CVPR_2019_paper.pdf)
