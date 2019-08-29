@@ -4,23 +4,23 @@
 
 <!-- MarkdownTOC -->
 
-1. [1. Datasets](#1-datasets)
+1. [Datasets](#1-datasets)
     1. [1.1 Regular Scene Text Datasets](#11-regular-scene-text-datasets)
     1. [1.2 Irregular Scene Text Datasets](#12-irregular-scene-text-datasets)
  	  1. [1.3 Bilingual Scene Text Datasets \(mainly in Chinese and English\)](#13-bilingual-scene-text-datasets-mainly-in-chinese-and-english)
     1. [1.4 Synthetic Datasets](#14-synthetic-datasets)
     1. [1.5 Comparison of Datasets](#15-comparison-of-datasets)
-1. [2. Summary of Scene Text Recognition Results](#2-summary-of-scene-text-recognition-results)
+1. [Summary of Scene Text Recognition Results](#2-summary-of-scene-text-recognition-results)
     1. [2.1 Comparison of methods](#21-comparison-of-methods)
     1. [2.2 Recognition Results](#22-recognition-results)
         1. [2.2.1 Recognition Results on Regular Dataset](#221-recognition-results-on-regular-dataset)
         1. [2.2.2 Recognition Results on Irregular Dataset](#222-recognition-results-on-irregular-dataset)
         1. [2.2.3 Recognition Results on Bilingual Scene Text Dataset](#223-recognition-results-on-bilingual-scene-text-dataset)
-1. [3. Survey](#3-field-survey)
-1. [4. OCR Service](#4-ocr-service)
-1. [5. References](#5-references)
-1. [6. Help](#6help)
-1. [7. Copyright](#7copyright)
+1. [Survey](#3-field-survey)
+1. [OCR Service](#4-ocr-service)
+1. [References](#5-references)
+1. [Help](#6help)
+1. [Copyright](#7copyright)
 
 <!-- /MarkdownTOC -->
 
