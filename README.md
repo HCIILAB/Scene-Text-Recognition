@@ -1,6 +1,6 @@
 # Scene Text Recognition Resources
 
-[<p align='right'>Author:陈晓雪</p>](https://github.com/CCchenxiaoxue)
+[<p align='right'>Author: 陈晓雪</p>](https://github.com/CCchenxiaoxue)
 
 <!-- MarkdownTOC -->
 
