@@ -16,11 +16,11 @@
         1. [2.2.1 Recognition Results on Regular Dataset](#221-recognition-results-on-regular-dataset)
         1. [2.2.2 Recognition Results on Irregular Dataset](#222-recognition-results-on-irregular-dataset)
         1. [2.2.3 Recognition Results on Bilingual Scene Text Dataset](#223-recognition-results-on-bilingual-scene-text-dataset)
-1. [3. Field Survey](#3-field-survey)
+1. [3. Survey](#3-field-survey)
 1. [4. OCR Service](#4-ocr-service)
 1. [5. References](#5-references)
-1. [6.Help](#6help)
-1. [7.Copyright](#7copyright)
+1. [6. Help](#6help)
+1. [7. Copyright](#7copyright)
 
 <!-- /MarkdownTOC -->
 
@@ -2437,7 +2437,7 @@ In this section, we only list the top three results of each competition. Please 
 ***
 
 <a id="3-field-survey"></a>
-## 3. Field Survey
+## 3. Survey
 
 **[50] \[TPAMI-2015]** Ye Q, Doermann D. Text detection and recognition in imagery: A survey[J]. IEEE transactions on pattern analysis and machine intelligence, 2015, 37(7): 1480-1500. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6945320)
 
