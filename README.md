@@ -97,7 +97,9 @@ Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding t
 * ReCTS(ReCTS competition, ICDAR2019)[59]:
   * **Introduction:** A practical and challenging multi-orientation natural scene text dataset (ReCTS) was collected with 25,000 images, which consist of lots of signboards. In the dataset, all text lines and characters are labeled with locations and character codes.
   * **Link:** [ReCTS-download](https://rrc.cvc.uab.es/?ch=16&com=downloads)
-
+* Chinese Street View Text(C-SVT) [63]:
+  * **Introduction:** It contains more than 430,000 street view images in total, including 30,000 fully annotated images with locations and text labels for the regions and 400,000 more images in which only the annotations of the text-of-interest are given.  It is the largest one compared with existing Chinese text reading datasets.
+  
 <a id="14-synthetic-datasets"></a>
 ### 1.4 Synthetic Datasets
 
