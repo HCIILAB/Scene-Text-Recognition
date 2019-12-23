@@ -1312,7 +1312,7 @@ You can also download the new [Excel](https://pan.baidu.com/s/1CvyMGm3a5KzPNOpK8
 
 In this section, we list the results on different scene text recognition benchmarks, including IIIT5K，SVT，IC03，IC13，SVT-P，CUTE80，IC15，RCTW-17, MWTI, CTW，SCUT-CTW1500, LSVT, ArT and ReCTS.
 
-It is notable that 1) The '*' indicates the methods use the extra datasets. 2) The **bold** represents the best recognition results. 3) '^' denotes the best recognition results of using the extra datasets. 4) '@' represents the methods under different evaluation which only uses 1811 test images. 5) 'SK', 'ST', 'ExPu', 'ExPr' and 'Un' indicates the methods use Synth90K, SynthText, Extra Public Data, Extra Private Data and unknown data, respectively.
+It is notable that 1) The '*' indicates the methods use the extra datasets. 2) The **bold** represents the best recognition results. 3) '^' denotes the best recognition results of using the extra datasets. 4) '@' represents the methods under different evaluation which only uses 1811 test images. 5) 'SK', 'ST', 'ExPu', 'ExPr' and 'Un' indicates the methods use Synth90K, SynthText, Extra Public Data, Extra Private Data and unknown data, respectively. 6) 'D_A' means data augmentation.
 
 <a id="221-recognition-results-on-regular-dataset"></a>
 #### 2.2.1 Recognition Results on Regular Dataset
@@ -1326,12 +1326,12 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=14 height="34" align="center"><b><font size=4>Recognition Results on Regular Dataset</font></b></td>
     </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 height="39" align="center"><font face="Arial">Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 height="34" align="center"><font face="Arial">Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" bgcolor="#FFFFCC"><font face="Arial">IIIT5K</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" bgcolor="#FFFFCC"><font face="Arial">SVT</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" bgcolor="#FFFFCC"><font face="Arial">IC03</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">IC13</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Data&emsp;&emsp;</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Data&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Source</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center"><font face="Arial">Time</font></td>
   </tr>
@@ -1348,7 +1348,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC"><font face="Arial">None</font></td>
     </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Wang et al. [1] : ABBYY</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Wang et al. [1] : ABBYY</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="24.3" sdnum="2052;0;0.0"><font face="Arial">24.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1364,7 +1364,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2011" sdnum="2052;">2011</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Wang et al. [1] : SYNTH+PLEX</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Wang et al. [1] : SYNTH+PLEX</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1380,7 +1380,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2011" sdnum="2052;">2011</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Mishra et al. [2]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Mishra et al. [2]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="64.1" sdnum="2052;0;0.0"><font face="Arial">64.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="57.5" sdnum="2052;0;0.0"><font face="Arial">57.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1396,7 +1396,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2012" sdnum="2052;">2012</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Wang et al. [3]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Wang et al. [3]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1412,7 +1412,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2012" sdnum="2052;">2012</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Goel et al. [4] : wDTW</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Goel et al. [4] : wDTW</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1428,7 +1428,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Bissacco et al. [5] : PhotoOCR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Bissacco et al. [5] : PhotoOCR</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1444,7 +1444,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Phan et al. [6]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Phan et al. [6]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1460,7 +1460,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2013" sdnum="2052;">2013</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Alsharif et al. [7] : HMM/Maxout</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Alsharif et al. [7] : HMM/Maxout</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1476,7 +1476,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Almazan et al [8] : KCSR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Almazan et al [8] : KCSR</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.6" sdnum="2052;0;0.0"><font face="Arial">88.6</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="75.6" sdnum="2052;0;0.0"><font face="Arial">75.6</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1492,7 +1492,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Yao et al. [9] : Strokelets</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Yao et al. [9] : Strokelets</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="80.2" sdnum="2052;0;0.0"><font face="Arial">80.2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="69.3" sdnum="2052;0;0.0"><font face="Arial">69.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1508,7 +1508,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">R.-Serrano et al.[10] : Label embedding</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">R.-Serrano et al.[10] : Label embedding</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="76.1" sdnum="2052;0;0.0"><font face="Arial">76.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="57.4" sdnum="2052;0;0.0"><font face="Arial">57.4</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1524,7 +1524,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Jaderberg et al. [11]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Jaderberg et al. [11]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1540,7 +1540,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Su and Lu [12]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Su and Lu [12]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1556,7 +1556,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2014" sdnum="2052;">2014</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Gordo[13] : Mid-features</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Gordo[13] : Mid-features</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.3" sdnum="2052;0;0.0"><font face="Arial">93.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="86.6" sdnum="2052;0;0.0"><font face="Arial">86.6</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1572,7 +1572,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Jaderberg et al. [14]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Jaderberg et al. [14]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.1" sdnum="2052;0;0.0"><font face="Arial">97.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.7" sdnum="2052;0;0.0"><font face="Arial">92.7</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1588,7 +1588,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Jaderberg et al. [15]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Jaderberg et al. [15]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.5" sdnum="2052;0;0.0"><font face="Arial">95.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.6" sdnum="2052;0;0.0"><font face="Arial">89.6</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1604,7 +1604,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2015" sdnum="2052;">2015</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Shi, Bai, and Yao [16] : CRNN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Shi, Bai, and Yao [16] : CRNN</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.8" sdnum="2052;0;0.0"><font face="Arial">97.8</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.2" sdnum="2052;0;0.0"><font face="Arial">81.2</font></td>
@@ -1620,7 +1620,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Shi et al. [17] : RARE</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Shi et al. [17] : RARE</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.2" sdnum="2052;0;0.0"><font face="Arial">96.2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.8" sdnum="2052;0;0.0"><font face="Arial">93.8</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.9" sdnum="2052;0;0.0"><font face="Arial">81.9</font></td>
@@ -1636,7 +1636,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Lee and Osindero [18] : R2AM</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="19" align="center"><font face="Arial">Lee and Osindero [18] : R2AM</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.8" sdnum="2052;0;0.0"><font face="Arial">96.8</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.4" sdnum="2052;0;0.0"><font face="Arial">94.4</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="78.4" sdnum="2052;0;0.0"><font face="Arial">78.4</font></td>
@@ -1652,7 +1652,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Liu et al.  [19] : STAR-Net</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Liu et al.  [19] : STAR-Net</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.7" sdnum="2052;0;0.0"><font face="Arial">97.7</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.5" sdnum="2052;0;0.0"><font face="Arial">94.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.3" sdnum="2052;0;0.0"><font face="Arial">83.3</font></td>
@@ -1668,7 +1668,55 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">*Yang et al. [20]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Liu et al. [78]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.1" sdnum="2052;0;0.0"><font face="Arial">94.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="84.7" sdnum="2052;0;0.0"><font face="Arial">84.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.5" sdnum="2052;0;0.0"><font face="Arial">92.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.8" sdnum="2052;0;0.0"><font face="Arial">96.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.2" sdnum="2052;0;0.0"><font face="Arial">92.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">ExPu (D_A)</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICPR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Mishra et al. [77]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="78.07" sdnum="2052;0;0.0"><font face="Arial">78.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="46.73" sdnum="2052;0;0.0"><font face="Arial">46.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="78.2" sdnum="2052;0;0.0"><font face="Arial">78.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88" sdnum="2052;0;0.0"><font face="Arial">88.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="67.7" sdnum="2052;0;0.0"><font face="Arial">67.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="60.18" sdnum="2052;0;0.0"><font face="Arial">60.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">ExPu (D_A)</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVIU</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2016" sdnum="2052;">2016</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Su and Lu [76]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91" sdnum="2052;0;0.0"><font face="Arial">91.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89" sdnum="2052;0;0.0"><font face="Arial">89.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="76" sdnum="2052;0;0.0"><font face="Arial">76.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ExPu</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">PR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Yang et al. [20]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.8" sdnum="2052;0;0.0"><font face="Arial">97.8</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.1" sdnum="2052;0;0.0"><font face="Arial">96.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1684,7 +1732,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Yin et al. [21]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Yin et al. [21]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.7" sdnum="2052;0;0.0"><font face="Arial">98.7</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.1" sdnum="2052;0;0.0"><font face="Arial">96.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="78.2" sdnum="2052;0;0.0"><font face="Arial">78.2</font></td>
@@ -1695,18 +1743,34 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.1" sdnum="2052;0;0.0"><font face="Arial">81.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.4" sdnum="2052;0;0.0"><font face="Arial">81.4</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK</font></td>
+    <td align="center">SK</td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">*Cheng et al. [22] : FAN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Wang et al.[66] : GRCNN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98" sdnum="2052;0;0.0"><font face="Arial">98.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.6" sdnum="2052;0;0.0"><font face="Arial">95.6</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="80.8" sdnum="2052;0;0.0"><font face="Arial">80.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.3" sdnum="2052;0;0.0"><font face="Arial">96.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.5" sdnum="2052;0;0.0"><font face="Arial">81.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><font face="Arial">98.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.8" sdnum="2052;0;0.0"><font face="Arial">97.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.2" sdnum="2052;0;0.0"><font face="Arial">91.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">NIPS</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Cheng et al. [22] : FAN</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.3" sdnum="2052;0;0.0"><font face="Arial">99.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.5" sdnum="2052;0;0.0"><font face="Arial">97.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87.4" sdnum="2052;0;0.0"><font face="Arial">87.4</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.1" sdnum="2052;0;0.0"><font face="Arial">97.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="85.9" sdnum="2052;0;0.0"><font face="Arial">85.9</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">^99.2</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.2" sdnum="2052;0;0.0"><font face="Arial">99.2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.3" sdnum="2052;0;0.0"><font face="Arial">97.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.2" sdnum="2052;0;0.0"><font face="Arial">94.2</font></td>
@@ -1716,7 +1780,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Cheng et al. [23] : AON</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Cheng et al. [23] : AON</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.6" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">99.6</font></b></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.1" sdnum="2052;0;0.0"><font face="Arial">98.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87" sdnum="2052;0;0.0"><font face="Arial">87.0</font></td>
@@ -1732,7 +1796,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Gao et al. [24]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Gao et al. [24]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.1" sdnum="2052;0;0.0"><font face="Arial" color="#000000">99.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial">97.9</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.8" sdnum="2052;0;0.0"><font face="Arial">81.8</font></td>
@@ -1748,7 +1812,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2017" sdnum="2052;">2017</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Liu et al.  [25] : Char-Net</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Liu et al.  [25] : Char-Net</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.6" sdnum="2052;0;0.0"><font face="Arial">83.6</font></td>
@@ -1764,7 +1828,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">*Liu et al.  [26] : SqueezedText</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Liu et al.  [26] : SqueezedText</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97" sdnum="2052;0;0.0"><font face="Arial">97.0</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.1" sdnum="2052;0;0.0"><font face="Arial">94.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87" sdnum="2052;0;0.0"><font face="Arial">87.0</font></td>
@@ -1780,7 +1844,23 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">*Bai et al. [27] : EP</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Zhan et al.[73]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.1" sdnum="2052;0;0.0"><font face="Arial">98.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.3" sdnum="2052;0;0.0"><font face="Arial">95.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="79.3" sdnum="2052;0;0.0"><font face="Arial">79.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.7" sdnum="2052;0;0.0"><font face="Arial">96.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.5" sdnum="2052;0;0.0"><font face="Arial">81.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87.1" sdnum="2052;0;0.0"><font face="Arial">87.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">Pr(5 million)</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Bai et al. [27] : EP</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.5" sdnum="2052;0;0.0"><font face="Arial">99.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial">97.9</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.3" sdnum="2052;0;0.0"><font face="Arial">88.3</font></td>
@@ -1796,7 +1876,39 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Liu et al. [28]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Fang et al.[74]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.5" sdnum="2052;0;0.0"><font face="Arial">98.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.8" sdnum="2052;0;0.0"><font face="Arial">96.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="86.7" sdnum="2052;0;0.0"><font face="Arial">86.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.8" sdnum="2052;0;0.0"><font face="Arial">97.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="86.7" sdnum="2052;0;0.0"><font face="Arial">86.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">99.3</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.4" sdnum="2052;0;0.0"><font face="Arial">98.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.8" sdnum="2052;0;0.0"><font face="Arial">94.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.5" sdnum="2052;0;0.0"><font face="Arial">93.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">MultiMedia</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Liu et al.[75] : EnEsCTC</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="82" sdnum="2052;0;0.0"><font face="Arial">82.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="80.6" sdnum="2052;0;0.0"><font face="Arial">80.6</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92" sdnum="2052;0;0.0"><font face="Arial">92.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.6" sdnum="2052;0;0.0"><font face="Arial">90.6</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">NIPS</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Liu et al. [28]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.3" sdnum="2052;0;0.0"><font face="Arial">97.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.1" sdnum="2052;0;0.0"><font face="Arial">96.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.4" sdnum="2052;0;0.0"><font face="Arial">89.4</font></td>
@@ -1812,11 +1924,27 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Gao et al. [29]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Wang et al.[61] : MAAN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.3" sdnum="2052;0;0.0"><font face="Arial">98.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.4" sdnum="2052;0;0.0"><font face="Arial">96.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="84.1" sdnum="2052;0;0.0"><font face="Arial">84.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.4" sdnum="2052;0;0.0"><font face="Arial">96.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.5" sdnum="2052;0;0.0"><font face="Arial">83.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.4" sdnum="2052;0;0.0"><font face="Arial">97.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.4" sdnum="2052;0;0.0"><font face="Arial">96.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.2" sdnum="2052;0;0.0"><font face="Arial">92.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.1" sdnum="2052;0;0.0"><font face="Arial">91.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICFHR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Gao et al. [29]</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.1" sdnum="2052;0;0.0"><font face="Arial">99.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.2" sdnum="2052;0;0.0"><font face="Arial">97.2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.6" sdnum="2052;0;0.0"><font face="Arial">83.6</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.7" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">97.7</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.7" sdnum="2052;0;0.0"><font face="Arial">97.7</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.9" sdnum="2052;0;0.0"><font face="Arial">83.9</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.6" sdnum="2052;0;0.0"><font face="Arial">98.6</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.6" sdnum="2052;0;0.0"><font face="Arial">96.6</font></td>
@@ -1828,11 +1956,11 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Shi et al. [30] : ASTER</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Shi et al. [30] : ASTER</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.6" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">99.6</font></b></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">98.8</font></b></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.4" sdnum="2052;0;0.0"><font face="Arial">93.4</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.4" sdnum="2052;0;0.0"><font face="Arial" color="#000000">97.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.4" sdnum="2052;0;0.0"><font face="Arial">97.4</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.5" sdnum="2052;0;0.0"><font face="Arial">89.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><font face="Arial">98.8</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98" sdnum="2052;0;0.0"><font face="Arial">98.0</font></td>
@@ -1844,23 +1972,23 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2018" sdnum="2052;">2018</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Chen et al. [60] : ASTER + AEG</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Chen et al. [60] : ASTER + AEG</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.5" sdnum="2052;0;0.0"><font face="Arial">99.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.5" sdnum="2052;0;0.0"><font face="Arial">98.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.4" sdnum="2052;0;0.0"><font face="Arial">94.4</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.4" sdnum="2052;0;0.0"><font face="Arial" color="#000000">97.4</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.3" sdnum="2052;0;0.0"><font face="Arial" color="#000000">90.3</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">99.0</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99" sdnum="2052;0;0.0"><font face="Arial">99.0</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.3" sdnum="2052;0;0.0"><font face="Arial">98.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.2" sdnum="2052;0;0.0"><font face="Arial" color="#000000">95.2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">arXiv</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">NC</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Luo et al. [46] : MORAN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Luo et al. [46] : MORAN</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial" color="#000000">97.9</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.2" sdnum="2052;0;0.0"><font face="Arial" color="#000000">96.2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.2" sdnum="2052;0;0.0"><font face="Arial" color="#000000">91.2</font></td>
@@ -1876,7 +2004,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Luo et al. [32] : MORAN-v2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Luo et al. [61] : MORAN-v2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.4" sdnum="2052;0;0.0"><font face="Arial">93.4</font></td>
@@ -1892,23 +2020,23 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Chen et al. [60] : MORAN-v2 + AEG</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Chen et al. [60] : MORAN-v2 + AEG</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.5" sdnum="2052;0;0.0"><font face="Arial">99.5</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.7" sdnum="2052;0;0.0"><font face="Arial">98.7</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.6" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">94.6</font></b></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.4" sdnum="2052;0;0.0"><font face="Arial">97.4</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.4" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">90.4</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.4" sdnum="2052;0;0.0"><font face="Arial" color="#000000">90.4</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><font face="Arial">98.8</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.3" sdnum="2052;0;0.0"><font face="Arial">98.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">95.3</font></b></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">95.3</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.3" sdnum="2052;0;0.0"><font face="Arial">95.3</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">arXiv</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">NC</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Xie et al. [47] : CAN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Xie et al. [47] : CAN</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97" sdnum="2052;0;0.0"><font face="Arial" color="#000000">97.0</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.2" sdnum="2052;0;0.0"><font face="Arial" color="#000000">94.2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="80.5" sdnum="2052;0;0.0"><font face="Arial" color="#000000">80.5</font></td>
@@ -1924,11 +2052,11 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">*Liao et al.[48] : CA-FCN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Liao et al.[48] : CA-FCN</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^99.8</font></b></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^98.9</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.9" sdnum="2052;0;0.0"><font face="Arial" color="#000000">98.9</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92" sdnum="2052;0;0.0"><font face="Arial">92.0</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^98.8</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><font face="Arial" color="#000000">98.8</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="82.1" sdnum="2052;0;0.0"><font face="Arial" color="#000000">82.1</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1940,12 +2068,12 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">*Li et al. [49] : SAR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Li et al. [49] : SAR</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.4" sdnum="2052;0;0.0"><font face="Arial">99.4</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.2" sdnum="2052;0;0.0"><font face="Arial">98.2</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^95.0</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.5" sdnum="2052;0;0.0"><font face="Arial" color="#000000">98.5</font></td>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^91.2</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.2" sdnum="2052;0;0.0"><font face="Arial" color="#000000">91.2</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
@@ -1972,7 +2100,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="20" align="center"><font face="Arial">Zhang et al. [56]: SSDAN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Zhang et al. [56]: SSDAN</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="83.8" sdnum="2052;0;0.0"><font face="Arial" color="#000000">83.8</font></td>
@@ -1986,6 +2114,198 @@ It is notable that 1) The '*' indicates the methods use the extra datasets. 2) T
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
     <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Yang et al. [62]: ScRN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.5" sdnum="2052;0;0.0"><font face="Arial">99.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><font face="Arial">98.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.4" sdnum="2052;0;0.0"><font face="Arial">94.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.2" sdnum="2052;0;0.0"><font face="Arial">97.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.9" sdnum="2052;0;0.0"><font face="Arial">88.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99" sdnum="2052;0;0.0"><font face="Arial">99.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.3" sdnum="2052;0;0.0"><font face="Arial">98.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.9" sdnum="2052;0;0.0"><font face="Arial">93.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST(char-level + word-level)</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Wang et al. [64]: GCAM</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.9" sdnum="2052;0;0.0"><font face="Arial">93.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">91.3</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.3" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">95.3</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.7" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF3333">95.7</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICME</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Jeonghun et al. [65]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87.9" sdnum="2052;0;0.0"><font face="Arial">87.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="87.5" sdnum="2052;0;0.0"><font face="Arial">87.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.4" sdnum="2052;0;0.0"><font face="Arial">94.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.3" sdnum="2052;0;0.0"><font face="Arial">92.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICCV</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center">Huang et al. [67]：EPAN</td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.9" sdnum="2052;0;0.0"><font face="Arial">98.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.8" sdnum="2052;0;0.0"><font face="Arial">97.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94" sdnum="2052;0;0.0"><font face="Arial">94.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.6" sdnum="2052;0;0.0"><font face="Arial">96.6</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.9" sdnum="2052;0;0.0"><font face="Arial">88.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.7" sdnum="2052;0;0.0"><font face="Arial">98.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98" sdnum="2052;0;0.0"><font face="Arial">98.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.5" sdnum="2052;0;0.0"><font face="Arial">94.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">NC</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Gao et al. [68]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.1" sdnum="2052;0;0.0"><font face="Arial">99.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial">97.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="81.8" sdnum="2052;0;0.0"><font face="Arial">81.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.4" sdnum="2052;0;0.0"><font face="Arial">97.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="82.7" sdnum="2052;0;0.0"><font face="Arial">82.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.7" sdnum="2052;0;0.0"><font face="Arial">98.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="96.7" sdnum="2052;0;0.0"><font face="Arial">96.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.2" sdnum="2052;0;0.0"><font face="Arial">89.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88" sdnum="2052;0;0.0"><font face="Arial">88.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">NC</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Qi et al. [69] : CCL</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.6" sdnum="2052;0;0.0"><font face="Arial">99.6</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.1" sdnum="2052;0;0.0"><font face="Arial">99.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.1" sdnum="2052;0;0.0"><font face="Arial">91.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98" sdnum="2052;0;0.0"><font face="Arial">98.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="85.9" sdnum="2052;0;0.0"><font face="Arial">85.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.2" sdnum="2052;0;0.0"><font face="Arial">99.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^98.8</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.5" sdnum="2052;0;0.0"><font face="Arial">93.5</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="92.8" sdnum="2052;0;0.0"><font face="Arial">92.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST(char-level + word-level)</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICDAR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Wang et al. [70] : ReELFA</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.2" sdnum="2052;0;0.0"><font face="Arial">99.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.1" sdnum="2052;0;0.0"><font face="Arial">98.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.9" sdnum="2052;0;0.0"><font face="Arial">90.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="82.7" sdnum="2052;0;0.0"><font face="Arial">82.7</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">ST(char-level + word-level)</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICDAR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Zhu et al. [71] : HATN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="88.6" sdnum="2052;0;0.0"><font face="Arial">88.6</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="82.2" sdnum="2052;0;0.0"><font face="Arial">82.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.3" sdnum="2052;0;0.0"><font face="Arial">91.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="91.1" sdnum="2052;0;0.0"><font face="Arial">91.1</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK(D_A) + Pu</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">ICIP</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Zhan et al. [72] : SF-GAN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="63" sdnum="2052;0;0.0"><font face="Arial">63.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="69.3" sdnum="2052;0;0.0"><font face="Arial">69.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="61.8" sdnum="2052;0;0.0"><font face="Arial">61.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">Pr(1 million)</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">CVPR</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Liao et al. [79] : SAM</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99.4" sdnum="2052;0;0.0"><font face="Arial">99.4</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.6" sdnum="2052;0;0.0"><font face="Arial">98.6</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.9" sdnum="2052;0;0.0"><font face="Arial">93.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.6" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF0000">98.6</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="90.6" sdnum="2052;0;0.0"><font face="Arial">90.6</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98.8" sdnum="2052;0;0.0"><font face="Arial">98.8</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="98" sdnum="2052;0;0.0"><font face="Arial">98.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.2" sdnum="2052;0;0.0"><font face="Arial">95.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.3" sdnum="2052;0;0.0"><font face="Arial">95.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">TPAMI</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">*Liao et al. [79] : seg-SAM</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^99.8</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^99.3</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^95.3</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^99.1</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><b><font face="Arial" color="#FF6666">^91.8</font></b></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="99" sdnum="2052;0;0.0"><font face="Arial">99.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="97.9" sdnum="2052;0;0.0"><font face="Arial">97.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95.3" sdnum="2052;0;0.0"><font face="Arial">95.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST (char-level)</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">TPAMI</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2019" sdnum="2052;">2019</td>
+  </tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">Wang et al. [80] : DAN</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="94.3" sdnum="2052;0;0.0"><font face="Arial">94.3</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="89.2" sdnum="2052;0;0.0"><font face="Arial">89.2</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdnum="2052;0;0.0"><font face="Arial">-</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="95" sdnum="2052;0;0.0"><font face="Arial">95.0</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#FFFFCC" sdval="93.9" sdnum="2052;0;0.0"><font face="Arial">93.9</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdnum="2052;0;0.0"><font face="Arial">SK + ST</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">AAAI</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="2020" sdnum="2052;">2020</td>
   </tr>
 </table>
 
