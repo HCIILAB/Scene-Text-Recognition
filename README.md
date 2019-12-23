@@ -468,7 +468,24 @@ Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding t
         <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000"> ×</font></td>
         <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
         <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">Regular</font></td>
-    </tr>
+</tr>
+  <tr>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="17" align="center"><font face="Arial">C-SVT(full annotations)[63]</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">Chinese</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="29966" sdnum="2052;"><font face="Arial">29966</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="908305" sdnum="2052;"><font face="Arial">908305</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="20157" sdnum="2052;"><font face="Arial">20157</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="620368" sdnum="2052;"><font face="Arial">620368</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="4841" sdnum="2052;"><font face="Arial">4841</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" sdval="143849" sdnum="2052;"><font face="Arial">143849</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000"> ×</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000"> ×</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000"> ×</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial" color="#000000"> ×</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font color="#000000">√</font></td>
+    <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center"><font face="Arial">Irregular</font></td>
+  </tr>
 </table>
 
 ***
