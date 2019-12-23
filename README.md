@@ -1312,7 +1312,7 @@ You can also download the new [Excel](https://pan.baidu.com/s/1CvyMGm3a5KzPNOpK8
 
 In this section, we list the results on different scene text recognition benchmarks, including IIIT5K，SVT，IC03，IC13，SVT-P，CUTE80，IC15，RCTW-17, MWTI, CTW，SCUT-CTW1500, LSVT, ArT and ReCTS.
 
-It is notable that 1) The '*' indicates the methods use the extra datasets. 2) The **bold** represents the best recognition results. 3) '^' denotes the best recognition results of using the extra datasets. 4) '@' represents the methods under different evaluation which only uses 1811 test images. 5) 'SK', 'ST', 'ExPu', 'ExPr' and 'Un' indicates the methods use Synth90K, SynthText, Extra Public Data, Extra Private Data and unknown data, respectively.
+It is notable that 1) The '*' indicates the methods use the extra datasets. 2) The **bold** represents the best recognition results. 3) '^' denotes the best recognition results of using the extra datasets. 4) '@' represents the methods under different evaluation which only uses 1811 test images. 5) 'SK', 'ST', 'ExPu', 'ExPr' and 'Un' indicates the methods use Synth90K, SynthText, Extra Public Data, Extra Private Data and unknown data, respectively. 6) 'D_A' means data augmentation.
 
 <a id="221-recognition-results-on-regular-dataset"></a>
 #### 2.2.1 Recognition Results on Regular Dataset
