@@ -2875,6 +2875,49 @@ In this section, we only list the top three results of each competition. Please 
 **[60] \[arXiv-2019]**  X. Chen, T. Wang, Y. Zhu, L. Jin, and C. Luo. Adaptive Embedding Gate for Attention-Based Scene Text Recognition.[J] arXiv preprint arXiv:1908.09475, 2019. [paper](https://arxiv.org/pdf/1908.09475.pdf)
 
 ***
+**Newly added references**
+
+**[61]** \[ICFHR-2018] Wang C, Yin F, Liu C L. Memory-Augmented Attention Model for Scene Text Recognition[C] //2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR). IEEE, 2018: 62-67.  [paper](https://ieeexplore.ieee.org/abstract/document/8563227)
+
+**[62]** \[ICCV-2019] Yang M K, Guan Y, Liao M, et al. Symmetry-constrained Rectification Network for Scene Text Recognition[J]. arXiv preprint arXiv:1908.01957, 2019. [paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Yang_Symmetry-Constrained_Rectification_Network_for_Scene_Text_Recognition_ICCV_2019_paper.pdf)
+
+**[63]** \[ICCV-2019] Sun Y, Liu J, Liu W, et al. Chinese Street View Text: Large-scale Chinese Text Reading with Partially Supervised Learning[J]. arXiv preprint arXiv:1909.07808, 2019. [paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_Chinese_Street_View_Text_Large-Scale_Chinese_Text_Reading_With_Partially_ICCV_2019_paper.pdf)
+
+**[64]** \[ICME-2019] Wang S, Wang Y, Qin X, et al. Scene Text Recognition via Gated Cascade Attention[C]//2019 IEEE International Conference on Multimedia and Expo (ICME). IEEE, 2019: 1018-1023. [paper](https://ieeexplore.ieee.org/abstract/document/8784914)
+
+**[65]** \[ICCV-2019] Baek J, Kim G, Lee J, et al. What is wrong with scene text recognition model comparisons? dataset and model analysis[J]. arXiv preprint arXiv:1904.01906, 2019. [paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Baek_What_Is_Wrong_With_Scene_Text_Recognition_Model_Comparisons_Dataset_ICCV_2019_paper.pdf) [code](https://github.com/clovaai/deep-text-recognition-benchmark)
+
+**[66]** \[Nips-2017] Wang J, Hu X. Gated recurrent convolution neural network for ocr[C]//Advances in Neural Information Processing Systems. 2017: 335-344. [paper](http://papers.nips.cc/paper/6637-gated-recurrent-convolution-neural-network-for-ocr.pdf) [code](https://github.com/Jianfeng1991/GRCNN-for-OCR)
+
+**[67]** \[NC-2019] Huang, Yunlong, et al. "EPAN: Effective parts attention network for scene text recognition." *Neurocomputing* (2019). [paper](https://www.sciencedirect.com/science/article/pii/S0925231219313839)
+
+**[68]** \[NC-2019] Gao, Yunze, et al. "Reading scene text with fully convolutional sequence modeling." *Neurocomputing* 339 (2019): 161-170. [paper](https://www.sciencedirect.com/science/article/pii/S0925231219301870)
+
+**[69]** \[ICDAR-2019] Qi, Xianbiao, et al. "A Novel Joint Character Categorization and Localization Approach for Character-Level Scene Text Recognition." *2019 International Conference on Document Analysis and Recognition Workshops (ICDARW)*. Vol. 5. IEEE, 2019. [paper](https://ieeexplore.ieee.org/abstract/document/8892915)
+
+**[70]** \[ICDAR-2019] Wang, Qingqing, et al. "ReELFA: A Scene Text Recognizer with Encoded Location and Focused Attention." *2019 International Conference on Document Analysis and Recognition Workshops (ICDARW)*. Vol. 5. IEEE, 2019. [paper](https://ieeexplore.ieee.org/abstract/document/8892900)
+
+**[71]** \[ICIP-2019] Zhu, Yiwei, et al. "Text Recognition in Images Based on Transformer with Hierarchical Attention." *2019 IEEE International Conference on Image Processing (ICIP)*. IEEE, 2019. [paper](https://ieeexplore.ieee.org/abstract/document/8803203)
+
+**[72]** \[CVPR-2019] Zhan, Fangneng, Hongyuan Zhu, and Shijian Lu. "Spatial fusion gan for image synthesis." *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition*. 2019. [paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhan_Spatial_Fusion_GAN_for_Image_Synthesis_CVPR_2019_paper.pdf)
+
+**[73]** \[ECCV-2018] Zhan, Fangneng, Shijian Lu, and Chuhui Xue. "Verisimilar image synthesis for accurate detection and recognition of texts in scenes." *Proceedings of the European Conference on Computer Vision (ECCV)*. 2018. [paper](http://openaccess.thecvf.com/content_ECCV_2018/papers/Fangneng_Zhan_Verisimilar_Image_Synthesis_ECCV_2018_paper.pdf) [code](https://github.com/fnzhan/Verisimilar-Image-Synthesis-for-Accurate-Detection-and-Recognition-of-Texts-in-Scenes)
+
+**[74]** \[MultiMedia-2018] Fang, Shancheng, et al. "Attention and language ensemble for scene text recognition with convolutional sequence modeling." *2018 ACM Multimedia Conference on Multimedia Conference*. ACM, 2018. [paper](https://dl.acm.org/citation.cfm?id=3240571) [code](https://github.com/FangShancheng/conv-ensemble-str)
+
+**[75]** \[Nips-2018] Liu, Hu, Sheng Jin, and Changshui Zhang. "Connectionist temporal classification with maximum entropy regularization." *Advances in Neural Information Processing Systems*. 2018. [paper](http://papers.nips.cc/paper/7363-connectionist-temporal-classification-with-maximum-entropy-regularization) [code](https://github.com/liuhu-bigeye/enctc.crnn )
+
+**[76]** \[PR-2017] Su, Bolan, and Shijian Lu. "Accurate recognition of words in scenes without character segmentation using recurrent neural network." *Pattern Recognition* 63 (2017): 397-405. [paper](https://www.sciencedirect.com/science/article/pii/S0031320316303314)
+
+**[77]** \[CVIU-2016] Mishra, Anand, Karteek Alahari, and C. V. Jawahar. "Enhancing energy minimization framework for scene text recognition with top-down cues." *Computer Vision and Image Understanding* 145 (2016): 30-42. [paper](https://www.sciencedirect.com/science/article/pii/S107731421600014X)
+
+**[78]** \[ICPR-2016] Liu, Xinhao, et al. "Scene text recognition with CNN classifier and WFST-based word labeling." *2016 23rd International Conference on Pattern Recognition (ICPR)*. IEEE, 2016. [paper](https://ieeexplore.ieee.org/abstract/document/7900259)  
+
+**[79]** \[TPAMI-2019] Liao M, Lyu P, He M, et al. Mask textspotter: An end-to-end trainable neural network for spotting text with arbitrary shapes[J]. IEEE transactions on pattern analysis and machine intelligence, 2019. [paper](https://ieeexplore.ieee.org/abstract/document/8812908) [code](https://github.com/MhLiao/MaskTextSpotter)
+
+**[80]** \[AAAI-2020] T. Wang, Y. Zhu, L. Jin, C. Luo and X. Chen. Decoupled Attention Network for Text Recognition[C]//AAAI. 2020.
+
+***
 
 <a id="6help"></a>
 
@@ -2891,7 +2934,7 @@ If you find any problems in our resources, or any good papers/codes we have miss
 Copyright © 2019 SCUT-DLVC. All Rights Reserved.
 
 <p align="center">
-    <img src="webwxgetmsgimg.jpeg" alt="Sample"  width="150" height="75">
+    <img src="scut-dlvc.jpeg" alt="Sample"  width="150" height="75">
     <p align="center">
         <em></em>
     </p>
