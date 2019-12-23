@@ -6,27 +6,27 @@
 
 Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1CvyMGm3a5KzPNOpK8Fs5gA) prepared by us. (Password: teqv)
 
-***
+------
 
 <!-- MarkdownTOC -->
 
-- [1. Datasets](#1-datasets)
-    - [1.1 Regular Scene Text Datasets](#11-regular-scene-text-datasets)
-    - [1.2 Irregular Scene Text Datasets](#12-irregular-scene-text-datasets)
- 	- [1.3 Bilingual Scene Text Datasets \(mainly in Chinese and English\)](#13-bilingual-scene-text-datasets-mainly-in-chinese-and-english)
-    - [1.4 Synthetic Datasets](#14-synthetic-datasets)
-    - [1.5 Comparison of Datasets](#15-comparison-of-datasets)
-- [2. Summary of Scene Text Recognition Results](#2-summary-of-scene-text-recognition-results)
-    - [2.1 Comparison of methods](#21-comparison-of-methods)
-    - [2.2 Recognition Results](#22-recognition-results)
-        - [2.2.1 Recognition Results on Regular Dataset](#221-recognition-results-on-regular-dataset)
-        - [2.2.2 Recognition Results on Irregular Dataset](#222-recognition-results-on-irregular-dataset)
-        - [2.2.3 Recognition Results on Bilingual Scene Text Dataset](#223-recognition-results-on-bilingual-scene-text-dataset)
-- [3. Survey](#3-field-survey)
-- [4. OCR Service](#4-ocr-service)
-- [5. References](#5-references)
-- [6. Help](#6help)
-- [7. Copyright](#7copyright)
+1. [Datasets](#1-datasets)
+   1. [1.1 Regular Scene Text Datasets](#11-regular-scene-text-datasets)
+   2. [1.2 Irregular Scene Text Datasets](#12-irregular-scene-text-datasets)
+      1. [1.3 Bilingual Scene Text Datasets \(mainly in Chinese and English\)](#13-bilingual-scene-text-datasets-mainly-in-chinese-and-english)
+   3. [1.4 Synthetic Datasets](#14-synthetic-datasets)
+   4. [1.5 Comparison of Datasets](#15-comparison-of-datasets)
+2. [Summary of Scene Text Recognition Results](#2-summary-of-scene-text-recognition-results)
+   1. [2.1 Comparison of methods](#21-comparison-of-methods)
+   2. [2.2 Recognition Results](#22-recognition-results)
+      1. [2.2.1 Recognition Results on Regular Dataset](#221-recognition-results-on-regular-dataset)
+      2. [2.2.2 Recognition Results on Irregular Dataset](#222-recognition-results-on-irregular-dataset)
+      3. [2.2.3 Recognition Results on Bilingual Scene Text Dataset](#223-recognition-results-on-bilingual-scene-text-dataset)
+3. [Survey](#3-field-survey)
+4. [OCR Service](#4-ocr-service)
+5. [References](#5-references)
+6. [Help](#6help)
+7. [Copyright](#7copyright)
 
 <!-- /MarkdownTOC -->
 
@@ -39,25 +39,26 @@ Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding t
 ### 1.1 Regular Scene Text Datasets
 
 - IIIT5K[31]：
-  * **Introduction:** It contains 5,000 images in total, 2,000 for training and 3,000 for testing. Every image is associated with a  50-word lexicon and a 1000-word lexicon. The lexicon consists of a  ground truth and some randomly picked words.
-  * **Link:** [IIIT5K-download](http://cvit.iiit.ac.in/research/projects/cvit-projects/the-iiit-5k-word-dataset)
+  - **Introduction:** It contains 5,000 images in total, 2,000 for training and 3,000 for testing. Every image is associated with a  50-word lexicon and a 1000-word lexicon. The lexicon consists of a  ground truth and some randomly picked words.
+  - **Link:** [IIIT5K-download](http://cvit.iiit.ac.in/research/projects/cvit-projects/the-iiit-5k-word-dataset)
 - SVT[1]：
-  * **Introduction:** It contains 647 cropped word images. Many images are severely corrupted by noise, blur, and low resolution. SVT was collected from the Google Street View, and every image is associated with a 50-word lexicon. Specifically, it only provides word-level annotations.
-  * **Link:** [SVT-download](http://vision.ucsd.edu/~kai/svt/)
+  - **Introduction:** It contains 647 cropped word images. Many images are severely corrupted by noise, blur, and low resolution. SVT was collected from the Google Street View, and every image is associated with a 50-word lexicon. Specifically, it only provides word-level annotations.
+  - **Link:** [SVT-download](http://vision.ucsd.edu/~kai/svt/)
 - ICDAR 2003(IC03)[33]：
-  * **Introduction:** It contains 509 images in total, 258 for training and 251 for testing. Specifically, it contains 867 cropped word images after discarding images that contain non-alphanumeric characters or those have less than three characters. Every image is associated with a 50-word lexicon and a full-word lexicon.  The full lexicon combines all lexicon words.
-  * **Link:** [IC03-download](http://www.iapr-tc11.org/mediawiki/index.php?title=ICDAR_2003_Robust_Reading_Competitions)
+  - **Introduction:** It contains 509 images in total, 258 for training and 251 for testing. Specifically, it contains 867 cropped word images after discarding images that contain non-alphanumeric characters or those have less than three characters. Every image is associated with a 50-word lexicon and a full-word lexicon.  The full lexicon combines all lexicon words.
+  - **Link:** [IC03-download](http://www.iapr-tc11.org/mediawiki/index.php?title=ICDAR_2003_Robust_Reading_Competitions)
 - ICDAR 2013(IC13)[34]：
-  * **Introduction:** It contains 1,015 cropped word images and inherits most of its samples from IC03. No lexicon is associated with this dataset.
-  * **Link:** [IC13-download](http://dagdata.cvc.uab.es/icdar2013competition/?ch=2&com=downloads)
+  - **Introduction:** It contains 1,015 cropped word images and inherits most of its samples from IC03. No lexicon is associated with this dataset.
+  - **Link:** [IC13-download](http://dagdata.cvc.uab.es/icdar2013competition/?ch=2&com=downloads)
 - COCO-Text[38]：
   - **Introduction:** It contains 63,686 images in total. Specifically, it contains 145,859  cropped word images for testing, including handwritten and printed, clear and blur, English and non-English.
   - **Link:** [COCO-Text-download](https://vision.cornell.edu/se3/coco-text-2/)
 - SVHN[45]：
-  * **Introduction:** It contains more than 600,000 digits of house numbers in natural scenes. The images were collected from the Google View images, and were used to digit recognition.
-  * **Link:** [SVHN-download](http://ufldl.stanford.edu/housenumbers/)
+  - **Introduction:** It contains more than 600,000 digits of house numbers in natural scenes. The images were collected from the Google View images, and were used to digit recognition.
+  - **Link:** [SVHN-download](http://ufldl.stanford.edu/housenumbers/)
 
 <a id="12-irregular-scene-text-datasets"></a>
+
 ### 1.2 Irregular Scene Text Datasets
 
 - SVT-P[35]：
@@ -74,6 +75,7 @@ Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding t
   - **Link:** [Total-Text-download](https://github.com/cs-chan/Total-Text-Dataset)
 
 <a id="13-bilingual-scene-text-datasets-mainly-in-chinese-and-english"></a>
+
 ### 1.3 Bilingual Scene Text Datasets (mainly in Chinese and English)
 
 - RCTW-17(RCTW competition，ICDAR17)[40]：
@@ -88,31 +90,33 @@ Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding t
 - SCUT-CTW1500[43]：
   - **Introduction:** It contains 1,500 images in total, 1,000 for training and 500 for testing. Specifically, it contains 10,751 cropped word images for testing. Annotations in SCUT-CTW1500 are polygons with 14 vertexes. The dataset mainly consists of Chinese and English.
   - **Link:** [SCUT-CTW1500-download](https://github.com/Yuliang-Liu/Curve-Text-Detector)
-* LSVT(LSVT competition, ICDAR2019)[57]:
-  * **Introduction:** It contains 20,000 testing data, 30,000 training data in full annotations and 400,000 training data in weak annotations, which are referred to as partial labels. For most of the training data in weak labels, only one transcription per image is provided.  All the images were captured from streets, which consist of a large variety of complicated real-world scenarios, e.g., store fronts and landmarks.
-  * **Link:** [LSVT-download](https://rrc.cvc.uab.es/?ch=16&com=downloads)
-* ArT(ArT competition, ICDAR2019)[58]:
-  * **Introduction:** It contains 10,166 images in total, 5,603 for training and 4,563 for testing. ArT is a combination of Total-Text, SCUT-CTW1500 and Baidu Curved Scene Text, which were collected with the motive of introducing the arbitrary-shaped text problem to the scene text community.  The ArT dataset was collected with text shape diversity, hence all existing text shapes (i.e. horizontal, multi-oriented, and curved) have high number of existence in the dataset.
-  * **Link:** [ArT-download](https://rrc.cvc.uab.es/?ch=16&com=downloads)
-* ReCTS(ReCTS competition, ICDAR2019)[59]:
-  * **Introduction:** A practical and challenging multi-orientation natural scene text dataset (ReCTS) was collected with 25,000 images, which consist of lots of signboards. In the dataset, all text lines and characters are labeled with locations and character codes.
-  * **Link:** [ReCTS-download](https://rrc.cvc.uab.es/?ch=16&com=downloads)
-* Chinese Street View Text(C-SVT) [63]:
-  * **Introduction:** It contains more than 430,000 street view images in total, including 30,000 fully annotated images with locations and text labels for the regions and 400,000 more images in which only the annotations of the text-of-interest are given.  It is the largest one compared with existing Chinese text reading datasets.
-  <!-- * **Link:** No publicly available resources. -->
+
+- LSVT(LSVT competition, ICDAR2019)[57]:
+  - **Introduction:** It contains 20,000 testing data, 30,000 training data in full annotations and 400,000 training data in weak annotations, which are referred to as partial labels. For most of the training data in weak labels, only one transcription per image is provided.  All the images were captured from streets, which consist of a large variety of complicated real-world scenarios, e.g., store fronts and landmarks.
+  - **Link:** [LSVT-download](https://rrc.cvc.uab.es/?ch=16&com=downloads)
+- ArT(ArT competition, ICDAR2019)[58]:
+  - **Introduction:** It contains 10,166 images in total, 5,603 for training and 4,563 for testing. ArT is a combination of Total-Text, SCUT-CTW1500 and Baidu Curved Scene Text, which were collected with the motive of introducing the arbitrary-shaped text problem to the scene text community.  The ArT dataset was collected with text shape diversity, hence all existing text shapes (i.e. horizontal, multi-oriented, and curved) have high number of existence in the dataset.
+  - **Link:** [ArT-download](https://rrc.cvc.uab.es/?ch=16&com=downloads)
+- ReCTS(ReCTS competition, ICDAR2019)[59]:
+  - **Introduction:** A practical and challenging multi-orientation natural scene text dataset (ReCTS) was collected with 25,000 images, which consist of lots of signboards. In the dataset, all text lines and characters are labeled with locations and character codes.
+  - **Link:** [ReCTS-download](https://rrc.cvc.uab.es/?ch=16&com=downloads)
+- Chinese Street View Text(C-SVT) [63]:
+  - **Introduction:** It contains more than 430,000 street view images in total, including 30,000 fully annotated images with locations and text labels for the regions and 400,000 more images in which only the annotations of the text-of-interest are given.  It is the largest one compared with existing Chinese text reading datasets.
+    <!-- * **Link:** No publicly available resources. -->
 
 <a id="14-synthetic-datasets"></a>
 
 ### 1.4 Synthetic Datasets
 
-* Synth90k [53] : 
-  * **Introduction:** It contains 8 million cropped word images generated from a set of 90k common English words. Words are rendered onto natural images with random transformations and effects. Every image is annotated with a ground-truth word.
-  * **Link:** [Synth90k-download](http://www.robots.ox.ac.uk/~vgg/data/text/)
-* SynthText [54] : 
-  * **Introduction:** It contains 6 million cropped word images. The generation process is similar to that of Synth90k.
-  * **Link:** [SynthText-download](https://github.com/ankush-me/SynthText)
+- Synth90k [53] : 
+  - **Introduction:** It contains 8 million cropped word images generated from a set of 90k common English words. Words are rendered onto natural images with random transformations and effects. Every image is annotated with a ground-truth word.
+  - **Link:** [Synth90k-download](http://www.robots.ox.ac.uk/~vgg/data/text/)
+- SynthText [54] : 
+  - **Introduction:** It contains 6 million cropped word images. The generation process is similar to that of Synth90k.
+  - **Link:** [SynthText-download](https://github.com/ankush-me/SynthText)
 
 <a id="15-comparison-of-datasets"></a>
+
 ### 1.5 Comparison of Datasets
 
 <table cellspacing="0" border="0">
@@ -490,12 +494,14 @@ Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding t
   </tr>
 </table>
 
-***
+------
 
 <a id="2-summary-of-scene-text-recognition-results"></a>
+
 ## 2. Summary of Scene Text Recognition Results
 
 <a id="21-comparison-of-methods"></a>
+
 ### 2.1 Comparison of methods
 
 It is notable that 1) "Reg" stands for regular scene text datasets. 2) "Irreg" stands for irregular scene text datasets. 3) "Seg" denotes the method based on segmentation. 4) "Extra" means the method uses the extra datasets in addition to Synth90k and SynthText. 5) "CTC" represents the method applies the CTC-based algorithm to decode. 6) "Attn" represents the method applies the attention mechanism to decode.
@@ -1310,6 +1316,7 @@ You can also download the new [Excel](https://pan.baidu.com/s/1CvyMGm3a5KzPNOpK8
 </table>
 
 <a id="22-recognition-results"></a>
+
 ### 2.2 Recognition Results
 
 In this section, we list the results on different scene text recognition benchmarks, including IIIT5K，SVT，IC03，IC13，SVT-P，CUTE80，IC15，RCTW-17, MWTI, CTW，SCUT-CTW1500, LSVT, ArT and ReCTS.
@@ -1317,6 +1324,7 @@ In this section, we list the results on different scene text recognition benchma
 It is notable that 1) The '*' indicates the methods use the extra datasets in addition to Synth90k and SynthText. 2) The **bold** represents the best recognition results. 3) '^' denotes the best recognition results of using the extra datasets. 4) '@' represents the methods under different evaluation which only uses 1811 test images. 5) 'SK', 'ST', 'ExPu', 'ExPr' and 'Un' indicates the methods use Synth90K, SynthText, Extra Public Data, Extra Private Data and unknown data, respectively. 6) 'D_A' means data augmentation.
 
 <a id="221-recognition-results-on-regular-dataset"></a>
+
 #### 2.2.1 Recognition Results on Regular Dataset
 
 <table cellspacing="0" border="0">
@@ -2312,6 +2320,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
 </table>
 
 <a id="222-recognition-results-on-irregular-dataset"></a>
+
 #### 2.2.2 Recognition Results on Irregular Dataset
 
 <table cellspacing="0" border="0">
@@ -3064,6 +3073,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
 </table>
 
 <a id="223-recognition-results-on-bilingual-scene-text-dataset"></a>
+
 #### 2.2.3 Recognition Results on Bilingual Scene Text Dataset
 
 In this section, we only list the top three results of each competition. Please refer to the competition website for more information.
@@ -3281,9 +3291,10 @@ In this section, we only list the top three results of each competition. Please 
   </tr>
 </table>
 
-***
+------
 
 <a id="3-field-survey"></a>
+
 ## 3. Survey
 
 **[50] \[TPAMI-2015]** Ye Q, Doermann D. Text detection and recognition in imagery: A survey[J]. IEEE transactions on pattern analysis and machine intelligence, 2015, 37(7): 1480-1500. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6945320)
@@ -3292,9 +3303,10 @@ In this section, we only list the top three results of each competition. Please 
 
 **[52] \[arXiv-2018]** Long S, He X, Ya C. Scene Text Detection and Recognition: The Deep Learning Era[J]. arXiv preprint arXiv:1811.04256, 2018. [paper](https://arxiv.org/pdf/1811.04256.pdf)
 
-***
+------
 
 <a id="4-ocr-service"></a>
+
 ## 4. OCR Service
 
 |                             OCR                              | API  | Free | Code |
@@ -3311,9 +3323,10 @@ In this section, we only list the top three results of each competition. Please 
 |   [Calamari OCR](https://github.com/Calamari-OCR/calamari)   |  ×   |  √   |  √   |
 | [ Tencent OCR](https://cloud.tencent.com/product/ocr?lang=cn) |  √   |  ×   |  ×   |
 
-***
+------
 
 <a id="5-references"></a>
+
 ## 5. References
 
 **[1] \[ICCV-2011]** K. Wang, B. Babenko, and S. Belongie. End-to-end scene text recognition. In Proceedings of International Conference on Computer Vision (ICCV), pages 1457–1464, 2011. [paper ](https://www.researchgate.net/profile/Serge_Belongie/publication/221110077_End-to-end_scene_text_recognition/links/09e4150b34908d2ebb000000/End-to-end-scene-text-recognition.pdf)
@@ -3436,7 +3449,8 @@ In this section, we only list the top three results of each competition. Please 
 
 **[60] \[arXiv-2019]**  X. Chen, T. Wang, Y. Zhu, L. Jin, and C. Luo. Adaptive Embedding Gate for Attention-Based Scene Text Recognition.[J] arXiv preprint arXiv:1908.09475, 2019. [paper](https://arxiv.org/pdf/1908.09475.pdf)
 
-***
+------
+
 **Newly added references**
 
 **[61]** \[ICFHR-2018] Wang C, Yin F, Liu C L. Memory-Augmented Attention Model for Scene Text Recognition[C] //2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR). IEEE, 2018: 62-67.  [paper](https://ieeexplore.ieee.org/abstract/document/8563227)
@@ -3479,18 +3493,18 @@ In this section, we only list the top three results of each competition. Please 
 
 **[80]** \[AAAI-2020] T. Wang, Y. Zhu, L. Jin, C. Luo and X. Chen. Decoupled Attention Network for Text Recognition[C]//AAAI. 2020.
 
-***
+------
 
 <a id="6help"></a>
 
-<a id="6help"></a>
 ## 6.Help
 
 If you find any problems in our resources, or any good papers/codes we have missed, please inform us at xxuechen@foxmail.com. Thank you for your contribution.
 
-***
+------
 
 <a id="7copyright"></a>
+
 ## 7.Copyright
 
 Copyright © 2019 SCUT-DLVC. All Rights Reserved.
