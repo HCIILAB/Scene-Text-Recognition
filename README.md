@@ -4,7 +4,7 @@
 
 ## Updates
 
-Dec 24, 2019: added 20 papers and the C-SVT dataset, and updated corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1CvyMGm3a5KzPNOpK8Fs5gA) prepared by us. (Password: teqv)
+Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1CvyMGm3a5KzPNOpK8Fs5gA) prepared by us. (Password: teqv)
 
 ***
 
@@ -1570,7 +1570,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td align="center" sdval="95.4" sdnum="2052;">95.4</td>
     <td align="center" sdval="80.7" sdnum="2052;">80.7</td>
     <td align="center" sdval="98.7" sdnum="2052;">98.7</td>
-    <td align="center" sdval="98.6" sdnum="2052;">98.6</td>
+    <td align="center" sdval="98.6" sdnum="2052;"><b>98.6<b></td>
     <td align="center" sdval="93.3" sdnum="2052;">93.3</td>
     <td align="center" sdval="93.1" sdnum="2052;">93.1</td>
     <td align="center" sdval="90.8" sdnum="2052;">90.8</td>
@@ -1603,7 +1603,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td align="center" sdval="82.7" sdnum="2052;">82.7</td>
     <td align="center" sdval="98.7" sdnum="2052;">98.7</td>
     <td align="center" sdval="98" sdnum="2052;">98</td>
-    <td align="center" sdval="95.7" sdnum="2052;">95.7</td>
+    <td align="center" sdval="95.7" sdnum="2052;"><b>95.7<b></td>
     <td align="center" sdval="91.9" sdnum="2052;">91.9</td>
     <td align="center" sdval="89.6" sdnum="2052;">89.6</td>
     <td align="center">SK</td>
@@ -1772,7 +1772,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
   </tr>
   <tr>
     <td height="20" align="center">Cheng et al. [23] : AON</td>
-    <td align="center" sdval="99.6" sdnum="2052;">99.6</td>
+    <td align="center" sdval="99.6" sdnum="2052;"><b>99.6<b></td>
     <td align="center" sdval="98.1" sdnum="2052;">98.1</td>
     <td align="center" sdval="87" sdnum="2052;">87</td>
     <td align="center" sdval="96" sdnum="2052;">96</td>
@@ -1873,7 +1873,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td align="center" sdval="86.7" sdnum="2052;">86.7</td>
     <td align="center" sdval="97.8" sdnum="2052;">97.8</td>
     <td align="center" sdval="86.7" sdnum="2052;">86.7</td>
-    <td align="center" sdval="99.3" sdnum="2052;">99.3</td>
+    <td align="center" sdval="99.3" sdnum="2052;"><b>99.3<b></td>
     <td align="center" sdval="98.4" sdnum="2052;">98.4</td>
     <td align="center">-</td>
     <td align="center" sdval="94.8" sdnum="2052;">94.8</td>
@@ -1948,8 +1948,8 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
   </tr>
   <tr>
     <td height="20" align="center">Shi et al. [30] : ASTER</td>
-    <td align="center" sdval="99.6" sdnum="2052;">99.6</td>
-    <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
+    <td align="center" sdval="99.6" sdnum="2052;"><b>99.6<b></td>
+    <td align="center" sdval="98.8" sdnum="2052;"><b>98.8<b></td>
     <td align="center" sdval="93.4" sdnum="2052;">93.4</td>
     <td align="center" sdval="97.4" sdnum="2052;">97.4</td>
     <td align="center" sdval="89.5" sdnum="2052;">89.5</td>
@@ -2014,13 +2014,13 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td height="20" align="center">Chen et al. [60] : MORAN-v2 + AEG</td>
     <td align="center" sdval="99.5" sdnum="2052;">99.5</td>
     <td align="center" sdval="98.7" sdnum="2052;">98.7</td>
-    <td align="center" sdval="94.6" sdnum="2052;">94.6</td>
+    <td align="center" sdval="94.6" sdnum="2052;"><b>94.6<b></td>
     <td align="center" sdval="97.4" sdnum="2052;">97.4</td>
     <td align="center" sdval="90.4" sdnum="2052;">90.4</td>
     <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
     <td align="center" sdval="98.3" sdnum="2052;">98.3</td>
     <td align="center">-</td>
-    <td align="center" sdval="95.3" sdnum="2052;">95.3</td>
+    <td align="center" sdval="95.3" sdnum="2052;"><b>95.3<b></td>
     <td align="center" sdval="95.3" sdnum="2052;">95.3</td>
     <td align="center">SK + ST</td>
     <td align="center">NC</td>
@@ -2044,7 +2044,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
   </tr>
   <tr>
     <td height="20" align="center">*Liao et al.[48] : CA-FCN</td>
-    <td align="center">^99.8</td>
+    <td align="center"><b>^99.8<b></td>
     <td align="center" sdval="98.9" sdnum="2052;">98.9</td>
     <td align="center" sdval="92" sdnum="2052;">92</td>
     <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
@@ -2076,8 +2076,8 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
   </tr>
   <tr>
     <td height="20" align="center">Zhan el at. [55]: ESIR</td>
-    <td align="center" sdval="99.6" sdnum="2052;">99.6</td>
-    <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
+    <td align="center" sdval="99.6" sdnum="2052;"><b>99.6<b></td>
+    <td align="center" sdval="98.8" sdnum="2052;"><b>98.8<b></td>
     <td align="center" sdval="93.3" sdnum="2052;">93.3</td>
     <td align="center" sdval="97.4" sdnum="2052;">97.4</td>
     <td align="center" sdval="90.2" sdnum="2052;">90.2</td>
@@ -2128,12 +2128,12 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td align="center">-</td>
     <td align="center" sdval="93.9" sdnum="2052;">93.9</td>
     <td align="center">-</td>
-    <td align="center" sdval="91.3" sdnum="2052;">91.3</td>
+    <td align="center" sdval="91.3" sdnum="2052;"><b>91.3<b></td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
-    <td align="center" sdval="95.3" sdnum="2052;">95.3</td>
-    <td align="center" sdval="95.7" sdnum="2052;">95.7</td>
+    <td align="center" sdval="95.3" sdnum="2052;"><b>95.3<b></td>
+    <td align="center" sdval="95.7" sdnum="2052;"><b>95.7<b></td>
     <td align="center">SK + ST</td>
     <td align="center">ICME</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
@@ -2194,7 +2194,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td align="center" sdval="98" sdnum="2052;">98</td>
     <td align="center" sdval="85.9" sdnum="2052;">85.9</td>
     <td align="center" sdval="99.2" sdnum="2052;">99.2</td>
-    <td align="center">^98.8</td>
+    <td align="center"><b>^98.8<b></td>
     <td align="center">-</td>
     <td align="center" sdval="93.5" sdnum="2052;">93.5</td>
     <td align="center" sdval="92.8" sdnum="2052;">92.8</td>
@@ -2255,7 +2255,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td align="center" sdval="99.4" sdnum="2052;">99.4</td>
     <td align="center" sdval="98.6" sdnum="2052;">98.6</td>
     <td align="center" sdval="93.9" sdnum="2052;">93.9</td>
-    <td align="center" sdval="98.6" sdnum="2052;">98.6</td>
+    <td align="center" sdval="98.6" sdnum="2052;"><b>98.6<b></td>
     <td align="center" sdval="90.6" sdnum="2052;">90.6</td>
     <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
     <td align="center" sdval="98" sdnum="2052;">98</td>
@@ -2268,11 +2268,11 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
   </tr>
   <tr>
     <td height="20" align="center">*Liao et al. [79] : seg-SAM</td>
-    <td align="center">^99.8</td>
-    <td align="center">^99.3</td>
-    <td align="center">^95.3</td>
-    <td align="center">^99.1</td>
-    <td align="center">^91.8</td>
+    <td align="center"><b>^99.8<b></td>
+    <td align="center"><b>^99.3<b></td>
+    <td align="center"><b>^95.3<b></td>
+    <td align="center"><b>^99.1<b></td>
+    <td align="center"><b>^91.8<b></td>
     <td align="center" sdval="99" sdnum="2052;">99</td>
     <td align="center" sdval="97.9" sdnum="2052;">97.9</td>
     <td align="center">-</td>
@@ -2646,7 +2646,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
-    <td align="center">*85.3</td>
+    <td align="center"><b>*85.3<b></td>
     <td align="center">-</td>
     <td align="center">SK + ST (Pixel_wise)</td>
     <td align="center">ICCV</td>
@@ -2834,8 +2834,8 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
   </tr>
   <tr>
     <td height="20" align="center">Chen et al. [60] : MORAN-v2 + AEG</td>
-    <td align="center" sdval="94.7" sdnum="2052;">94.7</td>
-    <td align="center" sdval="89.6" sdnum="2052;">89.6</td>
+    <td align="center" sdval="94.7" sdnum="2052;"><b>94.7<b></td>
+    <td align="center" sdval="89.6" sdnum="2052;"><b>89.6<b></td>
     <td align="center" sdval="82.8" sdnum="2052;">82.8</td>
     <td align="center" sdval="81.3" sdnum="2052;">81.3</td>
     <td align="center" sdval="77.4" sdnum="2052;">77.4</td>
@@ -2870,12 +2870,12 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
   </tr>
   <tr>
     <td height="20" align="center">*Li et al. [49] : SAR</td>
-    <td align="center">^95.8</td>
-    <td align="center">^91.2</td>
-    <td align="center">^86.4</td>
-    <td align="center">^89.6</td>
+    <td align="center"><b>^95.8<b></td>
+    <td align="center"><b>^91.2<b></td>
+    <td align="center"><b>^86.4<b></td>
+    <td align="center"><b>^89.6<b></td>
     <td align="center" sdval="78.8" sdnum="2052;">78.8</td>
-    <td align="center">^66.8</td>
+    <td align="center"><b>^66.8<b></td>
     <td align="center">SK + ST + ExPr</td>
     <td align="center">AAAI</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
@@ -2920,9 +2920,9 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td height="20" align="center">Wang et al. [64]: GCAM</td>
     <td align="center">-</td>
     <td align="center">-</td>
-    <td align="center" sdval="85.7" sdnum="2052;">85.7</td>
+    <td align="center" sdval="85.7" sdnum="2052;"><b>85.7<b></td>
     <td align="center" sdval="83.3" sdnum="2052;">83.3</td>
-    <td align="center" sdval="83.5" sdnum="2052;">83.5</td>
+    <td align="center" sdval="83.5" sdnum="2052;"><b>83.5<b></td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
     <td align="center">ICME</td>
@@ -3017,7 +3017,7 @@ It is notable that 1) The '*' indicates the methods use the extra datasets in ad
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center" sdval="82.2" sdnum="2052;">82.2</td>
-    <td align="center" sdval="87.8" sdnum="2052;">87.8</td>
+    <td align="center" sdval="87.8" sdnum="2052;"><b>87.8<b></td>
     <td align="center" sdval="77.3" sdnum="2052;">77.3</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3077,7 +3077,7 @@ In this section, we only list the top three results of each competition. Please 
     </tr>
   <tr>
     <td height="20" align="center">Lv et al. : NLPR PAL</td>
-    <td align="center">0.3201 (end-to-end)</td>
+    <td align="center"><b>0.3201 (end-to-end)<b></td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3111,7 +3111,7 @@ In this section, we only list the top three results of each competition. Please 
   <tr>
     <td height="20" align="center">IFLYTEK : nelslip(iflytek&amp;ustc)</td>
     <td align="center">-</td>
-    <td align="center">85.8 (AR)</td>
+    <td align="center"><b>85.8 (AR)<b></td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3145,7 +3145,7 @@ In this section, we only list the top three results of each competition. Please 
     <td height="20" align="center">Yuan et al.[42] : CTW</td>
     <td align="center">-</td>
     <td align="center">-</td>
-    <td align="center">80.5 (AR)</td>
+    <td align="center"><b>80.5 (AR)<b></td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3168,7 +3168,7 @@ In this section, we only list the top three results of each competition. Please 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
-    <td align="center">66.66 (end-to-end)</td>
+    <td align="center"><b>66.66 (end-to-end)<b></td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
@@ -3202,7 +3202,7 @@ In this section, we only list the top three results of each competition. Please 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
-    <td align="center">85.32 (AR)</td>
+    <td align="center"><b>85.32 (AR)<b></td>
     <td align="center">-</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
     <td align="center">ArT Competition</td>
@@ -3236,7 +3236,7 @@ In this section, we only list the top three results of each competition. Please 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
-    <td align="center">95.55 (AR)</td>
+    <td align="center"><b>95.55 (AR)<b></td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
     <td align="center">ReCTS Competition</td>
   </tr>
