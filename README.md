@@ -13,7 +13,7 @@ Dec 24, 2019: added 20 papers and the C-SVT dataset, and updated corresponding t
 - [1. Datasets](#1-datasets)
     - [1.1 Regular Scene Text Datasets](#11-regular-scene-text-datasets)
     - [1.2 Irregular Scene Text Datasets](#12-irregular-scene-text-datasets)
- 	  - [1.3 Bilingual Scene Text Datasets \(mainly in Chinese and English\)](#13-bilingual-scene-text-datasets-mainly-in-chinese-and-english)
+ 	- [1.3 Bilingual Scene Text Datasets \(mainly in Chinese and English\)](#13-bilingual-scene-text-datasets-mainly-in-chinese-and-english)
     - [1.4 Synthetic Datasets](#14-synthetic-datasets)
     - [1.5 Comparison of Datasets](#15-comparison-of-datasets)
 - [2. Summary of Scene Text Recognition Results](#2-summary-of-scene-text-recognition-results)
