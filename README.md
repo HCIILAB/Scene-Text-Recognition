@@ -4,7 +4,7 @@
 
 ## Updates
 
-Dec 23, 2019: added 20 papers and the C-SVT dataset, and updated corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1CvyMGm3a5KzPNOpK8Fs5gA) prepared by us. (Password: teqv)
+Dec 24, 2019: added 20 papers and the C-SVT dataset, and updated corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1CvyMGm3a5KzPNOpK8Fs5gA) prepared by us. (Password: teqv)
 
 ***
 
