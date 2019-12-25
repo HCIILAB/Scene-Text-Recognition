@@ -3460,7 +3460,7 @@ In this section, we only list the top three results of each competition. Please 
 
 **[79]** \[TPAMI-2019] Liao M, Lyu P, He M, et al. Mask textspotter: An end-to-end trainable neural network for spotting text with arbitrary shapes[J]. IEEE transactions on pattern analysis and machine intelligence, 2019. [paper](https://ieeexplore.ieee.org/abstract/document/8812908) [code](https://github.com/MhLiao/MaskTextSpotter)
 
-**[80]** \[AAAI-2020] T. Wang, Y. Zhu, L. Jin, C. Luo and X. Chen. Decoupled Attention Network for Text Recognition[C]//AAAI. 2020.
+**[80]** \[AAAI-2020] T. Wang, Y. Zhu, L. Jin, C. Luo and X. Chen. Decoupled Attention Network for Text Recognition[C]//AAAI. 2020. [paper](https://arxiv.org/abs/1912.10205) [code](https://github.com/Wang-Tianwei/Decoupled-attention-network)
 
 ***
 
