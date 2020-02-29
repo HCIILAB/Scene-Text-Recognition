@@ -1,5 +1,5 @@
 # Scene Text Recognition Resources
-
+<font size="1">size为1</font><br /> 
 [<p align='right'>Author: 陈晓雪</p>](https://github.com/CCchenxiaoxue)
 
 ## Updates
