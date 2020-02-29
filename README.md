@@ -1,5 +1,4 @@
 # Scene Text Recognition Resources
-<font size="1">size为1</font><br /> 
 [<p align='right'>Author: 陈晓雪</p>](https://github.com/CCchenxiaoxue)
 
 ## Updates
@@ -39,7 +38,7 @@ Feb 29, 2020: add AAAI-2020 papers and update corresponding tables. You can down
 ### 1.1 Regular Latin Datasets
 
 - IIIT5K[31]：
-  * **Introduction:** The IIIT5K dataset contains 5,000 text instance images: 2,000 for training and 3; 000 for testing. It contains words from street scenes and from originally-digital images. Every image is associated with a 50-word lexicon and a 1,000-word lexicon. Specifically, the lexicon consists of a ground-truth word and some randomly picked words.  
+  * **Introduction:** <font size="1">size为1</font><br /> The IIIT5K dataset contains 5,000 text instance images: 2,000 for training and 3; 000 for testing. It contains words from street scenes and from originally-digital images. Every image is associated with a 50-word lexicon and a 1,000-word lexicon. Specifically, the lexicon consists of a ground-truth word and some randomly picked words.  
   * **Link:** [IIIT5K-download](http://cvit.iiit.ac.in/research/projects/cvit-projects/the-iiit-5k-word-dataset)
 - SVT[1]：
   * **Introduction:** The SVT dataset contains 350 images: 100 for training and 250 for testing. Some images are severely corrupted by noise, blur, and low resolution. Besides, each image is associated with a 50-word lexicon.  
