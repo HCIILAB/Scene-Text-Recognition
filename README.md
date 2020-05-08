@@ -3451,9 +3451,9 @@ In this section, we only list the top one of each competition. Please refer to t
 
 **[51] \[Frontiers-Comput. Sci-2016]** Y. Zhu, C. Yao, and X. Bai, “Scene text detection and recognition: Recent advances and future trends,” Frontiers of Computer Science, vol. 10, no. 1, pp. 19–36, 2016. [paper](https://link.springer.com/article/10.1007/s11704-015-4488-0)
 
-**[52] \[arXiv-2018]** S. Long, X. He, and C. Ya, “Scene text detection and recognition: The deep learning era,” CoRR abs/1811.04256, 2018. [paper](https://arxiv.org/pdf/1811.04256.pdf)
+**[52] \[arXiv-2018]** S. Long, X. He, and C. Ya, “Scene text detection and recognition: The deep learning era,” CoRR abs/1811.04256, 2018. [paper](https://arxiv.org/pdf/1811.04256.pdf) [code](https://github.com/Jyouhou/SceneTextPapers)
 
-**[90]** **\[arXiv-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf)
+**[90]** **\[arXiv-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
 
 ***
 
@@ -3581,7 +3581,7 @@ In this section, we only list the top one of each competition. Please refer to t
 
 **[51] \[Frontiers-Comput. Sci-2016]** Y. Zhu, C. Yao, and X. Bai, “Scene text detection and recognition: Recent advances and future trends,” Frontiers of Computer Science, vol. 10, no. 1, pp. 19–36, 2016. [paper](https://link.springer.com/article/10.1007/s11704-015-4488-0)
 
-**[52] \[arXiv-2018]** S. Long, X. He, and C. Ya, “Scene text detection and recognition: The deep learning era,” CoRR abs/1811.04256, 2018. [paper](https://arxiv.org/pdf/1811.04256.pdf)
+**[52] \[arXiv-2018]** S. Long, X. He, and C. Ya, “Scene text detection and recognition: The deep learning era,” CoRR abs/1811.04256, 2018. [paper](https://arxiv.org/pdf/1811.04256.pdf) [code](https://github.com/Jyouhou/SceneTextPapers)
 
 **[53] \[NIPS-W-2014]** M. Jaderberg, K. Simonyan, A. Vedaldi, and A. Zisserman, “Synthetic data and artificial neural networks for natural scene text recognition,” in Proceedings of NIPS-W, 2014. [paper](https://arxiv.org/pdf/1406.2227.pdf) [code](http://www.robots.ox.ac.uk/~vgg/publications/2014/Jaderberg14c/)
 
@@ -3674,7 +3674,7 @@ character segmentation using recurrent neural network,” Pattern Recognition, v
 **[89]** **\[ECCV-2016]** W. Qiu and A. L. Yuille, “Unrealcv: Connecting computer vision
 to unreal engine,” in Proceedings of ECCV, 2016, pp. 909–916. [paper](https://link.springer.com/chapter/10.1007/978-3-319-49409-8_75)
 
-**[90]** **\[arXiv-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf)
+**[90]** **\[arXiv-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
 
 <a id="6help"></a>
 
