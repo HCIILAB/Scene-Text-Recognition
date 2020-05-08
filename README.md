@@ -1438,7 +1438,7 @@ You can also download the new [Excel](https://pan.baidu.com/s/1-HUJih5uBHLOSnIFX
 <a id="22-performance-comparison-on-benchmark-datasets"></a>
 ### 2.2 Performance Comparison on Benchmark Datasets
 
-In this section, we compare the performance of the current advanced algorithms on benchmark datasets, including IIIT5K，SVT，IC03，IC13，SVT-P，CUTE80，IC15，RCTW-17, MWTI, CTW，SCUT-CTW1500, LSVT, ArT and ReCTS-25k.
+In this section, we compare the performance of the current advanced algorithms on benchmark datasets, including IIIT5K，SVT，IC03，IC13，SVT-P，CUTE80，IC15，COCO-Text, RCTW-17, MWTI, CTW，SCUT-CTW1500, LSVT, ArT and ReCTS-25k.
 
 It is notable that 1) The '*' indicates the methods that use the extra datasets other than Synth90k and SynthText. 2) The **bold** represents the best recognition results. 3) '^' denotes the best recognition results of using extra datasets. 4) '@' represents the methods under different evaluation that only uses 1811 test images. 5) 'SK', 'ST', 'ExPu', 'ExPr' and 'Un' indicates the methods that use Synth90K, SynthText, Extra Public Data, Extra Private Data and unknown data, respectively. 6) 'D_A' means data augmentation.
 
