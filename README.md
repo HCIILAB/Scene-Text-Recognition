@@ -2550,7 +2550,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td colspan=3 align="center">SVT-P</td>
     <td align="center">CUTE80</td>
     <td align="center">IC15</td>
-    <td align="center">COCO-TEXT</td>
+    <td align="center">COCO-Text</td>
     <td rowspan=2 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     <td rowspan=2 align="center">Source</td>
     <td rowspan=2 align="center">Time</td>
@@ -3601,6 +3601,7 @@ localisation in natural images,” in Proceedings of CVPR, 2016, pp. 2315–2324
 **[60] \[NC-2019]**  X. Chen, T. Wang, Y. Zhu, L. Jin, and C. Luo, “Adaptive embedding gate for attention-based scene text recognition,” Neurocomputing, vol. 381, pp. 261–271, 2020. [paper](https://www.sciencedirect.com/science/article/pii/S0925231219316510)
 
 ***
+
 **Newly added references (Dec 24, 2019)**
 
 **[61]** **\[ICFHR-2018]** C. Wang, F. Yin, and C.-L. Liu, “Memory-augmented attention model for scene text recognition,” in Proceedings of ICFHR, 2018, pp. 62–67.  [paper](https://ieeexplore.ieee.org/abstract/document/8563227)
@@ -3662,7 +3663,7 @@ character segmentation using recurrent neural network,” Pattern Recognition, v
 
 ---
 
-**Newly added references (May 9, 2020)**
+**Newly added references (May 8, 2020)**
 
 **[86]** **\[CVPR-2020]** R. Litman, O. Anschel, S. Tsiper, R. Litman, S. Mazor, and R. Manmatha, “SCATTER: selective context attentional scene text recognizer,” in Proceedings of CVPR, 2020. [paper](https://arxiv.org/abs/2003.11288.pdf) 
 
