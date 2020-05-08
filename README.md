@@ -7,7 +7,7 @@ Dec 24, 2019: add 20 papers and update corresponding tables.
 
 Feb 29, 2020: add AAAI-2020 papers and update corresponding tables. 
 
-May 9, 2020: add CVPR-2020 papers and update corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1-HUJih5uBHLOSnIFXPJLtA) prepared by us. (Password: sx79)
+May 8, 2020: add CVPR-2020 papers and update corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1-HUJih5uBHLOSnIFXPJLtA) prepared by us. (Password: sx79)
 
 ***
 
@@ -3695,4 +3695,4 @@ Copyright © 2019 SCUT-DLVC. All Rights Reserved.
     <p align="center">
         <em></em>
     </p>
-</p>
+</p>8
