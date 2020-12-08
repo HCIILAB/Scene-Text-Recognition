@@ -1,13 +1,17 @@
 # Scene Text Recognition Resources
 [<p align='right'>Author: 陈晓雪</p>](https://github.com/CCchenxiaoxue)
 
+The paper "Text Recognition in the Wild: A Survey" (accepted to appear in ACM Computing Surveys) in [arXiv](https://arxiv.org/pdf/2005.03492v3.pdf) version is available now.
+
 ## Updates
 
 Dec 24, 2019: add 20 papers and update corresponding tables. 
 
 Feb 29, 2020: add AAAI-2020 papers and update corresponding tables. 
 
-May 8, 2020: add CVPR-2020 papers and update corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1-HUJih5uBHLOSnIFXPJLtA) prepared by us. (Password: sx79)
+May 8, 2020: add CVPR-2020 papers and update corresponding tables. 
+
+Dec 8, 2020: add 10 papers and update corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPTB2ZaA) prepared by us. (Password: gaxo)
 
 ***
 
@@ -22,9 +26,9 @@ May 8, 2020: add CVPR-2020 papers and update corresponding tables. You can downl
 - [2. Performance Comparison of Recognition Algorithms](#2-performance-comparison-of-recognition-algorithms)
   - [2.1 Characteristics Comparison of Recognition Approaches](#21-characteristics-comparison-of-recognition-approaches)
   - [2.2 Performance Comparison on Benchmark Datasets](#22-performance-comparison-on-benchmark-datasets)
-       - [2.2.1 Performance Comparison of Recognition Algorithms on Regular Latin Datasets](#221-performance-comparison-of-recognition-algorithms-on-regular-latin-datasets)
-       - [2.2.2 Performance Comparison of Recognition Algorithms on Irregular Latin Datasets](#222-performance-comparison-of-recognition-algorithms-on-irregular-latin-datasets)
-       - [2.2.3 Performance Comparison of Recognition Algorithms on Multilingual Datasets](#223-performance-comparison-of-recognition-algorithms-on-multilingual-datasets)
+           - [2.2.1 Performance Comparison of Recognition Algorithms on Regular Latin Datasets](#221-performance-comparison-of-recognition-algorithms-on-regular-latin-datasets)
+           - [2.2.2 Performance Comparison of Recognition Algorithms on Irregular Latin Datasets](#222-performance-comparison-of-recognition-algorithms-on-irregular-latin-datasets)
+           - [2.2.3 Performance Comparison of Recognition Algorithms on Multilingual Datasets](#223-performance-comparison-of-recognition-algorithms-on-multilingual-datasets)
 - [3. Survey](#3-survey)
 - [4. OCR Service](#4-ocr-service)
 - [5. References](#5-references)
@@ -57,6 +61,7 @@ May 8, 2020: add CVPR-2020 papers and update corresponding tables. You can downl
 
 <a id="12-irregular-latin-datasets"></a>
 
+<a id="12-irregular-latin-datasets"></a>
 ### 1.2 Irregular Latin Datasets
 
 - SVT-P[35]：
@@ -548,7 +553,7 @@ May 8, 2020: add CVPR-2020 papers and update corresponding tables. You can downl
 
 It is notable that 1) "Reg" stands for regular Latin datasets. 2) "Irreg" stands for irregular Latin datasets. 3) "Seg" denotes the segmentation-based methods. 4) "Extra" indicates the methods that use the extra datasets other than Synth90k and SynthText. 5) "CTC" represents the methods that apply the CTC-based algorithm to decode. 6) "Attn" represents the method that apply the attention mechanism to decode.
 
-You can also download the new [Excel](https://pan.baidu.com/s/1-HUJih5uBHLOSnIFXPJLtA) prepared by us. (Password: sx79)
+You can also download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPTB2ZaA) prepared by us. (Password: gaxo)
 
 <table cellspacing="0" border="0">
   <colgroup width="271"></colgroup>
@@ -558,7 +563,7 @@ You can also download the new [Excel](https://pan.baidu.com/s/1-HUJih5uBHLOSnIFX
   <colgroup span="2" width="86"></colgroup>
   <colgroup width="832"></colgroup>
   <tr>
-    <td colspan=11 height="34" align="center"><b>Characteristics Comparison of Recognition Approaches</b></td>
+    <td colspan=11 height="34" align="center">Characteristics Comparison of Recognition Approaches</td>
     </tr>
   <tr>
     <td rowspan=2 height="39" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -1433,6 +1438,97 @@ You can also download the new [Excel](https://pan.baidu.com/s/1-HUJih5uBHLOSnIFX
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
     <td align="center"> introducing a global semantic reasoning module (GSRM) to capture global semantic context through multi-way parallel transmission</td>
   </tr>
+  <tr>
+    <td height="20" align="center">Bleeker et al. [93] : Bi-STET</td>
+    <td align="center">√</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">ECAI</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+    <td align="center">a novel bidirectional STR method with a single decoder for bidirectional text decoding</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">*Bartz et al. [94] : KISS</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+    <td align="center">a new model for STR that consists of two ResNet based feature extractors, a spatial transformer, and a transformer</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Zhang et al. [95] : SPIN</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+    <td align="center">a new learnable geometric-unrelated module which allows the color manipulation of source data within the network</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Lin et al. [96] : FASDA</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+    <td align="center">implementing sequence-level domain adaption for STR</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Zhang et al. [98] : AutoSTR</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">ECCV</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+    <td align="center">searching data-dependent backbones</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Mou et al. [99] : PlugNet</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">ECCV</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+    <td align="center">combining the pluggable super-resolution unit to solve the low-quality text recognition from the feature-level</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">*Yue et al. [100] : RobustScanner</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">ECCV</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+    <td align="center"> mitigating the misrecognition problem of the encoderdecoder with attention framework on contextless text images</td>
+  </tr>
 </table>
 
 <a id="22-performance-comparison-on-benchmark-datasets"></a>
@@ -1446,12 +1542,9 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
 #### 2.2.1 Performance Comparison of Recognition Algorithms on Regular Latin Datasets
 
 <table cellspacing="0" border="0">
-  <colgroup width="271"></colgroup>
-  <colgroup span="10" width="89"></colgroup>
-  <colgroup width="172"></colgroup>
-  <colgroup span="2" width="86"></colgroup>
+  <colgroup span="14" width="85"></colgroup>
   <tr>
-    <td colspan=14 height="34" align="center"><b>Performance Comparison of Recognition Algorithms on Regular Latin Datasets</b></td>
+    <td colspan=14 height="20" align="center">Performance Comparison of Recognition Algorithms on Regular Latin Datasets</td>
     </tr>
   <tr>
     <td rowspan=2 height="39" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -1898,7 +1991,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="87.4" sdnum="2052;">87.4</td>
     <td align="center" sdval="97.1" sdnum="2052;">97.1</td>
     <td align="center" sdval="85.9" sdnum="2052;">85.9</td>
-    <td align="center"><b>^99.2</b></td>
+    <td align="center" sdval="99.2" sdnum="2052;">99.2</td>
     <td align="center" sdval="97.3" sdnum="2052;">97.3</td>
     <td align="center">-</td>
     <td align="center" sdval="94.2" sdnum="2052;">94.2</td>
@@ -2086,7 +2179,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   <tr>
     <td height="20" align="center">Shi et al. [30] : ASTER</td>
     <td align="center" sdval="99.6" sdnum="2052;"><b>99.6</b></td>
-    <td align="center" sdval="98.8" sdnum="2052;"><b>98.8</b></td>
+    <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
     <td align="center" sdval="93.4" sdnum="2052;">93.4</td>
     <td align="center" sdval="97.4" sdnum="2052;">97.4</td>
     <td align="center" sdval="89.5" sdnum="2052;">89.5</td>
@@ -2212,9 +2305,9 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td height="23" align="center">Zhan el at. [55]: ESIR</td>
+    <td height="20" align="center">Zhan el at. [55]: ESIR</td>
     <td align="center" sdval="99.6" sdnum="2052;"><b>99.6</b></td>
-    <td align="center" sdval="98.8" sdnum="2052;"><b>98.8</b></td>
+    <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
     <td align="center" sdval="93.3" sdnum="2052;">93.3</td>
     <td align="center" sdval="97.4" sdnum="2052;">97.4</td>
     <td align="center" sdval="90.2" sdnum="2052;">90.2</td>
@@ -2531,6 +2624,118 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">CVPR</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
   </tr>
+  <tr>
+    <td height="20" align="center">Bleeker et al. [93] : Bi-STET</td>
+    <td align="center" sdval="99.6" sdnum="2052;"><b>99.6</b></td>
+    <td align="center" sdval="98.9" sdnum="2052;"><b>98.9</b></td>
+    <td align="center" sdval="94.7" sdnum="2052;">94.7</td>
+    <td align="center" sdval="97.4" sdnum="2052;">97.4</td>
+    <td align="center" sdval="89" sdnum="2052;">89</td>
+    <td align="center" sdval="99.1" sdnum="2052;">99.1</td>
+    <td align="center" sdval="98.7" sdnum="2052;">98.7</td>
+    <td align="center">-</td>
+    <td align="center" sdval="96" sdnum="2052;">96</td>
+    <td align="center" sdval="93.4" sdnum="2052;">93.4</td>
+    <td align="center">SK + ST</td>
+    <td align="center">ECAI</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">*Bartz et al. [94] : KISS</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="94.6" sdnum="2052;">94.6</td>
+    <td align="center">-</td>
+    <td align="center" sdval="89.2" sdnum="2052;">89.2</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="93.1" sdnum="2052;">93.1</td>
+    <td align="center">SK + ST + ExPu (D_A)</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Zhang et al. [95] : SPIN</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="94.7" sdnum="2052;">94.7</td>
+    <td align="center">-</td>
+    <td align="center" sdval="90.3" sdnum="2052;">90.3</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="94.4" sdnum="2052;">94.4</td>
+    <td align="center" sdval="92.8" sdnum="2052;">92.8</td>
+    <td align="center">SK + ST</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Lin et al. [96] : FASDA</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="96.5" sdnum="2052;">96.5</td>
+    <td align="center" sdval="88.3" sdnum="2052;">88.3</td>
+    <td align="center" sdval="99.1" sdnum="2052;">99.1</td>
+    <td align="center" sdval="97.5" sdnum="2052;">97.5</td>
+    <td align="center">-</td>
+    <td align="center" sdval="94.8" sdnum="2052;">94.8</td>
+    <td align="center" sdval="94.4" sdnum="2052;">94.4</td>
+    <td align="center">SK</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Zhang et al. [98] : AutoSTR</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="94.7" sdnum="2052;">94.7</td>
+    <td align="center">-</td>
+    <td align="center" sdval="90.9" sdnum="2052;">90.9</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="93.3" sdnum="2052;">93.3</td>
+    <td align="center" sdval="94.2" sdnum="2052;">94.2</td>
+    <td align="center">SK + ST</td>
+    <td align="center">ECCV</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Mou et al. [99] : PlugNet</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="94.4" sdnum="2052;">94.4</td>
+    <td align="center">-</td>
+    <td align="center" sdval="92.3" sdnum="2052;">92.3</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="95.7" sdnum="2052;">95.7</td>
+    <td align="center" sdval="95" sdnum="2052;">95</td>
+    <td align="center">SK + ST</td>
+    <td align="center">ECCV</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">*Yue et al. [100] : RobustScanner</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="95.4" sdnum="2052;">95.4</td>
+    <td align="center">-</td>
+    <td align="center" sdval="89.3" sdnum="2052;">89.3</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="94.1" sdnum="2052;">94.1</td>
+    <td align="center">SK + ST + ExPu</td>
+    <td align="center">ECCV</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
 </table>
 
 <a id="222-performance-comparison-of-recognition-algorithms-on-irregular-latin-datasets"></a>
@@ -2543,14 +2748,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   <colgroup width="172"></colgroup>
   <colgroup span="2" width="86"></colgroup>
   <tr>
-    <td colspan=10 height="34" align="center"><b>Performance Comparison of Recognition Algorithms on Irregular Latin Datasets</b></td>
+    <td colspan=10 height="34" align="center">Performance Comparison of Recognition Algorithms on Irregular Latin Datasets</td>
     </tr>
   <tr>
     <td rowspan=2 height="39" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     <td colspan=3 align="center">SVT-P</td>
     <td align="center">CUTE80</td>
     <td align="center">IC15</td>
-    <td align="center">COCO-Text</td>
+    <td align="center">COCO-TEXT</td>
     <td rowspan=2 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     <td rowspan=2 align="center">Source</td>
     <td rowspan=2 align="center">Time</td>
@@ -3194,7 +3399,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center" sdval="62.3" sdnum="2052;">62.3</td>
-    <td align="center" sdval="40" sdnum="2052;"><b>40</b></td>
+    <td align="center" sdval="40" sdnum="2052;">40</td>
     <td align="center">SK</td>
     <td align="center">NC</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
@@ -3312,7 +3517,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center" sdval="85.7" sdnum="2052;">85.7</td>
-    <td align="center"><b>^92.2</b></td>
+    <td align="center" sdval="92.2" sdnum="2052;">92.2</td>
     <td align="center" sdval="79.5" sdnum="2052;">79.5</td>
     <td align="center">-</td>
     <td align="center">SK + ST + ExPu</td>
@@ -3353,6 +3558,90 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">SK + ST</td>
     <td align="center">CVPR</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Bleeker et al. [93] : Bi-STET</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="80.6" sdnum="2052;">80.6</td>
+    <td align="center" sdval="82.5" sdnum="2052;">82.5</td>
+    <td align="center" sdval="75.7" sdnum="2052;">75.7</td>
+    <td align="center">-</td>
+    <td align="center">SK + ST</td>
+    <td align="center">ECAI</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">*Bartz et al. [94] : KISS</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="83.1" sdnum="2052;">83.1</td>
+    <td align="center" sdval="89.6" sdnum="2052;">89.6</td>
+    <td align="center" sdval="74.2" sdnum="2052;">74.2</td>
+    <td align="center">-</td>
+    <td align="center">SK + ST + ExPu (D_A)</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Zhang et al. [95] : SPIN</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="82.8" sdnum="2052;">82.8</td>
+    <td align="center" sdval="87.5" sdnum="2052;">87.5</td>
+    <td align="center" sdval="78.5" sdnum="2052;">78.5</td>
+    <td align="center">-</td>
+    <td align="center">SK + ST</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Lin et al. [96] : FASDA</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="73.3" sdnum="2052;">73.3</td>
+    <td align="center">-</td>
+    <td align="center">SK</td>
+    <td align="center">arXiv</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Zhang et al. [98] : AutoSTR</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="81.7" sdnum="2052;">81.7</td>
+    <td align="center">-</td>
+    <td align="center" sdval="81.8" sdnum="2052;">81.8</td>
+    <td align="center">-</td>
+    <td align="center">SK + ST</td>
+    <td align="center">ECCV</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Mou et al. [99] : PlugNet</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="84.3" sdnum="2052;">84.3</td>
+    <td align="center" sdval="85" sdnum="2052;">85</td>
+    <td align="center" sdval="82.2" sdnum="2052;">82.2</td>
+    <td align="center">-</td>
+    <td align="center">SK + ST</td>
+    <td align="center">ECCV</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">*Yue et al. [100] : RobustScanner</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="82.9" sdnum="2052;">82.9</td>
+    <td align="center"><b>^92.4</b></td>
+    <td align="center" sdval="79.2" sdnum="2052;">79.2</td>
+    <td align="center">-</td>
+    <td align="center">SK + ST + ExPu</td>
+    <td align="center">ECCV</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
   </tr>
 </table>
@@ -3451,9 +3740,9 @@ In this section, we only list the top one of each competition. Please refer to t
 
 **[51] \[Frontiers-Comput. Sci-2016]** Y. Zhu, C. Yao, and X. Bai, “Scene text detection and recognition: Recent advances and future trends,” Frontiers of Computer Science, vol. 10, no. 1, pp. 19–36, 2016. [paper](https://link.springer.com/article/10.1007/s11704-015-4488-0)
 
-**[52] \[arXiv-2018]** S. Long, X. He, and C. Ya, “Scene text detection and recognition: The deep learning era,” CoRR abs/1811.04256, 2018. [paper](https://arxiv.org/pdf/1811.04256.pdf) [code](https://github.com/Jyouhou/SceneTextPapers)
+**[52] \[IJCV-2020]**  Long S, He X, Yao C. Scene text detection and recognition: The deep learning era[J]. International Journal of Computer Vision, 2020: 1-24. [paper](https://link.springer.com/article/10.1007/s11263-020-01369-0) [code](https://github.com/Jyouhou/SceneTextPapers)
 
-**[90]** **\[arXiv-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
+**[90]** **\[ACM Computing Surveys-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
 
 ***
 
@@ -3581,7 +3870,7 @@ In this section, we only list the top one of each competition. Please refer to t
 
 **[51] \[Frontiers-Comput. Sci-2016]** Y. Zhu, C. Yao, and X. Bai, “Scene text detection and recognition: Recent advances and future trends,” Frontiers of Computer Science, vol. 10, no. 1, pp. 19–36, 2016. [paper](https://link.springer.com/article/10.1007/s11704-015-4488-0)
 
-**[52] \[arXiv-2018]** S. Long, X. He, and C. Ya, “Scene text detection and recognition: The deep learning era,” CoRR abs/1811.04256, 2018. [paper](https://arxiv.org/pdf/1811.04256.pdf) [code](https://github.com/Jyouhou/SceneTextPapers)
+**[52] \[IJCV-2020]**  Long S, He X, Yao C. Scene text detection and recognition: The deep learning era[J]. International Journal of Computer Vision, 2020: 1-24. [paper](https://link.springer.com/article/10.1007/s11263-020-01369-0) [code](https://github.com/Jyouhou/SceneTextPapers)
 
 **[53] \[NIPS-W-2014]** M. Jaderberg, K. Simonyan, A. Vedaldi, and A. Zisserman, “Synthetic data and artificial neural networks for natural scene text recognition,” in Proceedings of NIPS-W, 2014. [paper](https://arxiv.org/pdf/1406.2227.pdf) [code](http://www.robots.ox.ac.uk/~vgg/publications/2014/Jaderberg14c/)
 
@@ -3659,7 +3948,7 @@ character segmentation using recurrent neural network,” Pattern Recognition, v
 
 **[84]** **\[AAAI-2020]** W. Hu, X. Cai, J. Hou, S. Yi, and Z. Lin, “GTC: Guided training of ctc towards efficient and accurate scene text recognition,” In Proceedings of AAAI, 2020. [paper](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-HuW.7838.pdf) 
 
-**[85]** **\[arXiv-2020]** C. Luo, Q. Lin, Y. Liu, J. Lianwen, and S. Chunhua, “Separating content from style using adversarial learning for recognizing text in the wild,” CoRR abs/2001.04189, 2020. [paper](https://arxiv.org/pdf/2001.04189.pdf) 
+**[85]** **\[IJCV-2020]** C. Luo, Q. Lin, Y. Liu, J. Lianwen, and S. Chunhua, “Separating content from style using adversarial learning for recognizing text in the wild,” CoRR abs/2001.04189, 2020. [paper](https://arxiv.org/pdf/2001.04189.pdf) 
 
 ---
 
@@ -3676,10 +3965,31 @@ to unreal engine,” in Proceedings of ECCV, 2016, pp. 909–916. [paper](https:
 
 **[90]** **\[arXiv-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
 
-<a id="6help"></a>
+---
+
+**Newly added references (Dec 8, 2020)**
+
+**[91]** **\[ICVGIP-2018]** Gupta A, Vedaldi A, Zisserman A. "Learning to read by spelling: Towards unsupervised text recognition," in Proceedings of ICVGIP, 2018. [paper](https://dl.acm.org/doi/pdf/10.1145/3293353.3293386) 
+
+**[92]** **\[CVPR-2020]** Wan Z, Zhang J, Zhang L, et al, "On Vocabulary Reliance in Scene Text Recognition," in  Proceedings of CVPR, 2020. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wan_On_Vocabulary_Reliance_in_Scene_Text_Recognition_CVPR_2020_paper.pdf) 
+
+**[93]** **\[ECAI-2020]** Bleeker M, de Rijke M, "Bidirectional Scene Text Recognition with a Single Decoder," in Proceedings of ECAI, 2020. [paper](https://arxiv.org/pdf/1912.03656.pdf) [code]( https:// github.com/MauritsBleeker/Bi-STET)
+
+**[94]** **\[arXiv-2019]** Bartz C, Bethge J, Yang H, et al, "KISS: Keeping It Simple for Scene Text Recognition,"CoRR abs/1911.08400, 2019. [paper](https://arxiv.org/pdf/1911.08400.pdf) [code]( https://github.com/Bartzi/kiss)
+
+**[95]** **\[arXiv-2020]**  Zhang C, Xu Y, Cheng Z, et al, "SPIN: Structure-Preserving Inner Offset Network for Scene Text Recognition,"  CoRR abs/2005.13117, 2020. [paper](https://arxiv.org/pdf/2005.13117.pdf) 
+
+**[96]** **\[arXiv-2020]**  Lin J, Cheng Z, Bai F, et al, "Text Recognition in Real Scenarios with a Few Labeled Samples,"  CoRR abs/2006.12209, 2020. [paper](https://arxiv.org/pdf/2006.12209.pdf) 
+
+**[97]** **\[ECCV-2020]**  Zhang C, Gupta A, Zisserman A. "Adaptive Text Recognition through Visual Matching," in Proceedings of ECCV, 2020. [paper](https://link.springer.com/chapter/10.1007/978-3-030-58517-4_4)  [code]( http://www.robots.ox.ac.uk/~vgg/research/FontAdaptor20/ )
+
+**[98]** **\[ECCV-2020]**  Zhang H, Yao Q, Yang M, et al, "AutoSTR: Efficient Backbone Search for Scene Text Recognition," in Proceedings of ECCV, 2020. [paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123690732.pdf)  [code](  https://github.com/AutoML-4Paradigm/AutoSTR.git)
+
+**[99]** **\[ECCV-2020]**   Yan R, Huang Y, "PlugNet: Degradation Aware Scene Text Recognition Supervised by a Pluggable Super-Resolution Unit," in Proceedings of ECCV, 2020. [paper](file:///E:/Sonmus/Github_repository/20201202-github-ori/new%20papers/Mou2020_Chapter_PlugNetDegradationAwareSceneTe.pdf) 
+
+**[100]** **\[ECCV-2020]**   Yue X, Kuang Z, Lin C, et al. RobustScanner: Dynamically Enhancing Positional Clues for Robust Text Recognition," in Proceedings of ECCV, 2020. [paper](https://arxiv.org/pdf/2007.07542.pdf) 
 
 <a id="6help"></a>
-
 ## 6.Help
 
 If you have any problem in our resources, or any good paper/code we missed, please inform us at xxuechen@foxmail.com. Thank you for your contribution.
@@ -3689,11 +3999,11 @@ If you have any problem in our resources, or any good paper/code we missed, plea
 <a id="7copyright"></a>
 ## 7.Copyright
 
-Copyright © 2019 SCUT-DLVC. All Rights Reserved.
+Copyright © 2020 SCUT-DLVC. All Rights Reserved.
 
 <p align="center">
     <img src="scut-dlvc.jpeg" alt="Sample"  width="150" height="75">
     <p align="center">
         <em></em>
     </p>
-</p>8
+</p>
