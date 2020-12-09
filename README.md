@@ -3941,8 +3941,7 @@ character segmentation using recurrent neural network,” Pattern Recognition, v
 
 **[81]** **\[ICDAR-2019]** N. Nayef, Y. Patel, M. Busta, P. N. Chowdhury, D. Karatzas, W. Khlif, J. Matas, U. Pal, J.-C. Burie, C.-l. Liu et al., “ICDAR2019 robust reading challenge on multi-lingual scene text detection and recognition–RRC-MLT-2019,” in Proceedings of ICDAR, 2019, pp. 1582–1587. [paper](https://arxiv.org/pdf/1907.00945.pdf)
 
-**[82]** **\[arXiv-2019]** W. Wang, E. Xie, P. Sun, W. Wang, L. Tian, C. Shen, and P. Luo, “TextSR: Content-aware text super-resolution guided by recognition,” CoRR abs/1909.07113, 2019. [paper](https://arxiv.org/pdf/1909.07113.pdf) [code](https:
-//github.com/xieenze/TextSR)
+**[82]** **\[arXiv-2019]** W. Wang, E. Xie, P. Sun, W. Wang, L. Tian, C. Shen, and P. Luo, “TextSR: Content-aware text super-resolution guided by recognition,” CoRR abs/1909.07113, 2019. [paper](https://arxiv.org/pdf/1909.07113.pdf) [code](https://github.com/xieenze/TextSR)
 
 **[83]** **\[AAAI-2020]** Z. Wan, M. He, H. Chen, X. Bai, and C. Yao, “Textscanner: Reading characters in order for robust scene text recognition,” In Proceedings of AAAI, 2020. [paper](https://arxiv.org/pdf/1912.12422.pdf) 
 
@@ -3973,7 +3972,7 @@ to unreal engine,” in Proceedings of ECCV, 2016, pp. 909–916. [paper](https:
 
 **[92]** **\[CVPR-2020]** Wan Z, Zhang J, Zhang L, et al, "On Vocabulary Reliance in Scene Text Recognition," in  Proceedings of CVPR, 2020. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wan_On_Vocabulary_Reliance_in_Scene_Text_Recognition_CVPR_2020_paper.pdf) 
 
-**[93]** **\[ECAI-2020]** Bleeker M, de Rijke M, "Bidirectional Scene Text Recognition with a Single Decoder," in Proceedings of ECAI, 2020. [paper](https://arxiv.org/pdf/1912.03656.pdf) [code](https:// github.com/MauritsBleeker/Bi-STET)
+**[93]** **\[ECAI-2020]** Bleeker M, de Rijke M, "Bidirectional Scene Text Recognition with a Single Decoder," in Proceedings of ECAI, 2020. [paper](https://arxiv.org/pdf/1912.03656.pdf) [code](https://github.com/MauritsBleeker/Bi-STET)
 
 **[94]** **\[arXiv-2019]** Bartz C, Bethge J, Yang H, et al, "KISS: Keeping It Simple for Scene Text Recognition,"CoRR abs/1911.08400, 2019. [paper](https://arxiv.org/pdf/1911.08400.pdf) [code](https://github.com/Bartzi/kiss)
 
