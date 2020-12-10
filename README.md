@@ -11,7 +11,7 @@ Feb 29, 2020: add AAAI-2020 papers and update corresponding tables.
 
 May 8, 2020: add CVPR-2020 papers and update corresponding tables. 
 
-Dec 8, 2020: add 10 papers and update corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPTB2ZaA) prepared by us. (Password: gaxo)
+Dec 8, 2020: add 11 papers and update corresponding tables. You can download the new [Excel](https://pan.baidu.com/s/1xitxu7R5hw27pVV7eJ1c7w) prepared by us. (Password: sj2t)
 
 ***
 
@@ -28,7 +28,6 @@ Dec 8, 2020: add 10 papers and update corresponding tables. You can download the
   - [2.2 Performance Comparison on Benchmark Datasets](#22-performance-comparison-on-benchmark-datasets)
        - [2.2.1 Performance Comparison of Recognition Algorithms on Regular Latin Datasets](#221-performance-comparison-of-recognition-algorithms-on-regular-latin-datasets)
        - [2.2.2 Performance Comparison of Recognition Algorithms on Irregular Latin Datasets](#222-performance-comparison-of-recognition-algorithms-on-irregular-latin-datasets)
-       - [2.2.3 Performance Comparison of Recognition Algorithms on Multilingual Datasets](#223-performance-comparison-of-recognition-algorithms-on-multilingual-datasets)
 - [3. Survey](#3-survey)
 - [4. OCR Service](#4-ocr-service)
 - [5. References](#5-references)
@@ -58,8 +57,6 @@ Dec 8, 2020: add 10 papers and update corresponding tables. You can download the
 - SVHN[45]：
   * **Introduction:** The SVHN [45] dataset contains more than 600,000 digits of house numbers in natural scenes. It is obtained from a large number of street view images using a combination of automated algorithms and the Amazon Mechanical Turk (AMT) framework. The SVHN dataset was typically  used for scene digit recognition.  
   * **Link:** [SVHN-download](http://ufldl.stanford.edu/housenumbers/)
-
-<a id="12-irregular-latin-datasets"></a>
 
 <a id="12-irregular-latin-datasets"></a>
 ### 1.2 Irregular Latin Datasets
@@ -553,7 +550,7 @@ Dec 8, 2020: add 10 papers and update corresponding tables. You can download the
 
 It is notable that 1) "Reg" stands for regular Latin datasets. 2) "Irreg" stands for irregular Latin datasets. 3) "Seg" denotes the segmentation-based methods. 4) "Extra" indicates the methods that use the extra datasets other than Synth90k and SynthText. 5) "CTC" represents the methods that apply the CTC-based algorithm to decode. 6) "Attn" represents the method that apply the attention mechanism to decode.
 
-You can also download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPTB2ZaA) prepared by us. (Password: gaxo)
+You can also download the new [Excel](https://pan.baidu.com/s/1xitxu7R5hw27pVV7eJ1c7w) prepared by us. (Password: sj2t)
 
 <table cellspacing="0" border="0">
   <colgroup width="271"></colgroup>
@@ -563,20 +560,20 @@ You can also download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPT
   <colgroup span="2" width="86"></colgroup>
   <colgroup width="832"></colgroup>
   <tr>
-    <td colspan=11 height="34" align="center">Characteristics Comparison of Recognition Approaches</td>
+    <td colspan=11 height="34" align="center"><b>Characteristics Comparison of Recognition Approaches</b></td>
     </tr>
   <tr>
-    <td rowspan=2 height="39" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td rowspan=2 align="center">Code</td>
-    <td rowspan=2 align="center">Regular</td>
-    <td rowspan=2 align="center">Irregular</td>
-    <td rowspan=2 align="center">Segmentation</td>
-    <td rowspan=2 align="center">Extra data</td>
-    <td rowspan=2 align="center">CTC</td>
-    <td rowspan=2 align="center">Attention</td>
-    <td rowspan=2 align="center">Source</td>
-    <td rowspan=2 align="center">Time</td>
-    <td rowspan=2 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td rowspan=2 height="39" align="center"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+    <td rowspan=2 align="center"><b>Code</b></td>
+    <td rowspan=2 align="center"><b>Regular</b></td>
+    <td rowspan=2 align="center"><b>Irregular</b></td>
+    <td rowspan=2 align="center"><b>Segmentation</b></td>
+    <td rowspan=2 align="center"><b>Extra data</b></td>
+    <td rowspan=2 align="center"><b>CTC</b></td>
+    <td rowspan=2 align="center"><b>Attention</b></td>
+    <td rowspan=2 align="center"><b>Source</b></td>
+    <td rowspan=2 align="center"><b>Time</b></td>
+    <td rowspan=2 align="center"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
   </tr>
   <tr>
     </tr>
@@ -1400,7 +1397,7 @@ You can also download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPT
     <td align="center">attempting to use GCN to learn the local correlations of feature sequence</td>
   </tr>
   <tr>
-    <td height="20" align="center">Luo et al. [85] :</td>
+    <td height="20" align="center">Luo et al. [85] </td>
     <td align="center">×</td>
     <td align="center">×</td>
     <td align="center">√</td>
@@ -1408,7 +1405,7 @@ You can also download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPT
     <td align="center">×</td>
     <td align="center">×</td>
     <td align="center">√</td>
-    <td align="center">arXiv</td>
+    <td align="center">IJCV</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
     <td align="center">separating text content from noisy background styles</td>
   </tr>
@@ -1437,6 +1434,19 @@ You can also download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPT
     <td align="center">CVPR</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
     <td align="center"> introducing a global semantic reasoning module (GSRM) to capture global semantic context through multi-way parallel transmission</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Qiao et al. [101] : SEED</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">×</td>
+    <td align="center">√</td>
+    <td align="center">CVPR</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+    <td align="center"> proposing a semantics enhanced encoder-decoder framework to robustly recognize low-quality scene texts</td>
   </tr>
   <tr>
     <td height="20" align="center">Bleeker et al. [93] : Bi-STET</td>
@@ -1536,15 +1546,18 @@ You can also download the new [Excel](https://pan.baidu.com/s/1fH1944w-reqXknNPT
 
 In this section, we compare the performance of the current advanced algorithms on benchmark datasets, including IIIT5K，SVT，IC03，IC13，SVT-P，CUTE80，IC15，COCO-Text, RCTW-17, MWTI, CTW，SCUT-CTW1500, LSVT, ArT and ReCTS-25k.
 
-It is notable that 1) The '*' indicates the methods that use the extra datasets other than Synth90k and SynthText. 2) The **bold** represents the best recognition results. 3) '^' denotes the best recognition results of using extra datasets. 4) '@' represents the methods under different evaluation that only uses 1811 test images. 5) 'SK', 'ST', 'ExPu', 'ExPr' and 'Un' indicates the methods that use Synth90K, SynthText, Extra Public Data, Extra Private Data and unknown data, respectively. 6) 'D_A' means data augmentation.
+It is notable that 1) The '*' indicates the methods that use the extra datasets other than Synth90k and SynthText. 2) The **bold** represents the best recognition results. 3) '^' denotes the best recognition results of using extra datasets. 4) '@' represents the methods under different evaluation that only uses 1811 test images. 5) 'SK', 'ST', 'ExPu', 'ExPr' and 'Un' indicates the methods that use Synth90K, SynthText, Extra Public Data, Extra Private Data and unknown data, respectively. 6) 'D_A' means data augmentation. 7) IC5-S contains only 1811 cropped text instances.
 
 <a id="221-performance-comparison-of-recognition-algorithms-on-regular-latin-datasets"></a>
 #### 2.2.1 Performance Comparison of Recognition Algorithms on Regular Latin Datasets
 
 <table cellspacing="0" border="0">
-  <colgroup span="14" width="85"></colgroup>
+  <colgroup width="271"></colgroup>
+  <colgroup span="10" width="89"></colgroup>
+  <colgroup width="172"></colgroup>
+  <colgroup span="2" width="86"></colgroup>
   <tr>
-    <td colspan=14 height="20" align="center">Performance Comparison of Recognition Algorithms on Regular Latin Datasets</td>
+    <td colspan=14 height="34" align="center"><b>Performance Comparison of Recognition Algorithms on Regular Latin Datasets</b></td>
     </tr>
   <tr>
     <td rowspan=2 height="39" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -2305,7 +2318,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
   </tr>
   <tr>
-    <td height="20" align="center">Zhan el at. [55]: ESIR</td>
+    <td height="23" align="center">Zhan el at. [55]: ESIR</td>
     <td align="center" sdval="99.6" sdnum="2052;"><b>99.6</b></td>
     <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
     <td align="center" sdval="93.3" sdnum="2052;">93.3</td>
@@ -2363,7 +2376,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center" sdval="95.3" sdnum="2052;">95.3</td>
-    <td align="center" sdval="95.7" sdnum="2052;"><b>95.7</b></td>
+    <td align="center" sdval="95.7" sdnum="2052;">95.7</td>
     <td align="center">SK + ST</td>
     <td align="center">ICME</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
@@ -2501,7 +2514,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center"><b>^99.8</b></td>
     <td align="center"><b>^99.3</b></td>
     <td align="center" sdval="95.3" sdnum="2052;">95.3</td>
-    <td align="center"><b>^99.1</b></td>
+    <td align="center" sdval="99.1" sdnum="2052;">99.1</td>
     <td align="center" sdval="91.8" sdnum="2052;">91.8</td>
     <td align="center" sdval="99" sdnum="2052;">99</td>
     <td align="center" sdval="97.9" sdnum="2052;">97.9</td>
@@ -2579,17 +2592,17 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   <tr>
     <td height="20" align="center">Luo et al. [85]</td>
     <td align="center" sdval="99.6" sdnum="2052;"><b>99.6</b></td>
-    <td align="center" sdval="98.7" sdnum="2052;">98.7</td>
-    <td align="center" sdval="95.4" sdnum="2052;"><b>95.4</b></td>
-    <td align="center" sdval="98.9" sdnum="2052;"><b>98.9</b></td>
-    <td align="center" sdval="92.7" sdnum="2052;"><b>92.7</b></td>
+    <td align="center" sdval="98.8" sdnum="2052;">98.8</td>
+    <td align="center" sdval="95.6" sdnum="2052;"><b>95.6</b></td>
+    <td align="center" sdval="99.4" sdnum="2052;"><b>99.4</b></td>
+    <td align="center" sdval="92.9" sdnum="2052;"><b>92.9</b></td>
     <td align="center" sdval="99.1" sdnum="2052;">99.1</td>
     <td align="center" sdval="98.8" sdnum="2052;"><b>98.8</b></td>
     <td align="center">-</td>
-    <td align="center" sdval="96.3" sdnum="2052;"><b>96.3</b></td>
-    <td align="center" sdval="94.8" sdnum="2052;">94.8</td>
+    <td align="center" sdval="96.2" sdnum="2052;"><b>96.2</b></td>
+    <td align="center" sdval="96" sdnum="2052;"><b>96</b></td>
     <td align="center">SK + ST</td>
-    <td align="center">arXiv</td>
+    <td align="center">IJCV</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
   </tr>
   <tr>
@@ -2620,6 +2633,22 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center" sdval="95.5" sdnum="2052;">95.5</td>
+    <td align="center">SK + ST</td>
+    <td align="center">CVPR</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Qiao et al. [101] : SEED</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="93.8" sdnum="2052;">93.8</td>
+    <td align="center">-</td>
+    <td align="center" sdval="89.6" sdnum="2052;">89.6</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="92.8" sdnum="2052;">92.8</td>
     <td align="center">SK + ST</td>
     <td align="center">CVPR</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
@@ -2737,23 +2766,24 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
   </tr>
 </table>
-
 <a id="222-performance-comparison-of-recognition-algorithms-on-irregular-latin-datasets"></a>
+
 #### 2.2.2 Performance Comparison of Recognition Algorithms on Irregular Latin Datasets
 
 <table cellspacing="0" border="0">
   <colgroup width="271"></colgroup>
-  <colgroup span="5" width="86"></colgroup>
+  <colgroup span="6" width="86"></colgroup>
   <colgroup width="103"></colgroup>
   <colgroup width="172"></colgroup>
   <colgroup span="2" width="86"></colgroup>
   <tr>
-    <td colspan=10 height="34" align="center">Performance Comparison of Recognition Algorithms on Irregular Latin Datasets</td>
+    <td colspan=11 height="34" align="center"><b>Performance Comparison of Recognition Algorithms on Irregular Latin Datasets</b></td>
     </tr>
   <tr>
     <td rowspan=2 height="39" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     <td colspan=3 align="center">SVT-P</td>
     <td align="center">CUTE80</td>
+    <td align="center">IC15-S</td>
     <td align="center">IC15</td>
     <td align="center">COCO-TEXT</td>
     <td rowspan=2 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -2767,11 +2797,13 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">None</td>
     <td align="center">None</td>
     <td align="center">None</td>
+    <td align="center">None</td>
     </tr>
   <tr>
     <td height="20" align="center">Wang et al. [1] : ABBYY</td>
     <td align="center" sdval="40.5" sdnum="2052;">40.5</td>
     <td align="center" sdval="26.1" sdnum="2052;">26.1</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -2782,6 +2814,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   </tr>
   <tr>
     <td height="20" align="center">Wang et al. [1] : SYNTH+PLEX</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -2800,6 +2833,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPu</td>
     <td align="center">BMVC</td>
     <td align="center" sdval="2012" sdnum="2052;">2012</td>
@@ -2812,12 +2846,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPr</td>
     <td align="center">ICPR</td>
     <td align="center" sdval="2012" sdnum="2052;">2012</td>
   </tr>
   <tr>
     <td height="20" align="center">Goel et al. [4] : wDTW</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -2836,6 +2872,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPr</td>
     <td align="center">ICCV</td>
     <td align="center" sdval="2013" sdnum="2052;">2013</td>
@@ -2848,12 +2885,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPu</td>
     <td align="center">ICCV</td>
     <td align="center" sdval="2013" sdnum="2052;">2013</td>
   </tr>
   <tr>
     <td height="20" align="center">Alsharif et al. [7] : HMM/Maxout</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -2872,12 +2911,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPu</td>
     <td align="center">TPAMI</td>
     <td align="center" sdval="2014" sdnum="2052;">2014</td>
   </tr>
   <tr>
     <td height="20" align="center">Yao et al. [9] : Strokelets</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -2896,12 +2937,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPu</td>
     <td align="center">IJCV</td>
     <td align="center" sdval="2015" sdnum="2052;">2015</td>
   </tr>
   <tr>
     <td height="20" align="center">Jaderberg et al. [11]</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -2920,12 +2963,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPu</td>
     <td align="center">ACCV</td>
     <td align="center" sdval="2014" sdnum="2052;">2014</td>
   </tr>
   <tr>
     <td height="20" align="center">Gordo[13] : Mid-features</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -2944,12 +2989,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPr</td>
     <td align="center">IJCV</td>
     <td align="center" sdval="2015" sdnum="2052;">2015</td>
   </tr>
   <tr>
     <td height="20" align="center">Jaderberg et al. [15]</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -2968,6 +3015,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK</td>
     <td align="center">TPAMI</td>
     <td align="center" sdval="2017" sdnum="2052;">2017</td>
@@ -2980,12 +3028,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="59.2" sdnum="2052;">59.2</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK</td>
     <td align="center">CVPR</td>
     <td align="center" sdval="2016" sdnum="2052;">2016</td>
   </tr>
   <tr>
     <td height="20" align="center">Lee and Osindero [18] : R2AM</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3004,12 +3054,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ExPr</td>
     <td align="center">BMVC</td>
     <td align="center" sdval="2016" sdnum="2052;">2016</td>
   </tr>
   <tr>
     <td height="20" align="center">*Liu et al. [78]</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3028,12 +3080,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPu (D_A)</td>
     <td align="center">CVIU</td>
     <td align="center" sdval="2016" sdnum="2052;">2016</td>
   </tr>
   <tr>
     <td height="20" align="center">*Su and Lu [76]</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3052,12 +3106,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="69.3" sdnum="2052;">69.3</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">ExPu</td>
     <td align="center">IJCAI</td>
     <td align="center" sdval="2017" sdnum="2052;">2017</td>
   </tr>
   <tr>
     <td height="20" align="center">Yin et al. [21]</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3076,6 +3132,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK</td>
     <td align="center">NIPS</td>
     <td align="center" sdval="2017" sdnum="2052;">2017</td>
@@ -3086,7 +3143,8 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
-    <td align="center"><b>*85.3</b></td>
+    <td align="center" sdval="70.6" sdnum="2052;">70.6</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">SK + ST (Pixel_wise)</td>
     <td align="center">ICCV</td>
@@ -3098,6 +3156,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="83.7" sdnum="2052;">83.7</td>
     <td align="center" sdval="73" sdnum="2052;">73</td>
     <td align="center" sdval="76.8" sdnum="2052;">76.8</td>
+    <td align="center">-</td>
     <td align="center" sdval="68.2" sdnum="2052;">68.2</td>
     <td align="center">-</td>
     <td align="center">SK + ST (D_A)</td>
@@ -3106,6 +3165,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   </tr>
   <tr>
     <td height="20" align="center">Gao et al. [24]</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3122,6 +3182,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="73.5" sdnum="2052;">73.5</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center" sdval="60" sdnum="2052;">60</td>
     <td align="center">-</td>
     <td align="center">SK (D_A)</td>
@@ -3130,6 +3191,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   </tr>
   <tr>
     <td height="20" align="center">*Liu et al.  [26] : SqueezedText</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3148,6 +3210,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">Pr(5 million)</td>
     <td align="center">CVPR</td>
     <td align="center" sdval="2018" sdnum="2052;">2018</td>
@@ -3160,12 +3223,14 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="73.9" sdnum="2052;">73.9</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ST (Pixel_wise)</td>
     <td align="center">CVPR</td>
     <td align="center" sdval="2018" sdnum="2052;">2018</td>
   </tr>
   <tr>
     <td height="20" align="center">Fang et al.[74]</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3184,6 +3249,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK</td>
     <td align="center">NIPS</td>
     <td align="center" sdval="2018" sdnum="2052;">2018</td>
@@ -3194,6 +3260,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="73.9" sdnum="2052;">73.9</td>
     <td align="center" sdval="62.5" sdnum="2052;">62.5</td>
+    <td align="center"><br></td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">SK</td>
@@ -3202,6 +3269,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   </tr>
   <tr>
     <td height="20" align="center">Wang et al.[61] : MAAN</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3220,6 +3288,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK</td>
     <td align="center">ICIP</td>
     <td align="center" sdval="2018" sdnum="2052;">2018</td>
@@ -3232,6 +3301,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="79.5" sdnum="2052;">79.5</td>
     <td align="center" sdval="76.1" sdnum="2052;">76.1</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ST</td>
     <td align="center">TPAMI</td>
     <td align="center" sdval="2018" sdnum="2052;">2018</td>
@@ -3242,6 +3312,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="89.5" sdnum="2052;">89.5</td>
     <td align="center" sdval="82" sdnum="2052;">82</td>
     <td align="center" sdval="80.9" sdnum="2052;">80.9</td>
+    <td align="center">-</td>
     <td align="center" sdval="76.7" sdnum="2052;">76.7</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3254,6 +3325,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="86.7" sdnum="2052;">86.7</td>
     <td align="center" sdval="76.1" sdnum="2052;">76.1</td>
     <td align="center" sdval="77.4" sdnum="2052;">77.4</td>
+    <td align="center">-</td>
     <td align="center" sdval="68.8" sdnum="2052;">68.8</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3266,6 +3338,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="79.7" sdnum="2052;">79.7</td>
     <td align="center" sdval="81.9" sdnum="2052;">81.9</td>
+    <td align="center">-</td>
     <td align="center" sdval="73.9" sdnum="2052;">73.9</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3278,6 +3351,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="89.6" sdnum="2052;">89.6</td>
     <td align="center" sdval="82.8" sdnum="2052;">82.8</td>
     <td align="center" sdval="81.3" sdnum="2052;">81.3</td>
+    <td align="center">-</td>
     <td align="center" sdval="77.4" sdnum="2052;">77.4</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3286,6 +3360,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   </tr>
   <tr>
     <td height="20" align="center">Xie et al. [47] : CAN</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3304,6 +3379,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="78.1" sdnum="2052;">78.1</td>
     <td align="center">-</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ST+ ExPr</td>
     <td align="center">AAAI</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
@@ -3314,6 +3390,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="91.2" sdnum="2052;">91.2</td>
     <td align="center">^86.4</td>
     <td align="center" sdval="89.6" sdnum="2052;">89.6</td>
+    <td align="center">-</td>
     <td align="center" sdval="78.8" sdnum="2052;">78.8</td>
     <td align="center"><b>^66.8</b></td>
     <td align="center">SK + ST + ExPr</td>
@@ -3326,6 +3403,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="79.6" sdnum="2052;">79.6</td>
     <td align="center" sdval="83.3" sdnum="2052;">83.3</td>
+    <td align="center">-</td>
     <td align="center" sdval="76.9" sdnum="2052;">76.9</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3334,6 +3412,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   </tr>
   <tr>
     <td height="20" align="center">Zhang et al. [56]: SSDAN</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3350,6 +3429,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="80.8" sdnum="2052;">80.8</td>
     <td align="center" sdval="87.5" sdnum="2052;">87.5</td>
+    <td align="center">-</td>
     <td align="center" sdval="78.7" sdnum="2052;">78.7</td>
     <td align="center">-</td>
     <td align="center">SK + ST(char-level + word-level)</td>
@@ -3364,6 +3444,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="83.3" sdnum="2052;">83.3</td>
     <td align="center" sdval="83.5" sdnum="2052;">83.5</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ST</td>
     <td align="center">ICME</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
@@ -3374,6 +3455,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="79.2" sdnum="2052;">79.2</td>
     <td align="center" sdval="74" sdnum="2052;">74</td>
+    <td align="center">-</td>
     <td align="center" sdval="71.8" sdnum="2052;">71.8</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3386,6 +3468,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="86.4" sdnum="2052;">86.4</td>
     <td align="center" sdval="79.4" sdnum="2052;">79.4</td>
     <td align="center" sdval="82.6" sdnum="2052;">82.6</td>
+    <td align="center">-</td>
     <td align="center" sdval="73.9" sdnum="2052;">73.9</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3394,6 +3477,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   </tr>
   <tr>
     <td height="20" align="center">Gao et al. [68]</td>
+    <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center">-</td>
@@ -3412,6 +3496,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="72.9" sdnum="2052;">72.9</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ST(char-level + word-level)</td>
     <td align="center">ICDAR</td>
     <td align="center" sdval="2019" sdnum="2052;">2019</td>
@@ -3422,6 +3507,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center">-</td>
     <td align="center" sdval="82.3" sdnum="2052;">82.3</td>
+    <td align="center">-</td>
     <td align="center" sdval="68.5" sdnum="2052;">68.5</td>
     <td align="center">-</td>
     <td align="center">ST(char-level + word-level)</td>
@@ -3434,6 +3520,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="73.5" sdnum="2052;">73.5</td>
     <td align="center" sdval="75.7" sdnum="2052;">75.7</td>
+    <td align="center">-</td>
     <td align="center" sdval="70.1" sdnum="2052;">70.1</td>
     <td align="center">-</td>
     <td align="center">SK(D_A) + Pu</td>
@@ -3446,6 +3533,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="48.6" sdnum="2052;">48.6</td>
     <td align="center" sdval="40.6" sdnum="2052;">40.6</td>
+    <td align="center">-</td>
     <td align="center" sdval="39" sdnum="2052;">39</td>
     <td align="center">-</td>
     <td align="center">Pr(1 million)</td>
@@ -3458,6 +3546,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="82.2" sdnum="2052;">82.2</td>
     <td align="center" sdval="87.8" sdnum="2052;">87.8</td>
+    <td align="center">-</td>
     <td align="center" sdval="77.3" sdnum="2052;">77.3</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3470,6 +3559,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="83.6" sdnum="2052;">83.6</td>
     <td align="center" sdval="88.5" sdnum="2052;">88.5</td>
+    <td align="center">-</td>
     <td align="center" sdval="78.2" sdnum="2052;">78.2</td>
     <td align="center">-</td>
     <td align="center">SK + ST (char-level)</td>
@@ -3482,6 +3572,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="80" sdnum="2052;">80</td>
     <td align="center" sdval="84.4" sdnum="2052;">84.4</td>
+    <td align="center">-</td>
     <td align="center" sdval="74.5" sdnum="2052;">74.5</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3494,6 +3585,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="77.4" sdnum="2052;">77.4</td>
     <td align="center" sdval="78.9" sdnum="2052;">78.9</td>
+    <td align="center">-</td>
     <td align="center" sdval="75.6" sdnum="2052;">75.6</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3506,6 +3598,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="84.3" sdnum="2052;">84.3</td>
     <td align="center" sdval="83.3" sdnum="2052;">83.3</td>
+    <td align="center">-</td>
     <td align="center" sdval="79.4" sdnum="2052;">79.4</td>
     <td align="center">-</td>
     <td align="center">SK + ST (char-level)</td>
@@ -3518,6 +3611,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="85.7" sdnum="2052;">85.7</td>
     <td align="center" sdval="92.2" sdnum="2052;">92.2</td>
+    <td align="center">-</td>
     <td align="center" sdval="79.5" sdnum="2052;">79.5</td>
     <td align="center">-</td>
     <td align="center">SK + ST + ExPu</td>
@@ -3526,14 +3620,15 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
   </tr>
   <tr>
     <td height="20" align="center">Luo et al. [85]</td>
-    <td align="center" sdval="95.5" sdnum="2052;"><b>95.5</b></td>
-    <td align="center" sdval="92.2" sdnum="2052;"><b>92.2</b></td>
-    <td align="center" sdval="85.4" sdnum="2052;">85.4</td>
-    <td align="center" sdval="89.6" sdnum="2052;"><b>89.6</b></td>
-    <td align="center" sdval="83.7" sdnum="2052;"><b>83.7</b></td>
+    <td align="center" sdval="95.8" sdnum="2052;"><b>95.8</b></td>
+    <td align="center" sdval="91.5" sdnum="2052;"><b>91.5</b></td>
+    <td align="center" sdval="85.1" sdnum="2052;">85.1</td>
+    <td align="center" sdval="91.3" sdnum="2052;"><b>91.3</b></td>
+    <td align="center" sdval="83.9" sdnum="2052;"><b>83.9</b></td>
+    <td align="center" sdval="81.4" sdnum="2052;"><b>81.4</b></td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
-    <td align="center">arXiv</td>
+    <td align="center">IJCV</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
   </tr>
   <tr>
@@ -3542,6 +3637,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center"><b>^86.9</b></td>
     <td align="center" sdval="87.5" sdnum="2052;">87.5</td>
+    <td align="center">-</td>
     <td align="center" sdval="82.2" sdnum="2052;">82.2</td>
     <td align="center">-</td>
     <td align="center">SK + ST + ExPu </td>
@@ -3556,6 +3652,20 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="87.8" sdnum="2052;">87.8</td>
     <td align="center" sdval="82.7" sdnum="2052;">82.7</td>
     <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">SK + ST</td>
+    <td align="center">CVPR</td>
+    <td align="center" sdval="2020" sdnum="2052;">2020</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">Qiao et al. [101] : SEED</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center" sdval="81.4" sdnum="2052;">81.4</td>
+    <td align="center" sdval="83.6" sdnum="2052;">83.6</td>
+    <td align="center" sdval="80" sdnum="2052;">80</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ST</td>
     <td align="center">CVPR</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
@@ -3568,6 +3678,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center" sdval="82.5" sdnum="2052;">82.5</td>
     <td align="center" sdval="75.7" sdnum="2052;">75.7</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ST</td>
     <td align="center">ECAI</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
@@ -3578,6 +3689,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="83.1" sdnum="2052;">83.1</td>
     <td align="center" sdval="89.6" sdnum="2052;">89.6</td>
+    <td align="center" sdval="80.3" sdnum="2052;">80.3</td>
     <td align="center" sdval="74.2" sdnum="2052;">74.2</td>
     <td align="center">-</td>
     <td align="center">SK + ST + ExPu (D_A)</td>
@@ -3590,6 +3702,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="82.8" sdnum="2052;">82.8</td>
     <td align="center" sdval="87.5" sdnum="2052;">87.5</td>
+    <td align="center" sdval="82.2" sdnum="2052;">82.2</td>
     <td align="center" sdval="78.5" sdnum="2052;">78.5</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3604,6 +3717,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="73.3" sdnum="2052;">73.3</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK</td>
     <td align="center">arXiv</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
@@ -3616,6 +3730,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="81.8" sdnum="2052;">81.8</td>
     <td align="center">-</td>
+    <td align="center">-</td>
     <td align="center">SK + ST</td>
     <td align="center">ECCV</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
@@ -3626,6 +3741,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="84.3" sdnum="2052;">84.3</td>
     <td align="center" sdval="85" sdnum="2052;">85</td>
+    <td align="center">-</td>
     <td align="center" sdval="82.2" sdnum="2052;">82.2</td>
     <td align="center">-</td>
     <td align="center">SK + ST</td>
@@ -3638,96 +3754,12 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
     <td align="center">-</td>
     <td align="center" sdval="82.9" sdnum="2052;">82.9</td>
     <td align="center"><b>^92.4</b></td>
+    <td align="center">-</td>
     <td align="center" sdval="79.2" sdnum="2052;">79.2</td>
     <td align="center">-</td>
     <td align="center">SK + ST + ExPu</td>
     <td align="center">ECCV</td>
     <td align="center" sdval="2020" sdnum="2052;">2020</td>
-  </tr>
-</table>
-
-<a id="223-performance-comparison-of-recognition-algorithms-on-multilingual-datasets"></a>
-#### 2.2.3 Performance Comparison of Recognition Algorithms on Multilingual Datasets
-
-In this section, we only list the top one of each competition. Please refer to the competition websites for more information.
-
-<table cellspacing="0" border="0">
-  <colgroup width="154"></colgroup>
-  <colgroup width="396"></colgroup>
-  <colgroup width="162"></colgroup>
-  <colgroup width="188"></colgroup>
-  <colgroup width="253"></colgroup>
-  <colgroup width="189"></colgroup>
-  <colgroup width="198"></colgroup>
-  <tr>
-    <td colspan=7 height="18" align="center" valign=middle><b><font face="宋体" color="#000000">Performance Comparison of Recognition Algorithms on Multilingual Datasets</font></b></td>
-    </tr>
-  <tr>
-    <td rowspan=2 height="37" align="center" >Competition</font></td>
-    <td colspan=3 align="center" >Detection</font></td>
-    <td colspan=3 align="center" >End-to-End</font></td>
-    </tr>
-  <tr>
-    <td align="center" >Team Name</font></td>
-    <td align="center" >Protocol</font></td>
-    <td align="center" >Result</font></td>
-    <td align="center" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
-    <td align="center" >Protocol</font></td>
-    <td align="center" >Result</font></td>
-  </tr>
-  <tr>
-    <td height="18" align="center" >RCTW</font></td>
-    <td align="center" >Foo &amp; Bar </font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="66.1" sdnum="2052;"><font face="宋体" color="#000000">66.1</font></td>
-    <td align="center" >NLPR_PAL</font></td>
-    <td align="center" >1-NED</font></td>
-    <td align="center" valign=middle sdval="67.99" sdnum="2052;"><font face="宋体" color="#000000">67.99</font></td>
-  </tr>
-  <tr>
-    <td height="18" align="center" >MTWI</font></td>
-    <td align="center" >nelslip(iflytek&amp;ustc)</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="79.6" sdnum="2052;"><font face="宋体" color="#000000">79.6</font></td>
-    <td align="center" >nelslip(iflytek&amp;ustc)</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="81.5" sdnum="2052;"><font face="宋体" color="#000000">81.5</font></td>
-  </tr>
-  <tr>
-    <td height="18" align="center" >LSVT</font></td>
-    <td align="center" >Tencent-DPPR Team</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="86.42" sdnum="2052;"><font face="宋体" color="#000000">86.42</font></td>
-    <td align="center" >Tencent-DPPR Team</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="60.97" sdnum="2052;"><font face="宋体" color="#000000">60.97</font></td>
-  </tr>
-  <tr>
-    <td height="18" align="center" >ArT</font></td>
-    <td align="center" >pil_maskrcnn</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="82.65" sdnum="2052;"><font face="宋体" color="#000000">82.65</font></td>
-    <td align="center" >baseline_0.5_class_5435</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="50.17" sdnum="2052;"><font face="宋体" color="#000000">50.17</font></td>
-  </tr>
-  <tr>
-    <td height="18" align="center" >ReCTS</font></td>
-    <td align="center" >SANHL</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="93.36" sdnum="2052;"><font face="宋体" color="#000000">93.36</font></td>
-    <td align="center" >Tencent-DPPR</font></td>
-    <td align="center" >1-NED</font></td>
-    <td align="center" valign=middle sdval="81.5" sdnum="2052;"><font face="宋体" color="#000000">81.5</font></td>
-  </tr>
-  <tr>
-    <td height="18" align="center" >MLT</font></td>
-    <td align="center" >Tencent-DPPR Team</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="83.61" sdnum="2052;"><font face="宋体" color="#000000">83.61</font></td>
-    <td align="center" >Tencent-DPPR Team &amp; USTB-PRIR</font></td>
-    <td align="center" >F-score</font></td>
-    <td align="center" valign=middle sdval="59.15" sdnum="2052;"><font face="宋体" color="#000000">59.15</font></td>
   </tr>
 </table>
 
@@ -3816,7 +3848,7 @@ In this section, we only list the top one of each competition. Please refer to t
 
 **[24] \[NC-2019]** Y. Gao, Y. Chen, J. Wang, M. Tang, and H. Lu, “Reading scene text with fully convolutional sequence modeling,” Neurocomputing, vol. 339, pp. 161–170, 2019. [paper](https://www.sciencedirect.com/science/article/pii/S0925231219301870)
 
-**[25] \[AAAI-2018]** W. Liu, C. Chen, and K.-Y. K. Wong, “Char-Net: A character-aware neural network for distorted scene text recognition.” in Proceedings of AAAI, 2018, pp. 7154–7161. [paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16327/16307)
+**[25] \[AAAI-2018]** W. Liu, C. Chen, and K.-Y. K. Wong, “Char-Net: A character-aware neural network for distorted scene text recognition.” in Proceedings of AAAI, 2018, pp. 7154–7161. [paper](https://i.cs.hku.hk/~kykwong/publications/wliu_aaai2018.pdf)
 
 **[26] \[AAAI-2018]** Z. Liu, Y. Li, F. Ren, W. L. Goh, and H. Yu, “Squeezedtext: A real-time scene text recognition by binary convolutional encoderdecoder network,” in Proceedings of AAAI, 2018, pp. 7194–7201. [paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16354/16312)
 
@@ -3947,7 +3979,7 @@ character segmentation using recurrent neural network,” Pattern Recognition, v
 
 **[84]** **\[AAAI-2020]** W. Hu, X. Cai, J. Hou, S. Yi, and Z. Lin, “GTC: Guided training of ctc towards efficient and accurate scene text recognition,” In Proceedings of AAAI, 2020. [paper](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-HuW.7838.pdf) 
 
-**[85]** **\[IJCV-2020]** C. Luo, Q. Lin, Y. Liu, J. Lianwen, and S. Chunhua, “Separating content from style using adversarial learning for recognizing text in the wild,” CoRR abs/2001.04189, 2020. [paper](https://arxiv.org/pdf/2001.04189.pdf) 
+**[85]** **\[IJCV-2020]** C. Luo, Q. Lin, Y. Liu, J. Lianwen, and S. Chunhua, “Separating content from style using adversarial learning for recognizing text in the wild,” Int. J. Comput. Vis. 2020. [paper](https://arxiv.org/pdf/2001.04189.pdf) 
 
 ---
 
@@ -3972,7 +4004,7 @@ to unreal engine,” in Proceedings of ECCV, 2016, pp. 909–916. [paper](https:
 
 **[92]** **\[CVPR-2020]** Wan Z, Zhang J, Zhang L, et al, "On Vocabulary Reliance in Scene Text Recognition," in  Proceedings of CVPR, 2020. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wan_On_Vocabulary_Reliance_in_Scene_Text_Recognition_CVPR_2020_paper.pdf) 
 
-**[93]** **\[ECAI-2020]** Bleeker M, de Rijke M, "Bidirectional Scene Text Recognition with a Single Decoder," in Proceedings of ECAI, 2020. [paper](https://arxiv.org/pdf/1912.03656.pdf) [code](https://github.com/MauritsBleeker/Bi-STET)
+**[93]** **\[ECAI-2020]** Bleeker M, de Rijke M, "Bidirectional Scene Text Recognition with a Single Decoder," in Proceedings of ECAI, 2020. [paper](https://arxiv.org/pdf/1912.03656.pdf) [code](https:// github.com/MauritsBleeker/Bi-STET)
 
 **[94]** **\[arXiv-2019]** Bartz C, Bethge J, Yang H, et al, "KISS: Keeping It Simple for Scene Text Recognition,"CoRR abs/1911.08400, 2019. [paper](https://arxiv.org/pdf/1911.08400.pdf) [code](https://github.com/Bartzi/kiss)
 
@@ -3980,20 +4012,25 @@ to unreal engine,” in Proceedings of ECCV, 2016, pp. 909–916. [paper](https:
 
 **[96]** **\[arXiv-2020]**  Lin J, Cheng Z, Bai F, et al, "Text Recognition in Real Scenarios with a Few Labeled Samples,"  CoRR abs/2006.12209, 2020. [paper](https://arxiv.org/pdf/2006.12209.pdf) 
 
-**[97]** **\[ECCV-2020]**  Zhang C, Gupta A, Zisserman A. "Adaptive Text Recognition through Visual Matching," in Proceedings of ECCV, 2020. [paper](https://link.springer.com/chapter/10.1007/978-3-030-58517-4_4)  [code]( http://www.robots.ox.ac.uk/~vgg/research/FontAdaptor20/ )
+**[97]** **\[ECCV-2020]**  Zhang C, Gupta A, Zisserman A. "Adaptive Text Recognition through Visual Matching," in Proceedings of ECCV, 2020. [paper](https://link.springer.com/chapter/10.1007/978-3-030-58517-4_4)  [code]( http://www.robots.ox.ac.uk/~vgg/research/FontAdaptor20/)
 
-**[98]** **\[ECCV-2020]**  Zhang H, Yao Q, Yang M, et al, "AutoSTR: Efficient Backbone Search for Scene Text Recognition," in Proceedings of ECCV, 2020. [paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123690732.pdf)  [code](  https://github.com/AutoML-4Paradigm/AutoSTR.git)
+**[98]** **\[ECCV-2020]**  Zhang H, Yao Q, Yang M, et al, "AutoSTR: Efficient Backbone Search for Scene Text Recognition," in Proceedings of ECCV, 2020. [paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123690732.pdf)  [code](https://github.com/AutoML-4Paradigm/AutoSTR.git)
 
 **[99]** **\[ECCV-2020]**   Yan R, Huang Y, "PlugNet: Degradation Aware Scene Text Recognition Supervised by a Pluggable Super-Resolution Unit," in Proceedings of ECCV, 2020. [paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600154.pdf) 
 
 **[100]** **\[ECCV-2020]**   Yue X, Kuang Z, Lin C, et al. RobustScanner: Dynamically Enhancing Positional Clues for Robust Text Recognition," in Proceedings of ECCV, 2020. [paper](https://arxiv.org/pdf/2007.07542.pdf) 
 
+**[101]** **\[CVPR-2020]**   Zhi Qiao, Yu Zhou, Dongbao Yang, Yucan Zhou, and Weiping Wang. 2020. SEED: Semantics Enhanced Encoder-Decoder Framework for Scene Text Recognition. In Proceedings of CVPR. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Qiao_SEED_Semantics_Enhanced_Encoder-Decoder_Framework_for_Scene_Text_Recognition_CVPR_2020_paper.pdf) [code]( https://github.com/Pay20Y/SEED)
+
 <a id="6help"></a>
+
 ## 6.Help
 
 If you have any problem in our resources, or any good paper/code we missed, please inform us at xxuechen@foxmail.com. Thank you for your contribution.
 
 ***
+
+<a id="7copyright"></a>
 
 <a id="7copyright"></a>
 ## 7.Copyright
