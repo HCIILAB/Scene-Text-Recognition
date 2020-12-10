@@ -3774,7 +3774,7 @@ It is notable that 1) The '*' indicates the methods that use the extra datasets 
 
 **[52] \[IJCV-2020]**  Long S, He X, Yao C. Scene text detection and recognition: The deep learning era[J]. International Journal of Computer Vision, 2020: 1-24. [paper](https://link.springer.com/article/10.1007/s11263-020-01369-0) [code](https://github.com/Jyouhou/SceneTextPapers)
 
-**[90]** **\[ACM Computing Surveys-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
+**[90]** **\[ACM Computing Surveys-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," ACM Computing Surveys (CSUR) 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
 
 ***
 
@@ -3994,7 +3994,7 @@ character segmentation using recurrent neural network,” Pattern Recognition, v
 **[89]** **\[ECCV-2016]** W. Qiu and A. L. Yuille, “Unrealcv: Connecting computer vision
 to unreal engine,” in Proceedings of ECCV, 2016, pp. 909–916. [paper](https://link.springer.com/chapter/10.1007/978-3-319-49409-8_75)
 
-**[90]** **\[arXiv-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," CoRR abs/2005.03492, 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
+**[90]** **\[ACM Computing Surveys-2020]** X. Chen, L. Jin, Y. Zhu, C. Luo, and T. Wang, “Text Recognition in the Wild: A Survey," ACM Computing Surveys (CSUR) 2020. [paper](https://arxiv.org/pdf/2005.03492.pdf) [code](https://github.com/HCIILAB/Scene-Text-Recognition)
 
 ---
 
