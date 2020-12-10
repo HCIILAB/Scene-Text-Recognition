@@ -4004,7 +4004,7 @@ to unreal engine,” in Proceedings of ECCV, 2016, pp. 909–916. [paper](https:
 
 **[92]** **\[CVPR-2020]** Wan Z, Zhang J, Zhang L, et al, "On Vocabulary Reliance in Scene Text Recognition," in  Proceedings of CVPR, 2020. [paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wan_On_Vocabulary_Reliance_in_Scene_Text_Recognition_CVPR_2020_paper.pdf) 
 
-**[93]** **\[ECAI-2020]** Bleeker M, de Rijke M, "Bidirectional Scene Text Recognition with a Single Decoder," in Proceedings of ECAI, 2020. [paper](https://arxiv.org/pdf/1912.03656.pdf) [code](https:// github.com/MauritsBleeker/Bi-STET)
+**[93]** **\[ECAI-2020]** Bleeker M, de Rijke M, "Bidirectional Scene Text Recognition with a Single Decoder," in Proceedings of ECAI, 2020. [paper](https://arxiv.org/pdf/1912.03656.pdf) [code](https://github.com/MauritsBleeker/Bi-STET)
 
 **[94]** **\[arXiv-2019]** Bartz C, Bethge J, Yang H, et al, "KISS: Keeping It Simple for Scene Text Recognition,"CoRR abs/1911.08400, 2019. [paper](https://arxiv.org/pdf/1911.08400.pdf) [code](https://github.com/Bartzi/kiss)
 
