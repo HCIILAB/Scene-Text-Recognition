@@ -1,6 +1,6 @@
 # Scene Text Recognition Resources
 [<p align='right'>Author: 陈晓雪</p>](https://github.com/CCchenxiaoxue)
-
+- 1
 The paper "Text Recognition in the Wild: A Survey" (accepted to appear in ACM Computing Surveys) in [arXiv](https://arxiv.org/pdf/2005.03492v3.pdf) version is available now.
 
 ## Updates
