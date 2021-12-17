@@ -3,7 +3,7 @@
 The paper "Text Recognition in the Wild: A Survey" (accepted to appear in ACM Computing Surveys) in [arXiv](https://arxiv.org/pdf/2005.03492v3.pdf) version is available now.
 
 # ❗❗ Newest Version Can be Found Here ❗❗
-## This repository is no longer maintaining now, you can refer to our newest one
+## This repository is no longer maintaining now, and you can refer to our newest one
 ## [Scene Text Recognition Recommendations](https://github.com/HCIILAB/Scene-Text-Recognition-Recommendations)
 
 ## Updates
